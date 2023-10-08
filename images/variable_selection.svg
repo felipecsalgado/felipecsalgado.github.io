@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="variable_selection.svg"
+   inkscape:version="1.2.1 (9c6d41e4, 2022-07-14)"
+   inkscape:export-filename="variable_selection.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.77611876"
+     inkscape:cx="293.12524"
+     inkscape:cy="273.15407"
+     inkscape:window-width="1728"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="65"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:11.4767px;line-height:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-decoration-color:#000000;text-anchor:middle;fill:#d5c26d;fill-opacity:0.989761;stroke-width:1.42058;paint-order:stroke fill markers;stop-color:#000000"
+       x="32.743988"
+       y="29.540981"
+       id="text236"><tspan
+         sodipodi:role="line"
+         id="tspan234"
+         style="fill:#000000;stroke-width:1.42058;font-weight:normal;font-style:italic"
+         x="32.743988"
+         y="29.540981">X<tspan
+   style="font-size:7.45988px;baseline-shift:sub;fill:#000000;stroke-width:1.42058;font-weight:normal;font-style:italic"
+   id="tspan288">1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.4767px;line-height:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-decoration-color:#000000;text-anchor:middle;fill:#d5c26d;fill-opacity:0.989761;stroke-width:1.42058;paint-order:stroke fill markers;stop-color:#000000"
+       x="59.539951"
+       y="28.978287"
+       id="text236-3"><tspan
+         sodipodi:role="line"
+         id="tspan234-8"
+         style="font-style:italic;font-weight:normal;fill:#000000;stroke-width:1.42058"
+         x="59.539951"
+         y="28.978287">X<tspan
+   style="font-style:italic;font-weight:normal;font-size:7.45988px;baseline-shift:sub;fill:#000000;stroke-width:1.42058"
+   id="tspan288-0">2</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.4767px;line-height:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-decoration-color:#000000;text-anchor:middle;fill:#d5c26d;fill-opacity:0.989761;stroke-width:1.42058;paint-order:stroke fill markers;stop-color:#000000"
+       x="85.371643"
+       y="28.521925"
+       id="text236-2-8"><tspan
+         sodipodi:role="line"
+         id="tspan234-4-1"
+         style="font-style:italic;font-weight:normal;fill:#000000;stroke-width:1.42058"
+         x="85.371643"
+         y="28.521925">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.4767px;line-height:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-decoration-color:#000000;text-anchor:middle;fill:#d5c26d;fill-opacity:0.989761;stroke-width:1.42058;paint-order:stroke fill markers;stop-color:#000000"
+       x="110.67482"
+       y="29.363619"
+       id="text236-39"><tspan
+         sodipodi:role="line"
+         id="tspan234-0"
+         style="font-style:italic;font-weight:normal;fill:#000000;stroke-width:1.42058"
+         x="110.67482"
+         y="29.363619">X<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan592">k</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.4767px;line-height:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-decoration-color:#000000;text-anchor:middle;fill:#d5c26d;fill-opacity:0.989761;stroke-width:1.42058;paint-order:stroke fill markers;stop-color:#000000"
+       x="75.821136"
+       y="66.24987"
+       id="text236-39-0"><tspan
+         sodipodi:role="line"
+         id="tspan234-0-4"
+         style="font-style:italic;font-weight:normal;fill:#000000;stroke-width:1.42058"
+         x="75.821136"
+         y="66.24987">Y</tspan></text>
+    <path
+       style="fill:none;fill-opacity:0.989761;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2);paint-order:stroke fill markers;stop-color:#000000"
+       d="M 39.348311,40.26767 60.734246,53.368966"
+       id="path1735"
+       inkscape:path-effect="#path-effect1737"
+       inkscape:original-d="m 39.348311,40.26767 c 4.367363,1.991146 21.385935,13.101296 21.385935,13.101296"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:0.989761;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2-5);paint-order:stroke fill markers;stop-color:#000000"
+       d="m 65.779753,40.777285 6.165313,9.055307"
+       id="path1735-8"
+       inkscape:path-effect="#path-effect1737-1"
+       inkscape:original-d="m 65.779753,40.777285 c 4.367363,1.991146 6.165313,9.055307 6.165313,9.055307"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:0.989761;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2-3);paint-order:stroke fill markers;stop-color:#000000"
+       d="M 105.60044,40.124654 92.169148,50.507373"
+       id="path1735-9"
+       inkscape:path-effect="#path-effect1737-5"
+       inkscape:original-d="M 105.60044,40.124654 C 101.69238,42.911325 92.169148,50.507373 92.169148,50.507373"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="variable_selection.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>

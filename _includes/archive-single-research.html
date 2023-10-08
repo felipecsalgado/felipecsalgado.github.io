@@ -1,0 +1,144 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+{% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+{% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+{% assign title = post.title %}
+{% endif %}
+
+<style>
+
+    li {
+        margin-bottom: 5px !important;
+        margin-top: -5px !important;
+    }
+    
+    .part1 {
+        margin:0;
+        padding:0px;
+        padding-left:20px;
+        margin-top: -20px !important;
+        margin-bottom: -10px !important;
+    }
+    
+    .about {
+
+    }
+
+    .card-body {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        transition: all 0.2s ease-out;
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: .25rem;
+        padding: 1em;
+    }
+
+    .card {
+        margin-bottom: 1em;
+        padding: 0.5rem;
+    }
+
+    .right {
+        float: right !important;
+    }
+
+    h4.title {
+        font-size: 0.9rem;
+        text-transform: none !important;
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    h4.card {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        font-weight: normal !important;
+        text-transform: none !important;
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .card-description {
+        font-size: smaller;
+        margin-top: 1em;
+    }
+
+    a.card-link {
+        font-size: larger;
+        color: darkcyan;
+    }
+
+    .archive__item-title {
+        margin-top: 0.25em;
+        color: black;
+        text-decoration: none !important;
+        font-size: $type-size-9;
+    }
+    a.card:hover {
+        text-decoration: none;
+    }
+    .top-container {
+        display: table;
+    }
+    .left-title {
+        width: 60%;
+        display: table-cell;
+        vertical-align: top;
+    }
+    .thumbnail {
+        vertical-align: top;
+        text-align: center;
+        width: 40%;
+        padding-left: 2em;
+        display: table-cell;
+    }
+
+    .pub-venue {
+    }
+    p.archive__item-excerpt, .archive__item-excerpt+p {
+        margin-bottom: 0;
+    }
+</style>
+
+
+<div class="{{ include.type | default: 'list' }}__item card">
+    <article class="archive__item card-body" itemscope itemtype="http://schema.org/CreativeWork">
+        <div class="top-container">
+            <div class="row">
+                <div class="left-title">
+                    <h2 class="archive__item-research-title" itemprop="headline">{{ title }}</h2>
+                </div>
+                <div class="left-title"></div>
+            </div>
+            <div class="row">
+                <div class="left-title">
+                    {% if post.excerpt%}
+                    <p class="archive__item-research-excerpt" itemprop="description">{{post.excerpt}}</p>
+                    {% endif %}
+                    {% if post.objective%}
+                    <p class="archive__item-research-excerpt" itemprop="description"><b>Objectives: </b>{{post.objective}}</p>
+                    {% endif %}
+                </div>
+                <div class="thumbnail">
+                    <img src='{{ post.thumbnail }}' alt="Thumbnail">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-title">
+                    {% if post.works %}
+                    <p class="archive__item-research-excerpt" itemprop="description"><b>Selected Publications:</b>{{post.works}}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </article>
+</div>

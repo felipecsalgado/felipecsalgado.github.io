@@ -1,0 +1,16 @@
+# main links links
+main:
+  - title: "Research"
+    url: /research/
+    
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Talks and Presentations"
+    url: /talks/
+
+  - title: "Programming"
+    url: /programming/
+
+#  - title: "CV"
+#    url: /files/felipecsalgado.pdf
