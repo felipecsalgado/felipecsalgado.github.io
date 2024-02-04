@@ -6,7 +6,7 @@ date: 01/03/2023
 venue: 'thesis'
 title: "Design of a single&#150;particle detection system for strong&#150;field QED experiments"
 authors: "<b>F. C. Salgado</b>"
-journal: "Dissertation"
+journal: "PhD Dissertation"
 location: "Friedrich-Schiller-Universitaet Jena"
 volume: "0"
 page: "0"

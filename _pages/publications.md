@@ -15,3 +15,12 @@ A complete list of my publications can be found on [Google Scholar](https://scho
     <li>{% include archive-single-publication.html %}</li>
     {% endfor %}
 </ol>
+
+<br>
+<hr>
+<h2 class="page__title">Patents</h2>
+<ol>
+    {% for post in site.patents reversed %}
+    <li>{% include archive-single-patent.html %}</li>
+    {% endfor %}
+</ol>
