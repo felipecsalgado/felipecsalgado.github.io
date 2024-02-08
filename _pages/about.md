@@ -8,11 +8,21 @@ redirect_from:
   - /about.html
 ---
 
-Greetings! My name is Felipe Salgado, a physicist with a background in electrical engineering. I have interest in physics, mathematics, data and image analysis, as well as electronics and programming.
+Hi! 👋 My name is Felipe Salgado, a physicist with a background in electrical engineering.
 
-Currently, I hold a postdoctoral position at Friedrich-Schiller-Universität Jena and Helmoltz Institute Jena, where my primary research focuses on Strong Field Quantum Electrodynamics (SF-QED) and laser-matter interactions, specifically in the field of laser wakefield acceleration (LWFA).
+I have completed my Masters in Photonics and a PhD in physics. I am passionate about developing new hardware and software for complex systems. Hence, I have conducted numerous research experiments that required extensive teamwork and thinking outside the box.
 
-<!-- Feel free to explore my public CV [here](../files/CV_Salgado_public.pdf).-->
+I have experience in:
+* Designing experiments and executing them in the lab, managing personal and project budgets;
+* Conducting data analysis and image processing using Python and Mathematica, and performing numerical simulations using C/C++.
+* Developing software (C/C++/C#/LabView) for controlling devices using different communication protocols, such as motor and trigger controllers, and cameras;
+* Designing optical components, complex systems, and detectors using Autodesk Inventor, for example.
+* Creating electronic PCBs to integrate systems;
+and much more!
+
+If you would like to learn more about my experiences and projects, feel free to send me a message or visit my GitHub repositories.
+
+I have also published scientific papers and hold patents from the work and research I have conducted.
 
 <!--**Get in Touch**  
 [Linkedin](https://www.linkedin.com/in/felipe-salgado-82a40a34/)  
