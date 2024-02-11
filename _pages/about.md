@@ -12,7 +12,7 @@ Hi! 👋 My name is Felipe Salgado, a physicist with a background in electrical 
 I have completed my Masters in Photonics and a PhD in physics. I am passionate about developing new hardware and software for complex systems. Hence, I have conducted numerous research experiments that required extensive teamwork and thinking outside the box.
 
 I have experience in:
-* Designing experiments and executing them in the lab, managing personal and project budgets;
+* Designing and performing experiments at high-power laser facilities (PW-class) around the globe such as JETi200 (Jena, Germany), CALA (Munich, Germany), FACET-II at the SLAC National Accelerator Laboratory (USA), and Rutherford Appleton Laboratory RAL (UK).
 * Conducting data analysis and image processing using Python and Mathematica, and performing numerical simulations using C/C++.
 * Developing software (C/C++/C#/LabView) for controlling devices using different communication protocols, such as motor and trigger controllers, and cameras;
 * Designing optical components, complex systems, and detectors using Autodesk Inventor, for example.
