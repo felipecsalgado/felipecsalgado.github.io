@@ -14,10 +14,10 @@ I have completed my Masters in Photonics and a PhD in physics. I am passionate a
 I have experience in:
 * Designing and performing experiments at high-power laser facilities (PW-class) around the globe such as JETi200 (Jena, Germany), CALA (Munich, Germany), FACET-II at the SLAC National Accelerator Laboratory (USA), and Rutherford Appleton Laboratory RAL (UK).
 * Conducting data analysis and image processing using Python and Mathematica, and performing numerical simulations using C/C++.
-* Developing software (C/C++/C#/LabView) for controlling devices using different communication protocols, such as motor and trigger controllers, and cameras;
+* Developing software (C/C++/C#/LabView) for controlling devices using different communication protocols, such as motor and trigger controllers, and cameras.
 * Designing optical components, complex systems, and detectors using Autodesk Inventor, for example.
-* Creating electronic PCBs to integrate systems;
-and much more!
+* Creating electronic PCBs to integrate systems.
+And much more!
 
 If you would like to learn more about my experiences and projects, feel free to send me a message or visit my GitHub repositories.
 
