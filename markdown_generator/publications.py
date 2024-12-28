@@ -48,7 +48,9 @@ html_escape_table = {
     "&": "&amp;",
     '"': "&quot;",
     "'": "&apos;",
-    "-": "&#150;"
+    "-": "&#150;",
+    "ü": "&#252;",
+    "á": "&#225;",
     }
 
 def html_escape(text):
@@ -63,17 +65,24 @@ def html_escape(text):
 # In[5]:
 
 import os
+import glob
+
+# Remove the files from the publication folders for later create new ones
+files = glob.glob('../_publications//*')
+for f in files:
+    os.remove(f)
+
 for row, item in publications.iterrows():
-    
-    md_filename = str(item.pub_date) + "-" + item.url_slug + ".md"
-    html_filename = str(item.pub_date) + "-" + item.url_slug
+    # print(row)
+    md_filename = str(row) + '-' + str(item.year) + "-" + item.url_slug + ".md"
+    html_filename = str(item.year) + "-" + item.url_slug
     year = item.pub_date[:4]
     
     ## YAML variables
     
-    md = "---\ntitle: \""   + item.title + '"\n'
+    # md = "---\ntitle: \""   + item.title + '"\n'
     
-    md += """collection: publications"""
+    md = """---\ncollection: publications"""
     
     md += """\npermalink: /publication/""" + html_filename
     
@@ -91,7 +100,7 @@ for row, item in publications.iterrows():
 
     md += '\nauthors: "' + html_escape(item.authors) + '"'
 
-    md += '\njournal: "' + html_escape(item.journal) + '"'
+    md += '\njournal: "<i>' + html_escape(item.journal) + '</i>"'
 
     md += '\nlocation: "' + str(item.location) + '"'
 

@@ -1,12 +1,11 @@
 ---
-title: "Conceptual design report for the LUXE experiment"
 collection: publications
-permalink: /publication/08/09/2021-paper-title-number-6
-date: 08/09/2021
+permalink: /publication/2021-paper-luxe-cdr
+date: 08.09.21
 venue: 'paper'
 title: "Conceptual design report for the LUXE experiment"
 authors: "H. Abramowicz, <i>et al.</i>"
-journal: "The European Physical Journal Special Topics"
+journal: "<i>The European Physical Journal Special Topics</i>"
 location: "nan"
 volume: "230"
 page: "2445"

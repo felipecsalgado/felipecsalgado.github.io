@@ -1,12 +1,11 @@
 ---
-title: "Towards pair production in the non-perturbative regime"
 collection: publications
-permalink: /publication/01/10/2021-paper-title-number-4
-date: 01/10/2021
+permalink: /publication/2021-paper-cala-design
+date: 01.10.21
 venue: 'paper'
 title: "Towards pair production in the non&#150;perturbative regime"
 authors: "<b>F. C. Salgado</b>,  K. Grafenstein, A. Golub, A. Doepp, A. Eckey, D. Hollatz, C. Mueller, A. Seidel, D. Seipt, S. Karsch, M. Zepf"
-journal: "New J. Phys."
+journal: "<i>New J. Phys.</i>"
 location: "nan"
 volume: "23"
 page: "105002"

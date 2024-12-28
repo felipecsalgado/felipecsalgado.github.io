@@ -1,12 +1,11 @@
 ---
-title: "Single particle detection system for strong-field QED experiments"
 collection: publications
-permalink: /publication/01/12/2021-paper-title-number-3
-date: 01/12/2021
+permalink: /publication/2021-paper-single-particle-detector
+date: 01.12.21
 venue: 'paper'
 title: "Single particle detection system for strong&#150;field QED experiments"
 authors: "<b>F. C. Salgado</b>,  N. Cavanagh, M. Tamburini, D. W. Storey, <i>et al.</i>"
-journal: "New J. Phys."
+journal: "<i>New J. Phys.</i>"
 location: "nan"
 volume: "24"
 page: "15002"

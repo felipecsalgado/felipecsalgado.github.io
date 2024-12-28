@@ -1,12 +1,11 @@
 ---
-title: "Design of a single-particle detection system for strong-field QED experiments"
 collection: publications
-permalink: /publication/01/03/2023-thesis
-date: 01/03/2023
+permalink: /publication/2023-thesis-fcsalgado
+date: 01.03.23
 venue: 'thesis'
 title: "Design of a single&#150;particle detection system for strong&#150;field QED experiments"
 authors: "<b>F. C. Salgado</b>"
-journal: "PhD Dissertation"
+journal: "<i>Dissertation</i>"
 location: "Friedrich-Schiller-Universitaet Jena"
 volume: "0"
 page: "0"
