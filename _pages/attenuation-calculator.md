@@ -1,0 +1,805 @@
+---
+layout: archive-no-title
+permalink: /attenuation-calculator/
+title: "Photon Attenuation Calculator"
+author_profile: true
+redirect_from: 
+  - /attenuation-calculator
+---
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+.page__footer {
+  display: none !important;
+}
+.attenuation-container {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-bottom: 60px;
+}
+.attenuation-form {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 300px;
+}
+.attenuation-form .form-group {
+  margin-bottom: 10px;
+}
+.attenuation-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.attenuation-form select,
+.attenuation-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.attenuation-form button {
+  background: #2c3e50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  margin-top: 8px;
+}
+.attenuation-form button:hover {
+  background: #34495e;
+}
+.result-card {
+  background: #f9f5f5;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.result-card h4 {
+  margin: 0 0 4px 0;
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.result-card .value {
+  font-size: 13px;
+  font-weight: normal;
+  color: #2c3e50;
+}
+.chart-container {
+  margin: 25px 0;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.chart-container h3 {
+  margin: 0 0 15px 0;
+  font-size: 17px;
+}
+.chart-container canvas {
+  width: 100% !important;
+  height: 450px !important;
+}
+.error-message {
+  color: #e74c3c;
+  padding: 12px;
+  background: #fadbd8;
+  border-radius: 4px;
+  margin: 12px 0;
+  display: none;
+  font-size: 14px;
+}
+.error-message.visible {
+  display: block;
+}
+.input-results-row {
+  display: grid;
+  grid-template-columns: 256px 350px;
+  gap: 30px;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.input-column {
+  order: 1;
+}
+.results-column {
+  order: 2;
+}
+.results-info {
+  margin-bottom: 15px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.charts-row {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+@media (max-width: 900px) {
+  .input-results-row {
+    grid-template-columns: 1fr;
+  }
+  .input-column {
+    order: 2;
+  }
+  .results-column {
+    order: 1;
+  }
+  .attenuation-container {
+    padding: 15px 20px;
+  }
+}
+</style>
+
+<div class="attenuation-container">
+  {% include base_path %}
+  <h2 class="page__title">Photon Attenuation Calculator</h2>
+  <p>Calculate attenuation, transmission, and interaction probabilities for photon-matter interactions.</p>
+  <p>Source for the mass interaction coefficients: <a href="https://physics.nist.gov/PhysRefData/Xcom/html/xcom1.html" target="_blank">XCOM NIST database</a></p>
+  <p>For more details on how to calculate, <a href="/attenuation-explanation/">here</a>.</p>
+  
+  <div id="errorMessage" class="error-message"></div>
+  
+  <div class="input-results-row" id="resultsSection">
+    <div class="input-column">
+      <div class="attenuation-form">
+        <div class="form-group">
+          <label for="material">Target Material:</label>
+          <select id="material">
+            <option value="">Loading materials...</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="length">Material Length (mm):</label>
+          <input type="number" id="length" value="10" min="0.1" step="0.1">
+        </div>
+        <div class="form-group">
+          <label for="energy">Photon Energy (keV):</label>
+          <input type="number" id="energy" value="1000" min="1" step="1">
+        </div>
+        <button id="calculateBtn">Calculate</button>
+      </div>
+    </div>
+    
+    <div class="results-column">
+      <div class="result-card" style="text-align: left;">
+        <div class="results-info">
+          <span><strong>Material:</strong> <span id="resultMaterial">-</span>, <strong>Energy:</strong> <span id="resultEnergy">-</span> keV</span>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;">
+          <div class="result-card">
+            <h4>Attenuation</h4>
+            <div class="value" id="attenuationValue">-</div>
+          </div>
+          <div class="result-card">
+            <h4>Transmission</h4>
+            <div class="value" id="transmissionValue">-</div>
+          </div>
+          <div class="result-card">
+            <h4>Rayleigh (Coherent)</h4>
+            <div class="value" id="rayleighProb">-</div>
+          </div>
+          <div class="result-card">
+            <h4>Compton (Incoherent)</h4>
+            <div class="value" id="comptonProb">-</div>
+          </div>
+          <div class="result-card">
+            <h4>Photoelectric</h4>
+            <div class="value" id="photoelectricProb">-</div>
+          </div>
+          <div class="result-card">
+            <h4>Nuclear Pair Prod.</h4>
+            <div class="value" id="nuclearProb">-</div>
+          </div>
+          <div class="result-card">
+            <h4>Electron Pair Prod.</h4>
+            <div class="value" id="electronProb">-</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="chartsSection">
+    <div class="chart-container">
+      <h3>Attenuation & Transmission vs Energy</h3>
+      <canvas id="attenuationChart"></canvas>
+    </div>
+    
+    <div class="chart-container">
+      <h3>Interaction Probabilities vs Energy</h3>
+      <canvas id="probabilitiesChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<script>
+const DENSITIES = {
+  'al': 2.70,
+  'pb': 11.35,
+  'cu': 8.96,
+  'c': 2.267
+};
+
+const SUPERSCRIPT = ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'];
+const MINUS = '⁻';
+
+function toSuperscript(num) {
+  const isNegative = num < 0;
+  const absNum = Math.abs(num);
+  const result = String(absNum).split('').map(d => SUPERSCRIPT[parseInt(d)]).join('');
+  return isNegative ? MINUS + result : result;
+}
+
+let materialsData = {};
+let attenuationChart = null;
+let probabilitiesChart = null;
+
+const minorGridPlugin = {
+  id: 'minorGrid',
+  beforeDraw: (chart) => {
+    if (chart.scales.y.type !== 'logarithmic') return;
+    
+    const ctx = chart.ctx;
+    const yScale = chart.scales.y;
+    const xScale = chart.scales.x;
+    
+    const minLog = Math.floor(Math.log10(yScale.min));
+    const maxLog = Math.ceil(Math.log10(yScale.max));
+    
+    ctx.save();
+    ctx.strokeStyle = '#e0e0e0';
+    ctx.lineWidth = 0.5;
+    ctx.beginPath();
+    
+    for (let i = minLog; i <= maxLog; i++) {
+      for (let j = 2; j <= 9; j++) {
+        const value = j * Math.pow(10, i);
+        if (value >= yScale.min && value <= yScale.max) {
+          const y = yScale.getPixelForValue(value);
+          ctx.moveTo(xScale.left, y);
+          ctx.lineTo(xScale.right, y);
+        }
+      }
+    }
+    
+    ctx.stroke();
+    ctx.restore();
+  }
+};
+
+Chart.register(minorGridPlugin);
+
+function formatPercent(value) {
+  if (value === undefined || value === null || isNaN(value)) return '-';
+  return (value * 100).toPrecision(5) + '%';
+}
+
+function ensurePositive(value, epsilon = 1e-12) {
+  if (value <= 0) return epsilon;
+  return value;
+}
+
+async function loadMaterials() {
+  const materialSelect = document.getElementById('material');
+  
+  try {
+    const response = await fetch('/attenuation/nist-xcom-data/');
+    const html = await response.text();
+    
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const links = doc.querySelectorAll('a');
+    
+    const csvFiles = [];
+    links.forEach(link => {
+      const href = link.getAttribute('href');
+      if (href && href.endsWith('.csv')) {
+        const filename = href.replace('/attenuation/nist-xcom-data/', '').replace('.csv', '');
+        csvFiles.push(filename);
+      }
+    });
+    
+    if (csvFiles.length === 0) {
+      csvFiles.push('al', 'pb', 'cu', 'c');
+    }
+    
+    materialSelect.innerHTML = '';
+    csvFiles.forEach(name => {
+      const option = document.createElement('option');
+      option.value = name;
+      option.textContent = name.charAt(0).toUpperCase() + name.slice(1);
+      materialSelect.appendChild(option);
+    });
+    
+    await loadAllMaterials(csvFiles);
+    
+  } catch (error) {
+    console.error('Error loading materials:', error);
+    materialSelect.innerHTML = '<option value="al">Al (default)</option>';
+    await loadMaterialData('al');
+  }
+}
+
+async function loadAllMaterials(files) {
+  for (const file of files) {
+    await loadMaterialData(file);
+  }
+}
+
+async function loadMaterialData(material) {
+  if (materialsData[material]) return;
+  
+  try {
+    const response = await fetch(`/attenuation/nist-xcom-data/${material}.csv`);
+    if (!response.ok) {
+      const fallbackMaterials = ['al', 'pb', 'cu', 'c'];
+      if (fallbackMaterials.includes(material)) {
+        console.warn(`Could not load ${material}.csv, using fallback data`);
+        materialsData[material] = generateFallbackData(material);
+        return;
+      }
+      throw new Error(`Failed to load ${material}.csv`);
+    }
+    
+    const text = await response.text();
+    const data = parseCSV(text);
+    materialsData[material] = data;
+    
+  } catch (error) {
+    console.error(`Error loading ${material}:`, error);
+    materialsData[material] = generateFallbackData(material);
+  }
+}
+
+function generateFallbackData(material) {
+  const energies = [0.001, 0.0015, 0.002, 0.003, 0.004, 0.005, 0.006, 0.008, 0.01, 0.015, 0.02, 0.03, 0.04, 0.05, 0.06, 0.08, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5, 0.6, 0.8, 1.0, 1.022, 1.25, 1.5, 2.0, 2.044, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 15.0, 20.0, 30.0, 40.0, 50.0, 60.0, 80.0, 100.0];
+  
+  const baseValues = {
+    'al': { coherent: 2.256, incoherent: 0.01427, photoelectric: 1183, nuclear: 0, electron: 0 },
+    'pb': { coherent: 368.0, incoherent: 0.38, photoelectric: 4850, nuclear: 0, electron: 0 },
+    'cu': { coherent: 41.5, incoherent: 0.048, photoelectric: 385, nuclear: 0, electron: 0 },
+    'c': { coherent: 0.8, incoherent: 0.002, photoelectric: 0.42, nuclear: 0, electron: 0 }
+  };
+  
+  const base = baseValues[material] || baseValues['al'];
+  const density = DENSITIES[material] || 2.7;
+  
+  return energies.map(E => {
+    const scale = E < 0.1 ? 1 + Math.log10(0.1/E) : (E > 10 ? 1 + Math.log10(E/10) * 0.3 : 1);
+    return {
+      energy: E,
+      coherent: base.coherent * scale / E,
+      incoherent: base.incoherent * (1 + Math.log10(E)),
+      photoelectric: base.photoelectric * scale / Math.sqrt(E),
+      nuclear: E > 1.022 ? (E - 1.022) * 0.0001 * density : 0,
+      electron: E > 2.044 ? (E - 2.044) * 0.00005 * density : 0,
+      total: base.coherent * scale / E + base.incoherent * (1 + Math.log10(E)) + base.photoelectric * scale / Math.sqrt(E),
+      totalNoCoherent: base.incoherent * (1 + Math.log10(E)) + base.photoelectric * scale / Math.sqrt(E)
+    };
+  });
+}
+
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  const data = [];
+  
+  for (let i = 2; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (!line) continue;
+    
+    const parts = line.split(/\s+/);
+    if (parts.length < 8) continue;
+    
+    try {
+      const entry = {
+        energy: parseFloat(parts[0]),
+        coherent: parseFloat(parts[1]),
+        incoherent: parseFloat(parts[2]),
+        photoelectric: parseFloat(parts[3]),
+        nuclear: parseFloat(parts[4]),
+        electron: parseFloat(parts[5]),
+        total: parseFloat(parts[6]),
+        totalNoCoherent: parseFloat(parts[7])
+      };
+      data.push(entry);
+    } catch (e) {
+      console.warn('Parse error on line', i, e);
+    }
+  }
+  
+  return data.sort((a, b) => a.energy - b.energy);
+}
+
+function interpolate(data, targetEnergy) {
+  if (targetEnergy <= data[0].energy) {
+    return { ...data[0] };
+  }
+  if (targetEnergy >= data[data.length - 1].energy) {
+    return { ...data[data.length - 1] };
+  }
+  
+  for (let i = 0; i < data.length - 1; i++) {
+    if (targetEnergy >= data[i].energy && targetEnergy <= data[i + 1].energy) {
+      const ratio = (targetEnergy - data[i].energy) / (data[i + 1].energy - data[i].energy);
+      return {
+        energy: targetEnergy,
+        coherent: data[i].coherent + ratio * (data[i + 1].coherent - data[i].coherent),
+        incoherent: data[i].incoherent + ratio * (data[i + 1].incoherent - data[i].incoherent),
+        photoelectric: data[i].photoelectric + ratio * (data[i + 1].photoelectric - data[i].photoelectric),
+        nuclear: data[i].nuclear + ratio * (data[i + 1].nuclear - data[i].nuclear),
+        electron: data[i].electron + ratio * (data[i + 1].electron - data[i].electron),
+        total: data[i].total + ratio * (data[i + 1].total - data[i].total),
+        totalNoCoherent: data[i].totalNoCoherent + ratio * (data[i + 1].totalNoCoherent - data[i].totalNoCoherent)
+      };
+    }
+  }
+  
+  return { ...data[Math.floor(data.length / 2)] };
+}
+
+function calculate(material, lengthMm, energyKeV) {
+  const density = DENSITIES[material] || 2.7;
+  const energyMeV = energyKeV / 1000;
+  const lengthCm = lengthMm * 0.1;
+  
+  const data = materialsData[material];
+  if (!data) {
+    throw new Error('Material data not loaded');
+  }
+  
+  if (energyMeV < data[0].energy || energyMeV > data[data.length - 1].energy) {
+    console.warn(`Energy ${energyMeV} MeV outside data range [${data[0].energy}, ${data[data.length - 1].energy}] MeV`);
+  }
+  
+  const interpolated = interpolate(data, energyMeV);
+  
+  const sigmaTotal = interpolated.total;
+  const muTotal = sigmaTotal * density;
+  
+  const transmission = Math.exp(-muTotal * lengthCm);
+  const attenuation = 1 - transmission;
+  
+  const pInteract = attenuation;
+  
+  const probabilities = {
+    rayleigh: (interpolated.coherent / sigmaTotal) * pInteract,
+    compton: (interpolated.incoherent / sigmaTotal) * pInteract,
+    photoelectric: (interpolated.photoelectric / sigmaTotal) * pInteract,
+    nuclear: (interpolated.nuclear / sigmaTotal) * pInteract,
+    electron: (interpolated.electron / sigmaTotal) * pInteract
+  };
+
+  return {
+    attenuation: attenuation,
+    transmission: transmission,
+    probabilities: probabilities,
+    data: data,
+    interpolated: interpolated,
+    density: density
+  };
+}
+
+function showError(message) {
+  const errorDiv = document.getElementById('errorMessage');
+  errorDiv.textContent = message;
+  errorDiv.classList.add('visible');
+}
+
+function hideError() {
+  const errorDiv = document.getElementById('errorMessage');
+  errorDiv.classList.remove('visible');
+}
+
+function displayResults(result, material, energy) {
+  document.getElementById('resultMaterial').textContent = material.charAt(0).toUpperCase() + material.slice(1);
+  document.getElementById('resultEnergy').textContent = energy;
+  
+  document.getElementById('attenuationValue').textContent = formatPercent(result.attenuation);
+  document.getElementById('transmissionValue').textContent = formatPercent(result.transmission);
+  document.getElementById('rayleighProb').textContent = formatPercent(result.probabilities.rayleigh);
+  document.getElementById('comptonProb').textContent = formatPercent(result.probabilities.compton);
+  document.getElementById('photoelectricProb').textContent = formatPercent(result.probabilities.photoelectric);
+  document.getElementById('nuclearProb').textContent = formatPercent(result.probabilities.nuclear);
+  document.getElementById('electronProb').textContent = formatPercent(result.probabilities.electron);
+  
+  createCharts(result, material, energy);
+}
+
+function createCharts(result, material, energy) {
+  const data = result.data;
+  const density = result.density;
+  const lengthCm = parseFloat(document.getElementById('length').value) * 0.1;
+  
+  const energies = data.map(d => d.energy);
+  const attenuations = data.map(d => {
+    const att = 1 - Math.exp(-d.total * density * lengthCm);
+    return ensurePositive(att * 100);
+  });
+  const transmissions = data.map(d => {
+    const trans = Math.exp(-d.total * density * lengthCm);
+    return ensurePositive(trans * 100);
+  });
+  
+  if (attenuationChart) {
+    attenuationChart.destroy();
+  }
+  
+  const attenuationCtx = document.getElementById('attenuationChart').getContext('2d');
+  attenuationChart = new Chart(attenuationCtx, {
+    type: 'line',
+    data: {
+      labels: energies,
+      datasets: [
+        {
+          label: 'Attenuation (%)',
+          data: attenuations,
+          borderColor: '#e74c3c',
+          backgroundColor: 'rgba(231, 76, 60, 0.1)',
+          fill: true,
+          tension: 0.1,
+          pointRadius: 0,
+          pointHoverRadius: 0,
+          lineWidth: 1.4
+        },
+        {
+          label: 'Transmission (%)',
+          data: transmissions,
+          borderColor: '#3498db',
+          backgroundColor: 'rgba(52, 152, 219, 0.1)',
+          fill: true,
+          tension: 0.1,
+          pointRadius: 0,
+          pointHoverRadius: 0,
+          lineWidth: 1.4
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'top'
+        },
+        minorGridPlugin: minorGridPlugin
+      },
+      scales: {
+        x: {
+          type: 'logarithmic',
+          title: {
+            display: true,
+            text: 'Energy (MeV)',
+            font: { size: 16, weight: 'bold' }
+          },
+          min: energies[0],
+          max: energies[energies.length - 1],
+          ticks: {
+            callback: function(value) {
+              const log10 = Math.log10(value);
+              if (Number.isInteger(log10)) {
+                return '10' + toSuperscript(log10);
+              }
+              return '';
+            }
+          }
+        },
+        y: {
+          type: 'logarithmic',
+          title: {
+            display: true,
+            text: 'Percentage (%)',
+            font: { size: 16, weight: 'bold' }
+          },
+          min: 5e-3,
+          max: 300,
+          grid: {
+            drawOnChartArea: true
+          },
+          ticks: {
+            callback: function(value) {
+              const log10 = Math.log10(value);
+              if (Number.isInteger(log10)) {
+                return '10' + toSuperscript(log10);
+              }
+              return '';
+            }
+          }
+        }
+      }
+    }
+  });
+  
+  const rayleigh = data.map(d => {
+    const pInteract = 1 - Math.exp(-d.total * density * lengthCm);
+    return ensurePositive((d.coherent / d.total) * pInteract * 100);
+  });
+  const compton = data.map(d => {
+    const pInteract = 1 - Math.exp(-d.total * density * lengthCm);
+    return ensurePositive((d.incoherent / d.total) * pInteract * 100);
+  });
+  const photoelectric = data.map(d => {
+    const pInteract = 1 - Math.exp(-d.total * density * lengthCm);
+    return ensurePositive((d.photoelectric / d.total) * pInteract * 100);
+  });
+  const nuclear = data.map(d => {
+    const pInteract = 1 - Math.exp(-d.total * density * lengthCm);
+    return ensurePositive((d.nuclear / d.total) * pInteract * 100);
+  });
+  const electron = data.map(d => {
+    const pInteract = 1 - Math.exp(-d.total * density * lengthCm);
+    return ensurePositive((d.electron / d.total) * pInteract * 100);
+  });
+  
+  if (probabilitiesChart) {
+    probabilitiesChart.destroy();
+  }
+  
+  const probCtx = document.getElementById('probabilitiesChart').getContext('2d');
+  probabilitiesChart = new Chart(probCtx, {
+    type: 'line',
+    data: {
+      labels: energies,
+      datasets: [
+        {
+          label: 'Rayleigh (Coherent)',
+          data: rayleigh,
+          borderColor: '#9b59b6',
+          fill: false,
+          tension: 0.1,
+          pointRadius: 0,
+          pointHoverRadius: 0,
+          lineWidth: 1.4
+        },
+        {
+          label: 'Compton (Incoherent)',
+          data: compton,
+          borderColor: '#e67e22',
+          fill: false,
+          tension: 0.1,
+          pointRadius: 0,
+          pointHoverRadius: 0,
+          lineWidth: 1.4
+        },
+        {
+          label: 'Photoelectric',
+          data: photoelectric,
+          borderColor: '#2ecc71',
+          fill: false,
+          tension: 0.1,
+          pointRadius: 0,
+          pointHoverRadius: 0,
+          lineWidth: 1.4
+        },
+        {
+          label: 'Nuclear Pair Production',
+          data: nuclear,
+          borderColor: '#e74c3c',
+          fill: false,
+          tension: 0.1,
+          pointRadius: 0,
+          pointHoverRadius: 0,
+          lineWidth: 1.4
+        },
+        {
+          label: 'Electron Pair Production',
+          data: electron,
+          borderColor: '#3498db',
+          fill: false,
+          tension: 0.1,
+          pointRadius: 0,
+          pointHoverRadius: 0,
+          lineWidth: 1.4
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'top'
+        },
+        minorGridPlugin: minorGridPlugin
+      },
+      scales: {
+        x: {
+          type: 'logarithmic',
+          title: {
+            display: true,
+            text: 'Energy (MeV)',
+            font: { size: 16, weight: 'bold' }
+          },
+          min: energies[0],
+          max: energies[energies.length - 1],
+          ticks: {
+            callback: function(value) {
+              const log10 = Math.log10(value);
+              if (Number.isInteger(log10)) {
+                return '10' + toSuperscript(log10);
+              }
+              return '';
+            }
+          }
+        },
+        y: {
+          type: 'logarithmic',
+          title: {
+            display: true,
+            text: 'Probability (%)',
+            font: { size: 16, weight: 'bold' }
+          },
+          min: 5e-5,
+          max: 300,
+          ticks: {
+            callback: function(value) {
+              const log10 = Math.log10(value);
+              if (Number.isInteger(log10)) {
+                return '10' + toSuperscript(log10);
+              }
+              return '';
+            }
+          }
+        }
+      }
+    }
+  });
+}
+
+document.getElementById('calculateBtn').addEventListener('click', async () => {
+  hideError();
+  
+  const material = document.getElementById('material').value;
+  const length = parseFloat(document.getElementById('length').value);
+  const energy = parseFloat(document.getElementById('energy').value);
+  
+  if (!material) {
+    showError('Please select a material');
+    return;
+  }
+  
+  if (isNaN(length) || length <= 0) {
+    showError('Please enter a valid length');
+    return;
+  }
+  
+  if (isNaN(energy) || energy <= 0) {
+    showError('Please enter a valid energy');
+    return;
+  }
+  
+  await loadMaterialData(material);
+  
+  try {
+    const result = calculate(material, length, energy);
+    displayResults(result, material, energy);
+  } catch (error) {
+    showError('Error calculating: ' + error.message);
+  }
+});
+
+loadMaterials();
+</script>

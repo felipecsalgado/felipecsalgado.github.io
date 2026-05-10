@@ -9,5 +9,10 @@ main:
   - title: "Talks and Presentations"
     url: /talks/
 
-  - title: "Programming"
-    url: /programming/
+  - title: "Analysis & Tools"
+    url: /attenuation-calculator/
+    submenu:
+      - title: "Photon Attenuation"
+        url: /attenuation-calculator/
+      - title: "Programming"
+        url: /programming/
