@@ -1,7 +1,7 @@
 ---
 collection: publications
 permalink: /publication/2024-paper-luxe-tdr
-date: 02.10.24
+date: 2024-10-02
 venue: 'paper'
 title: "Technical Design Report for the LUXE experiment"
 authors: "H. Abramowicz, <i>et al.</i>"

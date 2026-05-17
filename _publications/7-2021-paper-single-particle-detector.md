@@ -1,7 +1,7 @@
 ---
 collection: publications
 permalink: /publication/2021-paper-single-particle-detector
-date: 01.12.21
+date: 2021-12-01
 venue: 'paper'
 title: "Single particle detection system for strong&#150;field QED experiments"
 authors: "<b>F. C. Salgado</b>,  N. Cavanagh, M. Tamburini, D. W. Storey, <i>et al.</i>"

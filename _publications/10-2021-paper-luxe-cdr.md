@@ -1,7 +1,7 @@
 ---
 collection: publications
 permalink: /publication/2021-paper-luxe-cdr
-date: 08.09.21
+date: 2021-09-08
 venue: 'paper'
 title: "Conceptual design report for the LUXE experiment"
 authors: "H. Abramowicz, <i>et al.</i>"

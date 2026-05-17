@@ -1,7 +1,7 @@
 ---
 collection: publications
 permalink: /publication/2023-thesis-fcsalgado
-date: 01.03.23
+date: 2023-03-01
 venue: 'thesis'
 title: "Design of a single&#150;particle detection system for strong&#150;field QED experiments"
 authors: "<b>F. C. Salgado</b>"

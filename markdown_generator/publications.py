@@ -49,13 +49,25 @@ html_escape_table = {
     '"': "&quot;",
     "'": "&apos;",
     "-": "&#150;",
-    "ü": "&#252;",
-    "á": "&#225;",
+    "ü": "&#228;", "Ü": "&#196;",
+    "ö": "&#246;", "Ö": "&#214;",
+    "ä": "&#228;", "Ä": "&#196;",
+    "ß": "&#223;",
+    "á": "&#225;", "é": "&#233;", "í": "&#237;", "ó": "&#243;", "ú": "&#250;",
+    "à": "&#224;", "è": "&#232;", "ì": "&#236;", "ò": "&#242;", "ù": "&#249;"
     }
 
 def html_escape(text):
     """Produce entities within text."""
-    return "".join(html_escape_table.get(c,c) for c in text)
+    # Handle NaN or non-string inputs gracefully
+    if not isinstance(text, str):
+        text = str(text)
+    return "".join(html_escape_table.get(c, c) for c in text)
+
+# Convert pub_date to datetime for correct sorting
+# Date format in TSV seems to be DD.MM.YY
+publications['pub_date'] = pd.to_datetime(publications['pub_date'], dayfirst=True)
+publications = publications.sort_values(by='pub_date', ascending=False)
 
 
 # ## Creating the markdown files
@@ -74,9 +86,11 @@ for f in files:
 
 for row, item in publications.iterrows():
     # print(row)
-    md_filename = str(row) + '-' + str(item.year) + "-" + item.url_slug + ".md"
-    html_filename = str(item.year) + "-" + item.url_slug
-    year = item.pub_date[:4]
+    # Using the year from the datetime object
+    year_str = str(item.pub_date.year)
+    md_filename = str(row) + '-' + year_str + "-" + item.url_slug + ".md"
+    html_filename = year_str + "-" + item.url_slug
+    year = year_str
     
     ## YAML variables
     
@@ -89,7 +103,7 @@ for row, item in publications.iterrows():
     #if len(str(item.excerpt)) > 5:
     #    md += "\nexcerpt: '" + html_escape(item.excerpt) + "'"
     
-    md += "\ndate: " + str(item.pub_date) 
+    md += "\ndate: " + str(item.pub_date.strftime('%Y-%m-%d'))
     
     md += "\nvenue: '" + str(item.venue) + "'"
     
@@ -108,7 +122,7 @@ for row, item in publications.iterrows():
 
     md += '\npage: "' + str(int(item.page)) + '"'
 
-    md += '\nyear: "' + str(int(item.year)) + '"'
+    md += '\nyear: "' + year_str + '"'
 
     md += '\ndoi: "' + str(item.doi) + '"'
     

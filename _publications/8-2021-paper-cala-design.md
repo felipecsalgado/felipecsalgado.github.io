@@ -1,7 +1,7 @@
 ---
 collection: publications
 permalink: /publication/2021-paper-cala-design
-date: 01.10.21
+date: 2021-10-01
 venue: 'paper'
 title: "Towards pair production in the non&#150;perturbative regime"
 authors: "<b>F. C. Salgado</b>,  K. Grafenstein, A. Golub, A. Doepp, A. Eckey, D. Hollatz, C. Mueller, A. Seidel, D. Seipt, S. Karsch, M. Zepf"
