@@ -238,10 +238,41 @@ html, body {
 
 <script>
 const DENSITIES = {
-  'al': 2.70,
+  'al': 2.699,
   'pb': 11.35,
   'cu': 8.96,
-  'c': 2.267
+  'c': 2.267,
+  'ti': 4.506,
+  'w': 19.30,
+  'be': 1.85,
+  'ge': 5.323,
+  'ga': 5.91,
+  'o': 0.001429,
+  'csi': 4.51,
+  'lanex': 7.32,
+  'teflon': 2.20,
+  'mylar': 1.40,
+  'polyethylene': 0.94,
+  'kapton': 1.42
+};
+
+const DISPLAY_NAMES = {
+  'csi': 'CsI',
+  'lanex': 'Lanex (Gadolinium)',
+  'teflon': 'Teflon',
+  'mylar': 'Mylar',
+  'polyethylene': 'Polyethylene',
+  'kapton': 'Kapton (Polyamid)',
+  'pb': 'Pb (Lead)',
+  'cu': 'Cu (Copper)',
+  'al': 'Al (Aluminum)',
+  'w': 'W (Tungsten)',
+  'ti': 'Ti (Titanium)',
+  'be': 'Be (Beryllium)',
+  'ge': 'Ge (Germanium)',
+  'ga': 'Ga (Gallium)',
+  'o': 'O (Oxygen)',
+  'c': 'C (Carbon)'
 };
 
 const SUPERSCRIPT = ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'];
@@ -331,7 +362,7 @@ async function loadMaterials() {
     csvFiles.forEach(name => {
       const option = document.createElement('option');
       option.value = name;
-      option.textContent = name.charAt(0).toUpperCase() + name.slice(1);
+      option.textContent = DISPLAY_NAMES[name] || (name.charAt(0).toUpperCase() + name.slice(1));
       materialSelect.appendChild(option);
     });
     
@@ -442,18 +473,36 @@ function interpolate(data, targetEnergy) {
     return { ...data[data.length - 1] };
   }
   
+  const logInterp = (x, x1, x2, y1, y2) => {
+    if (y1 <= 0 || y2 <= 0) {
+      const ratio = (x - x1) / (x2 - x1);
+      return y1 + ratio * (y2 - y1);
+    }
+    const logX = Math.log(x);
+    const logX1 = Math.log(x1);
+    const logX2 = Math.log(x2);
+    const logY1 = Math.log(y1);
+    const logY2 = Math.log(y2);
+    
+    const logY = logY1 + (logX - logX1) * (logY2 - logY1) / (logX2 - logX1);
+    return Math.exp(logY);
+  };
+  
   for (let i = 0; i < data.length - 1; i++) {
     if (targetEnergy >= data[i].energy && targetEnergy <= data[i + 1].energy) {
-      const ratio = (targetEnergy - data[i].energy) / (data[i + 1].energy - data[i].energy);
+      const x = targetEnergy;
+      const x1 = data[i].energy;
+      const x2 = data[i + 1].energy;
+      
       return {
         energy: targetEnergy,
-        coherent: data[i].coherent + ratio * (data[i + 1].coherent - data[i].coherent),
-        incoherent: data[i].incoherent + ratio * (data[i + 1].incoherent - data[i].incoherent),
-        photoelectric: data[i].photoelectric + ratio * (data[i + 1].photoelectric - data[i].photoelectric),
-        nuclear: data[i].nuclear + ratio * (data[i + 1].nuclear - data[i].nuclear),
-        electron: data[i].electron + ratio * (data[i + 1].electron - data[i].electron),
-        total: data[i].total + ratio * (data[i + 1].total - data[i].total),
-        totalNoCoherent: data[i].totalNoCoherent + ratio * (data[i + 1].totalNoCoherent - data[i].totalNoCoherent)
+        coherent: logInterp(x, x1, x2, data[i].coherent, data[i + 1].coherent),
+        incoherent: logInterp(x, x1, x2, data[i].incoherent, data[i + 1].incoherent),
+        photoelectric: logInterp(x, x1, x2, data[i].photoelectric, data[i + 1].photoelectric),
+        nuclear: logInterp(x, x1, x2, data[i].nuclear, data[i + 1].nuclear),
+        electron: logInterp(x, x1, x2, data[i].electron, data[i + 1].electron),
+        total: logInterp(x, x1, x2, data[i].total, data[i + 1].total),
+        totalNoCoherent: logInterp(x, x1, x2, data[i].totalNoCoherent, data[i + 1].totalNoCoherent)
       };
     }
   }
@@ -515,7 +564,7 @@ function hideError() {
 }
 
 function displayResults(result, material, energy) {
-  document.getElementById('resultMaterial').textContent = material.charAt(0).toUpperCase() + material.slice(1);
+  document.getElementById('resultMaterial').textContent = DISPLAY_NAMES[material] || (material.charAt(0).toUpperCase() + material.slice(1));
   document.getElementById('resultEnergy').textContent = energy;
   
   document.getElementById('attenuationValue').textContent = formatPercent(result.attenuation);

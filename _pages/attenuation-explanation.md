@@ -53,7 +53,16 @@ title: "Attenuation Calculation Details"
   
   <h2>Definitions</h2>
   
-  <p>Let \(\sigma_i\) (in cm<sup>2</sup>/g) be the mass interaction coefficient from XCOM for process \(i\) (e.g., pair production, scattering, or photoelectric absorption), \(\rho\) (in g/cm<sup>3</sup>) the material density, and \(t\) (in cm) the slab thickness.</p>
+  <p>Let \(\sigma_i\) (in cm<sup>2</sup>/g) be the mass interaction coefficient from XCOM for process \(i\), \(\rho\) (in g/cm<sup>3</sup>) the material density, and \(t\) (in cm) the slab thickness.</p>
+
+  <p>The calculator breaks interactions down into the following five core physical processes:</p>
+  <ul>
+    <li><strong>Rayleigh Scattering</strong> (Coherent Scattering)</li>
+    <li><strong>Compton Scattering</strong> (Incoherent Scattering)</li>
+    <li><strong>Photoelectric Absorption</strong></li>
+    <li><strong>Nuclear Field Pair Production</strong></li>
+    <li><strong>Electron Field Pair Production</strong></li>
+  </ul>
   
   <h2>From Mass Cross Section to Linear Attenuation</h2>
   
@@ -73,7 +82,7 @@ title: "Attenuation Calculation Details"
     <p>\[\mu_\text{tot} = \sigma_\text{tot} \cdot \rho = \left( \sum_i \sigma_i \right) \cdot \rho\]</p>
   </div>
   
-  <p>where \(\sigma_\text{tot}\) is the total mass attenuation coefficient from the XCOM database.</p>
+  <p>where \(\sigma_\text{tot}\) is the total mass attenuation coefficient.</p>
   
   <h2>Interaction Probabilities</h2>
   
@@ -91,43 +100,39 @@ title: "Attenuation Calculation Details"
   
   <p>This is the <strong>attenuation</strong> displayed in the calculator. The <strong>transmission</strong> is simply \(P_\text{no interaction}\).</p>
   
-  <h2>Process-Specific Probabilities</h2>
+  <h2>Process-Specific Absolute Probabilities</h2>
   
-  <p>Since each process contributes independently and proportionally to \(\mu_\text{tot}\), the probability that a photon undergoes a specific process (given that an interaction occurred) is:</p>
-  
-  <div class="equation-box">
-    <p>\[P_\text{pair} = \frac{\sigma_\text{pair}}{\sigma_\text{tot}} \cdot \left(1 - e^{-\mu_\text{tot} \, t}\right)\]</p>
-  </div>
-  
-  <p>Similarly, for scattering processes:</p>
+  <p>Since each process contributes independently and proportionally to \(\mu_\text{tot}\), the absolute probability that a photon entering the material will undergo a specific process \(i\) across the total material length is calculated by multiplying the relative fraction of the interaction by the total interaction probability:</p>
   
   <div class="equation-box">
-    <p>\[P_\text{scat} = \frac{\sigma_\text{scat}}{\sigma_\text{tot}} \cdot \left(1 - e^{-\mu_\text{tot} \, t}\right)\]</p>
+    <p>\[P_i = \frac{\sigma_i}{\sigma_\text{tot}} \cdot \left(1 - e^{-\mu_\text{tot} \, t}\right)\]</p>
   </div>
-  
-  <p>Where the scattering cross section is the sum of coherent (Rayleigh) and incoherent (Compton) scattering:</p>
-  
+
+  <p>For example, the absolute probability of Photoelectric Absorption is:</p>
   <div class="equation-box">
-    <p>\[\sigma_\text{scat} = \sigma_\text{coherent} + \sigma_\text{incoherent}\]</p>
+    <p>\[P_\text{photoelectric} = \frac{\sigma_\text{photoelectric}}{\sigma_\text{tot}} \cdot \left(1 - e^{-\mu_\text{tot} \, t}\right)\]</p>
   </div>
+
+  <p>Because these represent absolute macroscopic probabilities across the slab thickness, the sum of all process-specific probabilities exactly equals the total <strong>attenuation</strong> probability.</p>
+
+  <h2>Data Interpolation and Absorption Edges</h2>
+
+  <p>The calculator evaluates coefficients for exact photon energies dynamically. However, since the NIST XCOM database contains discrete datapoints, values between these points must be interpolated. Because photon cross sections follow steep non-linear power laws across energy magnitudes, standard linear interpolation introduces severe physical errors.</p>
   
-  <p>And the pair production includes both nuclear and electron pair production:</p>
-  
+  <p>Instead, the tool employs a highly dense <strong>Log-Log Cubic Spline Interpolation</strong> algorithm. To preserve the exact structural properties of physical absorption limits—such as the sharp vertical discontinuities of K-edges and L-edges—the interpolation routine algorithmically segments the database at energy gaps \(\le 1\) eV. Splines are applied uniquely within each continuous energy band, rendering a mathematically flawless continuum that guarantees physical accuracy around electron binding energy shells.</p>
+
+  <h2>Compounds and Bragg's Additivity Rule</h2>
+
+  <p>For molecular compounds and complex materials (e.g., Kapton, Water, Lanex), the calculator natively fuses atomic components using <strong>Bragg's Additivity Rule</strong>. The total mass attenuation coefficient for a compound is derived by summing the independent coefficients of its constituent elemental components, appropriately weighted by their proportional mass fractions (\(w_j\)):</p>
+
   <div class="equation-box">
-    <p>\[\sigma_\text{pair} = \sigma_\text{nuclear} + \sigma_\text{electron}\]</p>
+    <p>\[\left(\frac{\mu}{\rho}\right)_{\text{compound}} = \sum_j w_j \left(\frac{\mu}{\rho}\right)_j\]</p>
   </div>
   
-  <h2>Thin-Target Limit</h2>
-  
-  <p>In the thin-target limit where \(\mu_\text{tot} \, t \ll 1\), the exponential can be expanded to first order, giving the simplified approximations:</p>
-  
+  <p>where the fractional weight \(w_j\) of element \(j\) in the molecule is defined by the number of atoms \(n_j\), the atomic mass \(A_j\), and the total molecular mass \(M_\text{total}\):</p>
+
   <div class="equation-box">
-    <p>\[P_\text{pair} \approx \sigma_\text{pair} \cdot \rho \cdot t\]</p>
-    <p>\[P_\text{scat} \approx \sigma_\text{scat} \cdot \rho \cdot t\]</p>
-  </div>
-  
-  <div class="note-box">
-    <p><strong>Note:</strong> The product \(\rho \cdot t\) is the areal density in g/cm<sup>2</sup>. Multiplying it directly by the XCOM cross section in cm<sup>2</sup>/g gives the dimensionless interaction probability.</p>
+    <p>\[w_j = \frac{n_j \cdot A_j}{M_\text{total}}\]</p>
   </div>
   
   <h2>Summary</h2>
@@ -137,7 +142,5 @@ title: "Attenuation Calculation Details"
     <li><strong>Transmission:</strong> \(e^{-\mu_\text{tot} t}\) — probability that the photon passes through without interaction</li>
     <li><strong>Process probability:</strong> \(\frac{\sigma_i}{\sigma_\text{tot}} \cdot (1 - e^{-\mu_\text{tot} t})\) — probability that the interaction is specifically process \(i\)</li>
   </ul>
-  
-  <p>The sum of all process-specific probabilities equals the total attenuation probability.</p>
   
 </div>
