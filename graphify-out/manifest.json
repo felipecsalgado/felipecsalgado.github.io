@@ -75,19 +75,14 @@
     "semantic_hash": ""
   },
   "markdown_generator/posters.py": {
-    "mtime": 1779037925.4893665,
-    "ast_hash": "ca3f8caccc2a9087e758e6a68d2bb411",
-    "semantic_hash": "ca3f8caccc2a9087e758e6a68d2bb411"
+    "mtime": 1781465025.9293058,
+    "ast_hash": "f3b1a0f6b4c23f1558ce3a94caa19cd3",
+    "semantic_hash": ""
   },
   "markdown_generator/publications.py": {
-    "mtime": 1779037651.0448542,
-    "ast_hash": "0a2c7d78ae368d851864389ba86a54e5",
-    "semantic_hash": "0a2c7d78ae368d851864389ba86a54e5"
-  },
-  "markdown_generator/pubsFromBib.py": {
-    "mtime": 1704022789.2739062,
-    "ast_hash": "91ab6d1a9e6115275c81eb6170fbd65f",
-    "semantic_hash": "91ab6d1a9e6115275c81eb6170fbd65f"
+    "mtime": 1781465052.5608695,
+    "ast_hash": "e5ff5977fca6d9441a2f3f192e9c2ca8",
+    "semantic_hash": ""
   },
   "markdown_generator/talkmap.py": {
     "mtime": 1704022789.2743948,
@@ -95,9 +90,9 @@
     "semantic_hash": "50793afdf72ff44cdb45050dfe760cb3"
   },
   "markdown_generator/talks.py": {
-    "mtime": 1779037931.3893652,
-    "ast_hash": "c0fd74b5c601e00dd0bfa9ad90db7bb5",
-    "semantic_hash": "c0fd74b5c601e00dd0bfa9ad90db7bb5"
+    "mtime": 1781465034.522034,
+    "ast_hash": "4e3b67f5773157efc8365239d04f4564",
+    "semantic_hash": ""
   },
   "package.json": {
     "mtime": 1704022789.2742562,
@@ -285,9 +280,9 @@
     "semantic_hash": "30b96544d0c0afd340faf40c1c4206d0"
   },
   "_includes/archive-single-programming.html": {
-    "mtime": 1704022789.2247698,
-    "ast_hash": "e3eaad25b01f0fe80aebf0755f02ea75",
-    "semantic_hash": "e3eaad25b01f0fe80aebf0755f02ea75"
+    "mtime": 1781465930.5845287,
+    "ast_hash": "434c2c982cdf8819ad63df7458866990",
+    "semantic_hash": ""
   },
   "_includes/archive-single-publication.html": {
     "mtime": 1704022789.2248685,
@@ -295,9 +290,9 @@
     "semantic_hash": "f89ec4f5946dcc1f4e2f3561a4203cc1"
   },
   "_includes/archive-single-research.html": {
-    "mtime": 1704022789.2249744,
-    "ast_hash": "c475b12bf496d35512593ca0c765d8d8",
-    "semantic_hash": "c475b12bf496d35512593ca0c765d8d8"
+    "mtime": 1781465937.56037,
+    "ast_hash": "30789672b9e0d0704ed4f5184aa3ea1d",
+    "semantic_hash": ""
   },
   "_includes/archive-single-talk-cv.html": {
     "mtime": 1704022789.2250726,
@@ -600,37 +595,37 @@
     "semantic_hash": "b03fd6c5bbf075e011dd217308eb879e"
   },
   "_patents/2015.0-otdr.md": {
-    "mtime": 1781464158.195631,
+    "mtime": 1781465044.4749553,
     "ast_hash": "9e27150a85be61513db891373dac887d",
     "semantic_hash": ""
   },
   "_patents/2016.0-methane.md": {
-    "mtime": 1781464158.1954927,
+    "mtime": 1781465044.4748185,
     "ast_hash": "de1314ea6b8f4c793a56b9a7317706b1",
     "semantic_hash": ""
   },
   "_posters/2018-09-18-poster-4.md": {
-    "mtime": 1779037934.714358,
+    "mtime": 1781465057.6879914,
     "ast_hash": "d7ed2ccca28a4dd3bea24a41c7da2115",
     "semantic_hash": "d7ed2ccca28a4dd3bea24a41c7da2115"
   },
   "_posters/2019-03-05-poster-3.md": {
-    "mtime": 1779037934.7141998,
+    "mtime": 1781465057.6878555,
     "ast_hash": "8da1d82c10e4198d671b20f62af3d5aa",
     "semantic_hash": "8da1d82c10e4198d671b20f62af3d5aa"
   },
   "_posters/2019-09-03-poster-2.md": {
-    "mtime": 1779037934.7140265,
+    "mtime": 1781465057.687711,
     "ast_hash": "ba7e192d2d7f49336c826a1bfccd0c0f",
     "semantic_hash": "ba7e192d2d7f49336c826a1bfccd0c0f"
   },
   "_posters/2021-06-24-poster-5.md": {
-    "mtime": 1779037934.7138329,
+    "mtime": 1781465057.6875522,
     "ast_hash": "fa22b9aa6e69322b3f2acd5faac5b2b6",
     "semantic_hash": "fa22b9aa6e69322b3f2acd5faac5b2b6"
   },
   "_posters/2022-09-21-poster-1.md": {
-    "mtime": 1779037934.713603,
+    "mtime": 1781465057.6873453,
     "ast_hash": "0566c1b722846e0f66f888af20173efc",
     "semantic_hash": "0566c1b722846e0f66f888af20173efc"
   },
@@ -680,52 +675,52 @@
     "semantic_hash": "624a600fcb84ac44e9120cfaf0372751"
   },
   "_publications/0-2026-paper-pepper-pot.md": {
-    "mtime": 1779036637.7999864,
+    "mtime": 1781465060.6164708,
     "ast_hash": "e1d1bf4bd93fd9670d4ef6b60e1ff7d1",
     "semantic_hash": "e1d1bf4bd93fd9670d4ef6b60e1ff7d1"
   },
   "_publications/10-2021-paper-luxe-cdr.md": {
-    "mtime": 1779036637.8013368,
+    "mtime": 1781465060.6179872,
     "ast_hash": "56aef9be6db3d1f1c8d29506a281ed8a",
     "semantic_hash": "56aef9be6db3d1f1c8d29506a281ed8a"
   },
   "_publications/2-2024-paper-nbw-laser-focus.md": {
-    "mtime": 1779036637.8003576,
+    "mtime": 1781465060.6168573,
     "ast_hash": "1a2c2281eff8ad5c9f4e3eb953e0b0df",
     "semantic_hash": "1a2c2281eff8ad5c9f4e3eb953e0b0df"
   },
   "_publications/3-2024-paper-luxe-tdr.md": {
-    "mtime": 1779036637.8004954,
+    "mtime": 1781465060.616998,
     "ast_hash": "ea42bdc514471ddb4bb622a3b7fd4096",
     "semantic_hash": "ea42bdc514471ddb4bb622a3b7fd4096"
   },
   "_publications/4-2024-paper-emittance-glaser-grating.md": {
-    "mtime": 1779036637.800628,
+    "mtime": 1781465060.6171358,
     "ast_hash": "d4447a3e8374b5c8ea5b039ae1fcc48d",
     "semantic_hash": "d4447a3e8374b5c8ea5b039ae1fcc48d"
   },
   "_publications/5-2023-paper-laser-hofi.md": {
-    "mtime": 1779036637.8007536,
+    "mtime": 1781465060.6172748,
     "ast_hash": "2e5c56c61a303885d208fcef269baffd",
     "semantic_hash": "2e5c56c61a303885d208fcef269baffd"
   },
   "_publications/6-2023-thesis-fcsalgado.md": {
-    "mtime": 1779036637.8008661,
+    "mtime": 1781465060.6174266,
     "ast_hash": "6a3be5eb3d30139fb73602e81c805183",
     "semantic_hash": "6a3be5eb3d30139fb73602e81c805183"
   },
   "_publications/7-2021-paper-single-particle-detector.md": {
-    "mtime": 1779036637.8009894,
+    "mtime": 1781465060.6175795,
     "ast_hash": "dd39510e8bd940829e8f138323a0ba11",
     "semantic_hash": "dd39510e8bd940829e8f138323a0ba11"
   },
   "_publications/8-2021-paper-cala-design.md": {
-    "mtime": 1779036637.8012264,
+    "mtime": 1781465060.6178656,
     "ast_hash": "8a170b417929483f377affd81bbbdf78",
     "semantic_hash": "8a170b417929483f377affd81bbbdf78"
   },
   "_publications/9-2021-paper-linear-bw.gemini.md": {
-    "mtime": 1779036637.801111,
+    "mtime": 1781465060.6177335,
     "ast_hash": "eda0547c30bc236f4e423cef9e19c287",
     "semantic_hash": "eda0547c30bc236f4e423cef9e19c287"
   },
@@ -745,39 +740,34 @@
     "semantic_hash": "70311009d1e937a3043aa43a50e6c92b"
   },
   "_talks/2021-09-14-talk-5.md": {
-    "mtime": 1779037946.0495641,
+    "mtime": 1781465049.1699064,
     "ast_hash": "ce1e35a99ca4740e089219550d652bb3",
     "semantic_hash": "ce1e35a99ca4740e089219550d652bb3"
   },
   "_talks/2022-09-26-talk-2.md": {
-    "mtime": 1779037946.0494492,
+    "mtime": 1781465049.1697729,
     "ast_hash": "3aca3ef5d322d3449f54b41d3cc7b2d7",
     "semantic_hash": "3aca3ef5d322d3449f54b41d3cc7b2d7"
   },
   "_talks/2022-10-19-talk-1.md": {
-    "mtime": 1779037946.049331,
+    "mtime": 1781465049.169632,
     "ast_hash": "a55cbbb630795adf6371243d1191e82d",
     "semantic_hash": "a55cbbb630795adf6371243d1191e82d"
   },
   "_talks/2023-02-22-talk-3.md": {
-    "mtime": 1779037946.0492122,
+    "mtime": 1781465049.16948,
     "ast_hash": "e86dc59d8207284ad73a0b4078cc23f5",
     "semantic_hash": "e86dc59d8207284ad73a0b4078cc23f5"
   },
   "_talks/2023-09-13-talk-4.md": {
-    "mtime": 1779037946.0490744,
+    "mtime": 1781465049.1693382,
     "ast_hash": "1d8f53039f8eb48174fb7415e144a951",
     "semantic_hash": "1d8f53039f8eb48174fb7415e144a951"
   },
   "_talks/2024-05-21-talk-6.md": {
-    "mtime": 1779037946.0489156,
+    "mtime": 1781465049.1691248,
     "ast_hash": "cd608f0778731d10f78ecb0aa9ad9914",
     "semantic_hash": "cd608f0778731d10f78ecb0aa9ad9914"
-  },
-  "markdown_generator/readme.md": {
-    "mtime": 1704022789.273971,
-    "ast_hash": "d53f6159647537dfe6986fd5d3f7da13",
-    "semantic_hash": "d53f6159647537dfe6986fd5d3f7da13"
   },
   "talkmap/map.html": {
     "mtime": 1704022789.2751162,
@@ -785,12 +775,12 @@
     "semantic_hash": "5dc28e1a8b7096c2aaca3051edbc9018"
   },
   "_publications/1-2025-paper-linear-bw2-gemini.md": {
-    "mtime": 1779036637.8001864,
+    "mtime": 1781465060.616692,
     "ast_hash": "811be8abc3e571db8a1356a0ad171c72",
     "semantic_hash": "811be8abc3e571db8a1356a0ad171c72"
   },
   "_publications/11-2017-paper-raman-dts.md": {
-    "mtime": 1779036637.8014467,
+    "mtime": 1781465060.6181152,
     "ast_hash": "c4a3cd9d9fbf52da2b76dbbdcee4bf1b",
     "semantic_hash": "c4a3cd9d9fbf52da2b76dbbdcee4bf1b"
   },

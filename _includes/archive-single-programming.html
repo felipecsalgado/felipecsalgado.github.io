@@ -29,27 +29,19 @@
         margin-bottom: -10px !important;
     }
 
-    .about {
-    }
-
     .card-body {
         overflow: hidden;
-        text-overflow: ellipsis;
         background: #fff;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         transition: all 0.2s ease-out;
         border: 1px solid rgba(0, 0, 0, .125);
         border-radius: .25rem;
-        padding: 1em;
+        padding: 1.25em;
     }
 
     .card {
         margin-bottom: 1em;
         padding: 0.5rem;
-    }
-
-    .right {
-        float: right !important;
     }
 
     h4.title {
@@ -89,69 +81,68 @@
         text-decoration: none;
     }
 
-    .top-container {
+    .card-body::after {
+        content: "";
         display: table;
+        clear: both;
     }
 
-    .left-title {
-        width: 60%;
-        display: table-cell;
-        vertical-align: top;
-    }
-
-    .right-title {
-        width: 60%;
-        display: table-cell;
-        vertical-align: bottom;
-        text-align: right;
-    }
-
-    .thumbnail {
-        vertical-align: top;
+    .card-image-float {
+        float: right;
+        width: 220px;
+        max-width: 35%;
+        margin-left: 24px;
+        margin-bottom: 12px;
         text-align: center;
-        width: 40%;
-        padding-left: 2em;
-        display: table-cell;
     }
 
-    .row {
-        display: table-row;
+    .card-image-float img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .pub-venue {
+    .card-image-float img:hover {
+        transform: scale(1.05);
     }
 
     p.archive__item-excerpt, .archive__item-excerpt + p {
         margin-bottom: 0;
     }
+
+    @media (max-width: 650px) {
+        .card-image-float {
+            float: none;
+            width: 100%;
+            max-width: 280px;
+            margin: 10px auto 15px auto;
+        }
+    }
 </style>
 
 <div class="{{ include.type | default: 'list' }}__item card">
     <article class="archive__item card-body" itemscope itemtype="http://schema.org/CreativeWork">
-        <div class="top-container">
-            <div class="row">
-                <div class="left-title">
-                    <h2 class="archive__item-research-title" itemprop="headline">{{ title }}</h2>
-                </div>
+        <h2 class="archive__item-research-title" itemprop="headline" style="margin-top: 0; margin-bottom: 0.5em;">{{ title }}</h2>
+        <div class="card-content-block">
+            {% if post.thumbnail %}
+            <div class="card-image-float">
+                <img src='{{ post.thumbnail }}' alt="Thumbnail">
             </div>
-            <div class="row">
-                <div class="left-title">
-                    {% if post.excerpt%}
-                    <p class="archive__item-research-excerpt" itemprop="description">{{post.excerpt}}</p>
-                    {% endif %}
-                    <b>Languages:</b> {{post.languages}}
-                    {% if post.repo == 'github'%}
-                    <p><a class="archive__item-research-excerpt" href="{{post.link}}">Link to code repository<i class="fab fa-fw fa-github social-icons" aria-hidden="true"></i></a></p>
-                    {% elsif post.repo == "bitbucket" %}
-                    <p><a class="archive__item-research-excerpt" href="{{post.link}}">Link to code repository<i class="fab fa-fw fa-bitbucket social-icons" aria-hidden="true"></i></a></p>
-                    {% else %}
-                    <p><a class="archive__item-research-excerpt" href="{{post.link}}">Link to code repository</a></p>
-                    {% endif %}
-                </div>
-                <div class="thumbnail">
-                    <img src='{{ post.thumbnail }}' alt="Thumbnail">
-                </div>
-            </div>
+            {% endif %}
+            
+            {% if post.excerpt%}
+            <p class="archive__item-research-excerpt" itemprop="description" style="margin-top: 0; margin-bottom: 0.8em;">{{post.excerpt}}</p>
+            {% endif %}
+            <p style="margin-top: 0; margin-bottom: 0.8em;"><b>Languages:</b> {{post.languages}}</p>
+            {% if post.repo == 'github'%}
+            <p style="margin-top: 0; margin-bottom: 0;"><a class="archive__item-research-excerpt" href="{{post.link}}">Link to code repository <i class="fab fa-fw fa-github social-icons" aria-hidden="true"></i></a></p>
+            {% elsif post.repo == "bitbucket" %}
+            <p style="margin-top: 0; margin-bottom: 0;"><a class="archive__item-research-excerpt" href="{{post.link}}">Link to code repository <i class="fab fa-fw fa-bitbucket social-icons" aria-hidden="true"></i></a></p>
+            {% else %}
+            <p style="margin-top: 0; margin-bottom: 0;"><a class="archive__item-research-excerpt" href="{{post.link}}">Link to code repository</a></p>
+            {% endif %}
         </div>
     </article>
 </div>

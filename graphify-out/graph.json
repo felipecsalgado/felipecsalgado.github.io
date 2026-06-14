@@ -1561,7 +1561,7 @@
       "label": "html_escape()",
       "file_type": "code",
       "source_file": "markdown_generator/posters.py",
-      "source_location": "L60",
+      "source_location": "L61",
       "_origin": "ast",
       "id": "markdown_generator_posters_html_escape",
       "community": 19,
@@ -1591,7 +1591,7 @@
       "label": "html_escape()",
       "file_type": "code",
       "source_file": "markdown_generator/publications.py",
-      "source_location": "L60",
+      "source_location": "L61",
       "_origin": "ast",
       "id": "markdown_generator_publications_html_escape",
       "community": 15,
@@ -1601,9 +1601,9 @@
       "label": "Produce entities within text.",
       "file_type": "rationale",
       "source_file": "markdown_generator/publications.py",
-      "source_location": "L61",
+      "source_location": "L62",
       "_origin": "ast",
-      "id": "markdown_generator_publications_rationale_61",
+      "id": "markdown_generator_publications_rationale_62",
       "community": 15,
       "norm_label": "produce entities within text."
     },
@@ -1616,56 +1616,6 @@
       "id": "markdown_generator_publications_rationale_8",
       "community": 15,
       "norm_label": "# todo: make this work with bibtex and other databases of citations, rather than"
-    },
-    {
-      "label": "pubsFromBib.py",
-      "file_type": "code",
-      "source_file": "markdown_generator/pubsFromBib.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "markdown_generator_pubsfrombib",
-      "community": 12,
-      "norm_label": "pubsfrombib.py"
-    },
-    {
-      "label": "html_escape()",
-      "file_type": "code",
-      "source_file": "markdown_generator/pubsFromBib.py",
-      "source_location": "L52",
-      "_origin": "ast",
-      "id": "markdown_generator_pubsfrombib_html_escape",
-      "community": 12,
-      "norm_label": "html_escape()"
-    },
-    {
-      "label": "Produce entities within text.",
-      "file_type": "rationale",
-      "source_file": "markdown_generator/pubsFromBib.py",
-      "source_location": "L53",
-      "_origin": "ast",
-      "id": "markdown_generator_pubsfrombib_rationale_53",
-      "community": 12,
-      "norm_label": "produce entities within text."
-    },
-    {
-      "label": "# TODO: Make this work with other databases of citations,",
-      "file_type": "rationale",
-      "source_file": "markdown_generator/pubsFromBib.py",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "markdown_generator_pubsfrombib_rationale_15",
-      "community": 12,
-      "norm_label": "# todo: make this work with other databases of citations,"
-    },
-    {
-      "label": "# TODO: Merge this with the existing TSV parsing solution",
-      "file_type": "rationale",
-      "source_file": "markdown_generator/pubsFromBib.py",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "markdown_generator_pubsfrombib_rationale_16",
-      "community": 12,
-      "norm_label": "# todo: merge this with the existing tsv parsing solution"
     },
     {
       "label": "talkmap.py",
@@ -1691,7 +1641,7 @@
       "label": "html_escape()",
       "file_type": "code",
       "source_file": "markdown_generator/talks.py",
-      "source_location": "L60",
+      "source_location": "L61",
       "_origin": "ast",
       "id": "markdown_generator_talks_html_escape",
       "community": 20,
@@ -2664,7 +2614,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "changelog_3_4_0_https_github_com_mmistakes_minimal_mistakes_releases_tag_3_4_0",
-      "community": 129,
+      "community": 79,
       "norm_label": "[3.4.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.0)"
     },
     {
@@ -2674,7 +2624,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "changelog_enhancements_19",
-      "community": 129,
+      "community": 79,
       "norm_label": "enhancements"
     },
     {
@@ -2844,7 +2794,7 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "changelog_3_3_2_https_github_com_mmistakes_minimal_mistakes_releases_tag_3_3_2",
-      "community": 79,
+      "community": 125,
       "norm_label": "[3.3.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.2)"
     },
     {
@@ -2854,7 +2804,7 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "changelog_bug_fixes_87",
-      "community": 79,
+      "community": 125,
       "norm_label": "bug fixes"
     },
     {
@@ -2974,7 +2924,7 @@
       "source_location": "L133",
       "_origin": "ast",
       "id": "changelog_3_2_10_https_github_com_mmistakes_minimal_mistakes_releases_tag_3_2_10",
-      "community": 125,
+      "community": 79,
       "norm_label": "[3.2.10](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.10)"
     },
     {
@@ -2984,7 +2934,7 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "changelog_maintenance_135",
-      "community": 125,
+      "community": 79,
       "norm_label": "maintenance"
     },
     {
@@ -3194,7 +3144,7 @@
       "source_location": "L210",
       "_origin": "ast",
       "id": "changelog_3_2_2_https_github_com_mmistakes_minimal_mistakes_releases_tag_3_2_2",
-      "community": 79,
+      "community": 119,
       "norm_label": "[3.2.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.2)"
     },
     {
@@ -3204,7 +3154,7 @@
       "source_location": "L212",
       "_origin": "ast",
       "id": "changelog_enhancements_212",
-      "community": 79,
+      "community": 119,
       "norm_label": "enhancements"
     },
     {
@@ -3684,7 +3634,7 @@
       "source_location": "L421",
       "_origin": "ast",
       "id": "changelog_1_3_1_https_github_com_mmistakes_minimal_mistakes_releases_tag_1_3_1",
-      "community": 119,
+      "community": 79,
       "norm_label": "[1.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.3.1)"
     },
     {
@@ -3694,7 +3644,7 @@
       "source_location": "L423",
       "_origin": "ast",
       "id": "changelog_enhancements_423",
-      "community": 119,
+      "community": 79,
       "norm_label": "enhancements"
     },
     {
@@ -3734,7 +3684,7 @@
       "source_location": "L442",
       "_origin": "ast",
       "id": "changelog_1_1_4_https_github_com_mmistakes_minimal_mistakes_releases_tag_1_1_4",
-      "community": 79,
+      "community": 12,
       "norm_label": "[1.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.4)"
     },
     {
@@ -3744,7 +3694,7 @@
       "source_location": "L444",
       "_origin": "ast",
       "id": "changelog_bug_fixes_444",
-      "community": 79,
+      "community": 12,
       "norm_label": "bug fixes"
     },
     {
@@ -5186,26 +5136,6 @@
       "id": "talks_2024_05_21_talk_6",
       "community": 176,
       "norm_label": "2024-05-21-talk-6.md"
-    },
-    {
-      "label": "readme.md",
-      "file_type": "document",
-      "source_file": "markdown_generator/readme.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "markdown_generator_readme",
-      "community": 131,
-      "norm_label": "readme.md"
-    },
-    {
-      "label": "Jupyter notebook markdown generator",
-      "file_type": "document",
-      "source_file": "markdown_generator/readme.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "markdown_generator_readme_jupyter_notebook_markdown_generator",
-      "community": 131,
-      "norm_label": "jupyter notebook markdown generator"
     },
     {
       "label": "Graphify Full Pipeline",
@@ -6688,19 +6618,6 @@
       "community": 82,
       "norm_label": "markdown generator - publications",
       "id": "markdown_gen_publications"
-    },
-    {
-      "label": "Markdown Generator - Publications from BibTeX",
-      "file_type": "code",
-      "source_file": "markdown_generator/pubsFromBib.py",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 82,
-      "norm_label": "markdown generator - publications from bibtex",
-      "id": "markdown_gen_pubs_bib"
     },
     {
       "label": "Markdown Generator - Talk Map",
@@ -10204,9 +10121,9 @@
       "source_file": "markdown_generator/patents.py",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "markdown_generator_patents_rationale_64",
-      "target": "markdown_generator_patents_html_escape",
-      "confidence_score": 1.0
+      "target": "markdown_generator_patents_html_escape"
     },
     {
       "relation": "contains",
@@ -10252,51 +10169,11 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "markdown_generator/publications.py",
-      "source_location": "L61",
+      "source_location": "L62",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "markdown_generator_publications_rationale_61",
-      "target": "markdown_generator_publications_html_escape"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "markdown_generator/pubsFromBib.py",
-      "source_location": "L52",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "markdown_generator_pubsfrombib",
-      "target": "markdown_generator_pubsfrombib_html_escape"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "markdown_generator/pubsFromBib.py",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "markdown_generator_pubsfrombib_rationale_15",
-      "target": "markdown_generator_pubsfrombib"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "markdown_generator/pubsFromBib.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "markdown_generator_pubsfrombib_rationale_16",
-      "target": "markdown_generator_pubsfrombib"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "markdown_generator/pubsFromBib.py",
-      "source_location": "L53",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "markdown_generator_pubsfrombib_rationale_53",
-      "target": "markdown_generator_pubsfrombib_html_escape"
+      "source": "markdown_generator_publications_rationale_62",
+      "target": "markdown_generator_publications_html_escape",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -13359,16 +13236,6 @@
       "target": "pages_terms_google_analytics"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "markdown_generator/readme.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "markdown_generator_readme",
-      "target": "markdown_generator_readme_jupyter_notebook_markdown_generator"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -14419,16 +14286,6 @@
       "target": "assets_js_magnific"
     },
     {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "markdown_generator/pubsFromBib.py",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "markdown_gen_pubs_bib",
-      "target": "markdown_gen_publications"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -14912,5 +14769,5 @@
       "source_file": "_pages/about.md"
     }
   ],
-  "built_at_commit": "8c3a09328b72398b494129367d2a4a6339657284"
+  "built_at_commit": "041415b51eca9014691928025d96e5a3a84626ed"
 }

@@ -34,7 +34,8 @@ import pandas as pd
 
 # In[3]:
 
-publications = pd.read_csv("publications.tsv", sep="\t", header=0, encoding = "ISO-8859-1")
+publications = pd.read_csv("publications.tsv", sep="\t", header=0, encoding="utf-8")
+publications = publications.dropna(subset=['title', 'pub_date', 'url_slug'])
 publications
 
 
@@ -61,12 +62,12 @@ def html_escape(text):
     """Produce entities within text."""
     # Handle NaN or non-string inputs gracefully
     if not isinstance(text, str):
-        text = str(text)
+        return ""
     return "".join(html_escape_table.get(c, c) for c in text)
 
 # Convert pub_date to datetime for correct sorting
 # Date format in TSV seems to be DD.MM.YY
-publications['pub_date'] = pd.to_datetime(publications['pub_date'], dayfirst=True)
+publications['pub_date'] = pd.to_datetime(publications['pub_date'], format='%d.%m.%y')
 publications = publications.sort_values(by='pub_date', ascending=False)
 
 
@@ -142,7 +143,7 @@ for row, item in publications.iterrows():
     
     md_filename = os.path.basename(md_filename)
        
-    with open("../_publications/" + md_filename, 'w') as f:
+    with open("../_publications/" + md_filename, 'w', encoding='utf-8') as f:
         f.write(md)
 
 

@@ -1,11 +1,11 @@
 # Graph Report - felipecsalgado.github.io  (2026-06-14)
 
 ## Corpus Check
-- 90 files · ~549,444 words
+- 89 files · ~549,424 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 673 nodes · 712 edges · 177 communities (108 shown, 69 thin omitted)
+- 672 nodes · 712 edges · 176 communities (107 shown, 69 thin omitted)
 - Extraction: 81% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 136 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
@@ -185,7 +185,7 @@
 - **Jekyll + Academic Pages Tech Stack** — concept_academicpages, concept_minimal_mistakes, config_jekyll, config_github_actions, concept_github_pages [INFERRED 0.90]
 - **Top-Level Knowledge Domains of the Repository** — god_node_physics_research, god_node_website_infrastructure, god_node_knowledge_graph, god_node_photon_tools, god_node_software_tools [INFERRED 0.90]
 
-## Communities (177 total, 69 thin omitted)
+## Communities (176 total, 69 thin omitted)
 
 ### Community 0 - "jQuery Core Library"
 Cohesion: 0.06
@@ -273,7 +273,7 @@ Nodes (29): Abbreviation Tag, Address Tag, Anchor Tag (aka. Link), Blockquotes, 
 
 ### Community 79 - "Community 79"
 Cohesion: 0.08
-Nodes (23): [1.0.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.1), [1.0.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.2), [1.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.2), [2.0.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/v2.0), [2.2.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.0), [2.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.1), [3.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.1), [3.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.4) (+15 more)
+Nodes (23): [1.0.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.1), [1.0.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.2), [1.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.2), [1.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.4), [2.0.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/v2.0), [2.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.1), [3.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.1), [3.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.4) (+15 more)
 
 ### Community 80 - "Community 80"
 Cohesion: 0.18

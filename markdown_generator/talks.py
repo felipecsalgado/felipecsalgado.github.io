@@ -34,7 +34,8 @@ import glob
 
 # In[3]:
 
-talks = pd.read_csv("talks.tsv", sep="\t", header=0)
+talks = pd.read_csv("talks.tsv", sep="\t", header=0, encoding="utf-8")
+talks = talks.dropna(subset=['title', 'date', 'url_slug'])
 talks
 
 
@@ -58,10 +59,9 @@ html_escape_table = {
     }
 
 def html_escape(text):
-    if type(text) is str:
-        return "".join(html_escape_table.get(c,c) for c in text)
-    else:
-        return "False"
+    if not isinstance(text, str):
+        return ""
+    return "".join(html_escape_table.get(c,c) for c in text)
 
 
 # ## Creating the markdown files
@@ -121,7 +121,7 @@ for row, item in talks.iterrows():
     md_filename = os.path.basename(md_filename)
     #print(md)
     
-    with open("../_talks/" + md_filename, 'w') as f:
+    with open("../_talks/" + md_filename, 'w', encoding='utf-8') as f:
         f.write(md)
 
 

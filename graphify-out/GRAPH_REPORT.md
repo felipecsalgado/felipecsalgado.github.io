@@ -1,16 +1,16 @@
 # Graph Report - felipecsalgado.github.io  (2026-06-14)
 
 ## Corpus Check
-- 89 files · ~549,424 words
+- 87 files · ~548,797 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 672 nodes · 712 edges · 176 communities (107 shown, 69 thin omitted)
-- Extraction: 81% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 136 edges (avg confidence: 0.88)
+- 664 nodes · 706 edges · 174 communities (106 shown, 68 thin omitted)
+- Extraction: 81% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 135 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8c3a0932`
+- Built from commit: `041415b5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -134,9 +134,7 @@
 - [[_COMMUNITY_Community 126|Community 126]]
 - [[_COMMUNITY_Community 127|Community 127]]
 - [[_COMMUNITY_Community 128|Community 128]]
-- [[_COMMUNITY_Community 129|Community 129]]
 - [[_COMMUNITY_Community 130|Community 130]]
-- [[_COMMUNITY_Community 131|Community 131]]
 - [[_COMMUNITY_Community 132|Community 132]]
 - [[_COMMUNITY_Community 133|Community 133]]
 - [[_COMMUNITY_Community 134|Community 134]]
@@ -163,8 +161,8 @@
   images/emittance_PP2.png → _publications/0-2026-paper-pepper-pot.md
 - `Pepper-Pot Screen Shot (Experimental Data)` --references--> `Paper: Pepper-Pot Emittance Measurement (2026)`  [INFERRED]
   images/PP_shot_cropped.png → _publications/0-2026-paper-pepper-pot.md
-- `CALA Detector Setup - Spectrometer Detail` --references--> `Research: Particle Detector Development for SF-QED`  [INFERRED]
-  images/CALA_detector_setup_clip.png → _research/2-detector-Focus2.md
+- `Markdown Generator - Publications` --conceptually_related_to--> `Paper: Pepper-Pot Emittance Measurement (2026)`  [INFERRED]
+  markdown_generator/publications.py → _publications/0-2026-paper-pepper-pot.md
 
 ## Import Cycles
 - None detected.
@@ -185,7 +183,7 @@
 - **Jekyll + Academic Pages Tech Stack** — concept_academicpages, concept_minimal_mistakes, config_jekyll, config_github_actions, concept_github_pages [INFERRED 0.90]
 - **Top-Level Knowledge Domains of the Repository** — god_node_physics_research, god_node_website_infrastructure, god_node_knowledge_graph, god_node_photon_tools, god_node_software_tools [INFERRED 0.90]
 
-## Communities (176 total, 69 thin omitted)
+## Communities (174 total, 68 thin omitted)
 
 ### Community 0 - "jQuery Core Library"
 Cohesion: 0.06
@@ -235,10 +233,6 @@ Nodes (5): jQuery FitVids Plugin, jQuery Greedy Navigation Plugin, jQuery Magnif
 Cohesion: 0.40
 Nodes (5): Comment Include, Comments System Include, Discourse Comments Provider Include, Disqus Comments Provider Include, Facebook Comments Provider Include
 
-### Community 12 - "Markdown Generator (BibTeX)"
-Cohesion: 0.40
-Nodes (4): html_escape(), # TODO: Make this work with other databases of citations,, # TODO: Merge this with the existing TSV parsing solution, Produce entities within text.
-
 ### Community 13 - "Jekyll HTML Head & Analytics"
 Cohesion: 0.50
 Nodes (4): Analytics Include (HTML), Head Include, Scripts Include, SEO Include
@@ -273,7 +267,7 @@ Nodes (29): Abbreviation Tag, Address Tag, Anchor Tag (aka. Link), Blockquotes, 
 
 ### Community 79 - "Community 79"
 Cohesion: 0.08
-Nodes (23): [1.0.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.1), [1.0.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.2), [1.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.2), [1.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.4), [2.0.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/v2.0), [2.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.1), [3.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.1), [3.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.4) (+15 more)
+Nodes (23): [1.0.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.1), [1.0.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.2), [1.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.2), [1.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.3.1), [2.0.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/v2.0), [2.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.1), [3.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.1), [3.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.4) (+15 more)
 
 ### Community 80 - "Community 80"
 Cohesion: 0.18
@@ -284,8 +278,8 @@ Cohesion: 0.15
 Nodes (12): Academic and Industrial Awards, Awards, Honors, and Intellectual Property, Curriculum Vitae Summary: Felipe Cezar Salgado, Education, Optics and Photonics Competencies, Patents Held, Ph.D. Candidate / Researcher (Wissenschaftlicher Mitarbeiter), Physics Research Frameworks (+4 more)
 
 ### Community 82 - "Community 82"
-Cohesion: 0.25
-Nodes (9): Pepper-Pot Emittance Measurement - Electron Beam Spots on Screen, Pepper-Pot Emittance Measurement - Annotated Experimental Data, Pepper-Pot Screen Shot (Experimental Data), Markdown Generator - Publications, Markdown Generator - Publications from BibTeX, Markdown Generator README, Markdown Generator - Talks, Paper: Pepper-Pot Emittance Measurement (2026) (+1 more)
+Cohesion: 0.29
+Nodes (8): Pepper-Pot Emittance Measurement - Electron Beam Spots on Screen, Pepper-Pot Emittance Measurement - Annotated Experimental Data, Pepper-Pot Screen Shot (Experimental Data), Markdown Generator - Publications, Markdown Generator README, Markdown Generator - Talks, Paper: Pepper-Pot Emittance Measurement (2026), Talk: FOR2783 Pair Production (ExHILP 2021)
 
 ### Community 83 - "Community 83"
 Cohesion: 0.22
@@ -416,9 +410,9 @@ Cohesion: 0.67
 Nodes (3): Markdown Generator - Posters, Poster 2022 - ICUIL Prize, Talk: ICUIL 2022 (Poster Prize)
 
 ## Knowledge Gaps
-- **302 isolated node(s):** `name`, `icons`, `name`, `version`, `description` (+297 more)
+- **300 isolated node(s):** `name`, `icons`, `name`, `version`, `description` (+295 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **69 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **68 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -432,7 +426,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Are the 13 inferred relationships involving `GOD NODE: Physics Research (SF-QED, LWFA, Detector)` (e.g. with `Single-Particle Detector Design` and `Laser Wakefield Acceleration (LWFA)`) actually correct?**
   _`GOD NODE: Physics Research (SF-QED, LWFA, Detector)` has 13 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `name`, `icons`, `Produce entities within text.` to the rest of the system?**
-  _311 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _306 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `jQuery Core Library` be split into smaller, more focused modules?**
   _Cohesion score 0.05889724310776942 - nodes in this community are weakly interconnected._
 - **Should `Jekyll Site Configuration` be split into smaller, more focused modules?**

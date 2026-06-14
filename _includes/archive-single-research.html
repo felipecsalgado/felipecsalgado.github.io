@@ -26,29 +26,20 @@
         margin-top: -20px !important;
         margin-bottom: -10px !important;
     }
-    
-    .about {
-
-    }
 
     .card-body {
         overflow: hidden;
-        text-overflow: ellipsis;
         background: #fff;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         transition: all 0.2s ease-out;
         border: 1px solid rgba(0, 0, 0, .125);
         border-radius: .25rem;
-        padding: 1em;
+        padding: 1.25em;
     }
 
     .card {
         margin-bottom: 1em;
         padding: 0.5rem;
-    }
-
-    .right {
-        float: right !important;
     }
 
     h4.title {
@@ -86,59 +77,70 @@
     a.card:hover {
         text-decoration: none;
     }
-    .top-container {
+    
+    .card-body::after {
+        content: "";
         display: table;
-    }
-    .left-title {
-        width: 60%;
-        display: table-cell;
-        vertical-align: top;
-    }
-    .thumbnail {
-        vertical-align: top;
-        text-align: center;
-        width: 40%;
-        padding-left: 2em;
-        display: table-cell;
+        clear: both;
     }
 
-    .pub-venue {
+    .card-image-float {
+        float: right;
+        width: 220px;
+        max-width: 35%;
+        margin-left: 24px;
+        margin-bottom: 12px;
+        text-align: center;
     }
+
+    .card-image-float img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .card-image-float img:hover {
+        transform: scale(1.05);
+    }
+
     p.archive__item-excerpt, .archive__item-excerpt+p {
         margin-bottom: 0;
+    }
+
+    @media (max-width: 650px) {
+        .card-image-float {
+            float: none;
+            width: 100%;
+            max-width: 280px;
+            margin: 10px auto 15px auto;
+        }
     }
 </style>
 
 
 <div class="{{ include.type | default: 'list' }}__item card">
     <article class="archive__item card-body" itemscope itemtype="http://schema.org/CreativeWork">
-        <div class="top-container">
-            <div class="row">
-                <div class="left-title">
-                    <h2 class="archive__item-research-title" itemprop="headline">{{ title }}</h2>
-                </div>
-                <div class="left-title"></div>
+        <h2 class="archive__item-research-title" itemprop="headline" style="margin-top: 0; margin-bottom: 0.5em;">{{ title }}</h2>
+        <div class="card-content-block">
+            {% if post.thumbnail %}
+            <div class="card-image-float">
+                <img src='{{ post.thumbnail }}' alt="Thumbnail">
             </div>
-            <div class="row">
-                <div class="left-title">
-                    {% if post.excerpt%}
-                    <p class="archive__item-research-excerpt" itemprop="description">{{post.excerpt}}</p>
-                    {% endif %}
-                    {% if post.objective%}
-                    <p class="archive__item-research-excerpt" itemprop="description"><b>Objectives: </b>{{post.objective}}</p>
-                    {% endif %}
-                </div>
-                <div class="thumbnail">
-                    <img src='{{ post.thumbnail }}' alt="Thumbnail">
-                </div>
-            </div>
-            <div class="row">
-                <div class="left-title">
-                    {% if post.works %}
-                    <p class="archive__item-research-excerpt" itemprop="description"><b>More about the topic:</b>{{post.works}}</p>
-                    {% endif %}
-                </div>
-            </div>
+            {% endif %}
+            
+            {% if post.excerpt%}
+            <p class="archive__item-research-excerpt" itemprop="description" style="margin-top: 0; margin-bottom: 0.8em;">{{post.excerpt}}</p>
+            {% endif %}
+            {% if post.objective%}
+            <p class="archive__item-research-excerpt" itemprop="description" style="margin-top: 0; margin-bottom: 0;"><b>Objectives: </b>{{post.objective}}</p>
+            {% endif %}
         </div>
+        {% if post.works %}
+        <div style="width: 100%; border-top: 1px dashed #eee; padding-top: 1em; margin-top: 1em; clear: both;">
+            <p class="archive__item-research-excerpt" itemprop="description"><b>More about the topic:</b>{{post.works}}</p>
+        </div>
+        {% endif %}
     </article>
 </div>
