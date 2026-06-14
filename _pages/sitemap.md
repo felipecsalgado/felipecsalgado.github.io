@@ -7,31 +7,39 @@ author_profile: true
 
 {% include base_path %}
 
-A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
+<p>This is a sitemap of all user-accessible pages, research projects, and tools on this website. A machine-readable <a href="{{ base_path }}/sitemap.xml">XML Sitemap</a> is also available.</p>
 
-<h2>Pages</h2>
-{% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}
+<div style="margin-top: 2em; line-height: 2.0; font-size: 0.95em;">
+  
+  <h3>Main Pages</h3>
+  <ul>
+    <li><a href="{{ base_path }}/">About / Home</a></li>
+    <li><a href="{{ base_path }}/research/">Research Overview</a></li>
+    <li><a href="{{ base_path }}/publications/">Publications &amp; Patents</a></li>
+    <li><a href="{{ base_path }}/talks/">Talks &amp; Presentations</a></li>
+    <li><a href="{{ base_path }}/programming/">Programming Codes</a></li>
+    <li><a href="{{ base_path }}/attenuation-calculator/">Photon Attenuation Calculator</a></li>
+    <li><a href="{{ base_path }}/cv/">CV / Resume</a></li>
+  </ul>
 
-<h2>Posts</h2>
-{% for post in site.posts %}
-  {% include archive-single.html %}
-{% endfor %}
+  <h3>Research Projects</h3>
+  <ul>
+    {% for item in site.research %}
+      <li><a href="{{ base_path }}{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
 
-{% capture written_label %}'None'{% endcapture %}
+  <h3>Programming Projects</h3>
+  <ul>
+    {% for item in site.programming %}
+      <li><a href="{{ base_path }}{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
 
-{% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
-  {% endif %}
-{% endunless %}
-{% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" %}
-  {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
-{% endfor %}
+  <h3>Scientific Tools</h3>
+  <ul>
+    <li><a href="{{ base_path }}/attenuation-calculator/">Photon Attenuation Calculator</a></li>
+    <li><a href="{{ base_path }}/attenuation-explanation/">Photon Attenuation Calculation Details</a></li>
+  </ul>
+
+</div>

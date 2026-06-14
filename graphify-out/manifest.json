@@ -375,14 +375,14 @@
     "semantic_hash": "86f90b58e47bd440027e1ffa4a92ab53"
   },
   "_includes/footer.html": {
-    "mtime": 1704022789.2268593,
-    "ast_hash": "e68f97abe1817112629068964a174a1f",
-    "semantic_hash": "e68f97abe1817112629068964a174a1f"
+    "mtime": 1781466205.8582015,
+    "ast_hash": "8501547051e5c053d96193021e34c45a",
+    "semantic_hash": ""
   },
   "_includes/footer/custom.html": {
-    "mtime": 1704022789.2269886,
-    "ast_hash": "d0f6257505e84bdd7ace5569ca4648d7",
-    "semantic_hash": "d0f6257505e84bdd7ace5569ca4648d7"
+    "mtime": 1781466200.5068731,
+    "ast_hash": "395266b756da4fc121166b7de55af5db",
+    "semantic_hash": ""
   },
   "_includes/head.html": {
     "mtime": 1704022789.2272608,
@@ -565,9 +565,9 @@
     "semantic_hash": "1e0bd0e01399465541ce1277eccc455f"
   },
   "_pages/sitemap.md": {
-    "mtime": 1704022789.2307825,
-    "ast_hash": "f4081f0f2cf253135013a55e9fbf6e0a",
-    "semantic_hash": "f4081f0f2cf253135013a55e9fbf6e0a"
+    "mtime": 1781466214.2465363,
+    "ast_hash": "0929f452ccf288408f1379c4b62239ff",
+    "semantic_hash": ""
   },
   "_pages/tag-archive.html": {
     "mtime": 1704022789.2308762,
