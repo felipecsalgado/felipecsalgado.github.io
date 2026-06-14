@@ -190,8 +190,8 @@
     "semantic_hash": "a45d4c79656cf969aa93a38bd8c2a600"
   },
   "_config.yml": {
-    "mtime": 1781463622.5664191,
-    "ast_hash": "774ec70897f5925fda0fc430e478b7b4",
+    "mtime": 1781467350.6900797,
+    "ast_hash": "2c6091d972c9f78e95e042a0a9dfa0de",
     "semantic_hash": ""
   },
   "_data/authors.yml": {
@@ -500,7 +500,7 @@
     "semantic_hash": "7cdfc43dbb97533a74110d6504f5fa75"
   },
   "_pages/about.md": {
-    "mtime": 1708863478.311363,
+    "mtime": 1781467161.9456813,
     "ast_hash": "c770472da122bb3eb70679467a44ed80",
     "semantic_hash": "c770472da122bb3eb70679467a44ed80"
   },
@@ -978,5 +978,75 @@
     "mtime": 1781462061.0779145,
     "ast_hash": "c4cd16193c02d9c9a0f7300c9e4c3904",
     "semantic_hash": "c4cd16193c02d9c9a0f7300c9e4c3904"
+  },
+  "images/android-chrome-192x192.png": {
+    "mtime": 1781467346.0820112,
+    "ast_hash": "f6dc36a6056c367a8344a45ddb496d42",
+    "semantic_hash": ""
+  },
+  "images/apple-touch-icon-114x114.png": {
+    "mtime": 1781467346.0427902,
+    "ast_hash": "e777618bd53a9a38714dd91e9282d6ed",
+    "semantic_hash": ""
+  },
+  "images/apple-touch-icon-120x120.png": {
+    "mtime": 1781467346.0475724,
+    "ast_hash": "4d25c256741b124045489b24b145f528",
+    "semantic_hash": ""
+  },
+  "images/apple-touch-icon-144x144.png": {
+    "mtime": 1781467346.052995,
+    "ast_hash": "2f687ab350f7f92560fc557fbd2cead7",
+    "semantic_hash": ""
+  },
+  "images/apple-touch-icon-152x152.png": {
+    "mtime": 1781467346.0585146,
+    "ast_hash": "e3af93cf528e05ea3d877fdcd39569ff",
+    "semantic_hash": ""
+  },
+  "images/apple-touch-icon-180x180.png": {
+    "mtime": 1781467346.0645869,
+    "ast_hash": "e51798846b12fb8d1dea190ed9d1ab4d",
+    "semantic_hash": ""
+  },
+  "images/apple-touch-icon-57x57.png": {
+    "mtime": 1781467346.0257,
+    "ast_hash": "91449eb59cb0407df20df32514cdbd41",
+    "semantic_hash": ""
+  },
+  "images/apple-touch-icon-60x60.png": {
+    "mtime": 1781467346.0296724,
+    "ast_hash": "1dc8c75a949aade103a08faaec29a16e",
+    "semantic_hash": ""
+  },
+  "images/apple-touch-icon-72x72.png": {
+    "mtime": 1781467346.0337775,
+    "ast_hash": "812148a206fe05b0e329323ad6e072d7",
+    "semantic_hash": ""
+  },
+  "images/apple-touch-icon-76x76.png": {
+    "mtime": 1781467346.0378659,
+    "ast_hash": "1b49e1e6745911e1d3323adf5d6243a5",
+    "semantic_hash": ""
+  },
+  "images/favicon-16x16.png": {
+    "mtime": 1781467346.0677097,
+    "ast_hash": "a7474f0695ad25fc93d130c850d08d8b",
+    "semantic_hash": ""
+  },
+  "images/favicon-32x32.png": {
+    "mtime": 1781467346.0711484,
+    "ast_hash": "6e8dc25074710b937aab977dc85cec24",
+    "semantic_hash": ""
+  },
+  "images/favicon-96x96.png": {
+    "mtime": 1781467346.075691,
+    "ast_hash": "9ccd38e474ff158b72654d576452fb47",
+    "semantic_hash": ""
+  },
+  "images/mstile-144x144.png": {
+    "mtime": 1781467346.0874445,
+    "ast_hash": "2f687ab350f7f92560fc557fbd2cead7",
+    "semantic_hash": ""
   }
 }
