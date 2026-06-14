@@ -4,7 +4,7 @@ excerpt: 'App coded in C#.net for controlling the <a href="https://www.thinksrs.
 collection: programming
 permalink: /programming/DG645-Control-App
 languages: "C#.net"
-thumbnail: /images/DG-app_screen.png
+thumbnail: /images/DG-app_screen.PNG
 link: "https://github.com/felipecsalgado/DG645-Controller-App"
 repo: "github"
 ---
