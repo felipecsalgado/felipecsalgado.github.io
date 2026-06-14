@@ -119,7 +119,9 @@ title: "Attenuation Calculation Details"
 
   <p>The calculator evaluates coefficients for exact photon energies dynamically. However, since the NIST XCOM database contains discrete datapoints, values between these points must be interpolated. Because photon cross sections follow steep non-linear power laws across energy magnitudes, standard linear interpolation introduces severe physical errors.</p>
   
-  <p>Instead, the tool employs a highly dense <strong>Log-Log Cubic Spline Interpolation</strong> algorithm. To preserve the exact structural properties of physical absorption limits—such as the sharp vertical discontinuities of K-edges and L-edges—the interpolation routine algorithmically segments the database at energy gaps \(\le 1\) eV. Splines are applied uniquely within each continuous energy band, rendering a mathematically flawless continuum that guarantees physical accuracy around electron binding energy shells.</p>
+  <p>Instead, the tool employs a <strong>Log-Log Linear Interpolation</strong> algorithm. For any target energy, it locates the two closest discrete energy points in the NIST database and performs a linear interpolation in log-log space. This choice matches the power-law scaling of photon cross sections across energy ranges and prevents the severe physical errors of simple linear interpolation.</p>
+
+  <p>To handle absorption edges (such as K-edges and L-edges), the NIST XCOM database contains pairs of points placed extremely close to each other at the discontinuity. The log-log interpolation natively handles these sharp transitions, ensuring accurate values immediately below and above the binding energy thresholds.</p>
 
   <h2>Compounds and Bragg's Additivity Rule</h2>
 

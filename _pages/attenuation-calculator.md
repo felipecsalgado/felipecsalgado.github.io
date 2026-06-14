@@ -7,8 +7,6 @@ redirect_from:
   - /attenuation-calculator
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 <style>
 html, body {
   margin: 0;
@@ -83,23 +81,6 @@ html, body {
   font-weight: normal;
   color: #2c3e50;
 }
-.chart-container {
-  margin: 25px 0;
-  background: white;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  width: 100%;
-  box-sizing: border-box;
-}
-.chart-container h3 {
-  margin: 0 0 15px 0;
-  font-size: 17px;
-}
-.chart-container canvas {
-  width: 100% !important;
-  height: 450px !important;
-}
 .error-message {
   color: #e74c3c;
   padding: 12px;
@@ -131,11 +112,6 @@ html, body {
   margin-bottom: 15px;
   font-size: 13px;
   line-height: 1.6;
-}
-.charts-row {
-  display: block;
-  width: 100%;
-  max-width: 100%;
 }
 @media (max-width: 900px) {
   .input-results-row {
@@ -222,18 +198,6 @@ html, body {
       </div>
     </div>
   </div>
-  
-  <div id="chartsSection">
-    <div class="chart-container">
-      <h3>Attenuation & Transmission vs Energy</h3>
-      <canvas id="attenuationChart"></canvas>
-    </div>
-    
-    <div class="chart-container">
-      <h3>Interaction Probabilities vs Energy</h3>
-      <canvas id="probabilitiesChart"></canvas>
-    </div>
-  </div>
 </div>
 
 <script>
@@ -275,54 +239,7 @@ const DISPLAY_NAMES = {
   'c': 'C (Carbon)'
 };
 
-const SUPERSCRIPT = ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'];
-const MINUS = '⁻';
-
-function toSuperscript(num) {
-  const isNegative = num < 0;
-  const absNum = Math.abs(num);
-  const result = String(absNum).split('').map(d => SUPERSCRIPT[parseInt(d)]).join('');
-  return isNegative ? MINUS + result : result;
-}
-
 let materialsData = {};
-let attenuationChart = null;
-let probabilitiesChart = null;
-
-const minorGridPlugin = {
-  id: 'minorGrid',
-  beforeDraw: (chart) => {
-    if (chart.scales.y.type !== 'logarithmic') return;
-    
-    const ctx = chart.ctx;
-    const yScale = chart.scales.y;
-    const xScale = chart.scales.x;
-    
-    const minLog = Math.floor(Math.log10(yScale.min));
-    const maxLog = Math.ceil(Math.log10(yScale.max));
-    
-    ctx.save();
-    ctx.strokeStyle = '#e0e0e0';
-    ctx.lineWidth = 0.5;
-    ctx.beginPath();
-    
-    for (let i = minLog; i <= maxLog; i++) {
-      for (let j = 2; j <= 9; j++) {
-        const value = j * Math.pow(10, i);
-        if (value >= yScale.min && value <= yScale.max) {
-          const y = yScale.getPixelForValue(value);
-          ctx.moveTo(xScale.left, y);
-          ctx.lineTo(xScale.right, y);
-        }
-      }
-    }
-    
-    ctx.stroke();
-    ctx.restore();
-  }
-};
-
-Chart.register(minorGridPlugin);
 
 function formatPercent(value) {
   if (value === undefined || value === null || isNaN(value)) return '-';
@@ -574,248 +491,6 @@ function displayResults(result, material, energy) {
   document.getElementById('photoelectricProb').textContent = formatPercent(result.probabilities.photoelectric);
   document.getElementById('nuclearProb').textContent = formatPercent(result.probabilities.nuclear);
   document.getElementById('electronProb').textContent = formatPercent(result.probabilities.electron);
-  
-  createCharts(result, material, energy);
-}
-
-function createCharts(result, material, energy) {
-  const data = result.data;
-  const density = result.density;
-  const lengthCm = parseFloat(document.getElementById('length').value) * 0.1;
-  
-  const energies = data.map(d => d.energy);
-  const attenuations = data.map(d => {
-    const att = 1 - Math.exp(-d.total * density * lengthCm);
-    return ensurePositive(att * 100);
-  });
-  const transmissions = data.map(d => {
-    const trans = Math.exp(-d.total * density * lengthCm);
-    return ensurePositive(trans * 100);
-  });
-  
-  if (attenuationChart) {
-    attenuationChart.destroy();
-  }
-  
-  const attenuationCtx = document.getElementById('attenuationChart').getContext('2d');
-  attenuationChart = new Chart(attenuationCtx, {
-    type: 'line',
-    data: {
-      labels: energies,
-      datasets: [
-        {
-          label: 'Attenuation (%)',
-          data: attenuations,
-          borderColor: '#e74c3c',
-          backgroundColor: 'rgba(231, 76, 60, 0.1)',
-          fill: true,
-          tension: 0.1,
-          pointRadius: 0,
-          pointHoverRadius: 0,
-          lineWidth: 1.4
-        },
-        {
-          label: 'Transmission (%)',
-          data: transmissions,
-          borderColor: '#3498db',
-          backgroundColor: 'rgba(52, 152, 219, 0.1)',
-          fill: true,
-          tension: 0.1,
-          pointRadius: 0,
-          pointHoverRadius: 0,
-          lineWidth: 1.4
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: {
-          position: 'top'
-        },
-        minorGridPlugin: minorGridPlugin
-      },
-      scales: {
-        x: {
-          type: 'logarithmic',
-          title: {
-            display: true,
-            text: 'Energy (MeV)',
-            font: { size: 16, weight: 'bold' }
-          },
-          min: energies[0],
-          max: energies[energies.length - 1],
-          ticks: {
-            callback: function(value) {
-              const log10 = Math.log10(value);
-              if (Number.isInteger(log10)) {
-                return '10' + toSuperscript(log10);
-              }
-              return '';
-            }
-          }
-        },
-        y: {
-          type: 'logarithmic',
-          title: {
-            display: true,
-            text: 'Percentage (%)',
-            font: { size: 16, weight: 'bold' }
-          },
-          min: 5e-3,
-          max: 300,
-          grid: {
-            drawOnChartArea: true
-          },
-          ticks: {
-            callback: function(value) {
-              const log10 = Math.log10(value);
-              if (Number.isInteger(log10)) {
-                return '10' + toSuperscript(log10);
-              }
-              return '';
-            }
-          }
-        }
-      }
-    }
-  });
-  
-  const rayleigh = data.map(d => {
-    const pInteract = 1 - Math.exp(-d.total * density * lengthCm);
-    return ensurePositive((d.coherent / d.total) * pInteract * 100);
-  });
-  const compton = data.map(d => {
-    const pInteract = 1 - Math.exp(-d.total * density * lengthCm);
-    return ensurePositive((d.incoherent / d.total) * pInteract * 100);
-  });
-  const photoelectric = data.map(d => {
-    const pInteract = 1 - Math.exp(-d.total * density * lengthCm);
-    return ensurePositive((d.photoelectric / d.total) * pInteract * 100);
-  });
-  const nuclear = data.map(d => {
-    const pInteract = 1 - Math.exp(-d.total * density * lengthCm);
-    return ensurePositive((d.nuclear / d.total) * pInteract * 100);
-  });
-  const electron = data.map(d => {
-    const pInteract = 1 - Math.exp(-d.total * density * lengthCm);
-    return ensurePositive((d.electron / d.total) * pInteract * 100);
-  });
-  
-  if (probabilitiesChart) {
-    probabilitiesChart.destroy();
-  }
-  
-  const probCtx = document.getElementById('probabilitiesChart').getContext('2d');
-  probabilitiesChart = new Chart(probCtx, {
-    type: 'line',
-    data: {
-      labels: energies,
-      datasets: [
-        {
-          label: 'Rayleigh (Coherent)',
-          data: rayleigh,
-          borderColor: '#9b59b6',
-          fill: false,
-          tension: 0.1,
-          pointRadius: 0,
-          pointHoverRadius: 0,
-          lineWidth: 1.4
-        },
-        {
-          label: 'Compton (Incoherent)',
-          data: compton,
-          borderColor: '#e67e22',
-          fill: false,
-          tension: 0.1,
-          pointRadius: 0,
-          pointHoverRadius: 0,
-          lineWidth: 1.4
-        },
-        {
-          label: 'Photoelectric',
-          data: photoelectric,
-          borderColor: '#2ecc71',
-          fill: false,
-          tension: 0.1,
-          pointRadius: 0,
-          pointHoverRadius: 0,
-          lineWidth: 1.4
-        },
-        {
-          label: 'Nuclear Pair Production',
-          data: nuclear,
-          borderColor: '#e74c3c',
-          fill: false,
-          tension: 0.1,
-          pointRadius: 0,
-          pointHoverRadius: 0,
-          lineWidth: 1.4
-        },
-        {
-          label: 'Electron Pair Production',
-          data: electron,
-          borderColor: '#3498db',
-          fill: false,
-          tension: 0.1,
-          pointRadius: 0,
-          pointHoverRadius: 0,
-          lineWidth: 1.4
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: {
-          position: 'top'
-        },
-        minorGridPlugin: minorGridPlugin
-      },
-      scales: {
-        x: {
-          type: 'logarithmic',
-          title: {
-            display: true,
-            text: 'Energy (MeV)',
-            font: { size: 16, weight: 'bold' }
-          },
-          min: energies[0],
-          max: energies[energies.length - 1],
-          ticks: {
-            callback: function(value) {
-              const log10 = Math.log10(value);
-              if (Number.isInteger(log10)) {
-                return '10' + toSuperscript(log10);
-              }
-              return '';
-            }
-          }
-        },
-        y: {
-          type: 'logarithmic',
-          title: {
-            display: true,
-            text: 'Probability (%)',
-            font: { size: 16, weight: 'bold' }
-          },
-          min: 5e-5,
-          max: 300,
-          ticks: {
-            callback: function(value) {
-              const log10 = Math.log10(value);
-              if (Number.isInteger(log10)) {
-                return '10' + toSuperscript(log10);
-              }
-              return '';
-            }
-          }
-        }
-      }
-    }
-  });
 }
 
 document.getElementById('calculateBtn').addEventListener('click', async () => {

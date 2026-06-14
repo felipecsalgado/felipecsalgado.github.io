@@ -37,6 +37,7 @@ import glob
 # In[3]:
 
 publications = pd.read_csv("patents.tsv", sep="\t", header=0, encoding="utf-8")
+publications = publications.dropna(subset=['year', 'short_title'])
 publications
 
 

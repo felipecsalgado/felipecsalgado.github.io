@@ -70,8 +70,8 @@
     "semantic_hash": "51296a6384461762325733ef3ca52779"
   },
   "markdown_generator/patents.py": {
-    "mtime": 1781464151.583032,
-    "ast_hash": "e958c25240eda8e0dbc10c51e07c15ea",
+    "mtime": 1781463291.4277854,
+    "ast_hash": "7869db263403f3521ab67f2a5c76d6af",
     "semantic_hash": ""
   },
   "markdown_generator/posters.py": {
@@ -600,14 +600,19 @@
     "semantic_hash": "b03fd6c5bbf075e011dd217308eb879e"
   },
   "_patents/2015.0-otdr.md": {
-    "mtime": 1781464158.195631,
+    "mtime": 1781463324.7131605,
     "ast_hash": "9e27150a85be61513db891373dac887d",
     "semantic_hash": ""
   },
   "_patents/2016.0-methane.md": {
-    "mtime": 1781464158.1954927,
+    "mtime": 1781463324.7130024,
     "ast_hash": "de1314ea6b8f4c793a56b9a7317706b1",
     "semantic_hash": ""
+  },
+  "_patents/nan-nan.md": {
+    "mtime": 1781463324.7137842,
+    "ast_hash": "b8d9ee97eb67eefe104622886010e381",
+    "semantic_hash": "b8d9ee97eb67eefe104622886010e381"
   },
   "_posters/2018-09-18-poster-4.md": {
     "mtime": 1779037934.714358,
