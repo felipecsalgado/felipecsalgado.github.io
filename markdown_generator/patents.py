@@ -24,6 +24,8 @@
 # In[2]:
 
 import pandas as pd
+import os
+import glob
 
 
 # ## Import TSV
@@ -34,7 +36,7 @@ import pandas as pd
 
 # In[3]:
 
-publications = pd.read_csv("patents.tsv", sep="\t", header=0, encoding = "ISO-8859-1")
+publications = pd.read_csv("patents.tsv", sep="\t", header=0, encoding="utf-8")
 publications
 
 
@@ -48,12 +50,20 @@ html_escape_table = {
     "&": "&amp;",
     '"': "&quot;",
     "'": "&apos;",
-    "-": "&#150;"
+    "-": "&#150;",
+    "ü": "&#252;", "Ü": "&#220;",
+    "ö": "&#246;", "Ö": "&#214;",
+    "ä": "&#228;", "Ä": "&#196;",
+    "ß": "&#223;",
+    "á": "&#225;", "é": "&#233;", "í": "&#237;", "ó": "&#243;", "ú": "&#250;",
+    "à": "&#224;", "è": "&#232;", "ì": "&#236;", "ò": "&#242;", "ù": "&#249;"
     }
 
 def html_escape(text):
     """Produce entities within text."""
-    return "".join(html_escape_table.get(c,c) for c in text)
+    if not isinstance(text, str):
+        text = str(text)
+    return "".join(html_escape_table.get(c, c) for c in text)
 
 
 # ## Creating the markdown files
@@ -62,7 +72,16 @@ def html_escape(text):
 
 # In[5]:
 
-import os
+# Remove the files from the patent folders for later create new ones
+files = glob.glob('../_patents//*')
+for f in files:
+    os.remove(f)
+
+# Ensure year is datetime for sorting
+# Assuming 'year' column exists or can be derived
+publications['year'] = pd.to_numeric(publications['year'])
+publications = publications.sort_values(by='year', ascending=False)
+
 for row, item in publications.iterrows():
     
     md_filename = str(item.year) + "-" + str(item.short_title) + ".md"
@@ -115,7 +134,7 @@ for row, item in publications.iterrows():
     
     md_filename = os.path.basename(md_filename)
        
-    with open("../_patents/" + md_filename, 'w') as f:
+    with open("../_patents/" + md_filename, 'w', encoding='utf-8') as f:
         f.write(md)
 
 

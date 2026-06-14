@@ -13,14 +13,16 @@ author_profile: true
 
 <h2 class="page__title">Talks</h2>
 <ol>
-    {% for post in site.talks reversed %}
+    {% assign sorted_talks = site.talks | sort: "date" | reverse %}
+    {% for post in sorted_talks %}
     <li>{% include archive-single-talk.html %}</li>
     {% endfor %}
 </ol>
 
 <h2 class="page__title">Posters</h2>
 <ol>
-    {% for post in site.posters reversed %}
+    {% assign sorted_posters = site.posters | sort: "date" | reverse %}
+    {% for post in sorted_posters %}
     <li>{% include archive-single-talk.html %}</li>
     {% endfor %}
 </ol>

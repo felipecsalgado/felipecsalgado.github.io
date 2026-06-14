@@ -11,6 +11,7 @@
 
 import pandas as pd
 import os
+import glob
 
 
 # ## Data format
@@ -46,7 +47,14 @@ talks
 html_escape_table = {
     "&": "&amp;",
     '"': "&quot;",
-    "'": "&apos;"
+    "'": "&apos;",
+    "-": "&#150;",
+    "ü": "&#252;", "Ü": "&#220;",
+    "ö": "&#246;", "Ö": "&#214;",
+    "ä": "&#228;", "Ä": "&#196;",
+    "ß": "&#223;",
+    "á": "&#225;", "é": "&#233;", "í": "&#237;", "ó": "&#243;", "ú": "&#250;",
+    "à": "&#224;", "è": "&#232;", "ì": "&#236;", "ò": "&#242;", "ù": "&#249;"
     }
 
 def html_escape(text):
@@ -62,13 +70,19 @@ def html_escape(text):
 
 # In[5]:
 
-loc_dict = {}
+# Remove the files from the talks folders for later create new ones
+files = glob.glob('../_talks//*')
+for f in files:
+    os.remove(f)
+
+talks['date'] = pd.to_datetime(talks['date'], dayfirst=False, format='%d.%m.%y')
+talks = talks.sort_values(by='date', ascending=False)
 
 for row, item in talks.iterrows():
     
-    md_filename = str(item.date) + "-" + item.url_slug + ".md"
-    html_filename = str(item.date) + "-" + item.url_slug 
-    year = item.date[:4]
+    md_filename = str(item.date.strftime('%Y-%m-%d')) + "-" + item.url_slug + ".md"
+    html_filename = str(item.date.strftime('%Y-%m-%d')) + "-" + item.url_slug 
+    year = str(item.date.year)
     
     md = "---\ntitle: \""   + item.title + '"\n'
     md += "collection: talks" + "\n"
