@@ -1048,5 +1048,1060 @@
     "mtime": 1781467346.0874445,
     "ast_hash": "2f687ab350f7f92560fc557fbd2cead7",
     "semantic_hash": ""
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/.vs/ProjectSettings.json": {
+    "mtime": 1704022789.21,
+    "ast_hash": "dfea8ab09c8108ab159b6d8f203ead68",
+    "semantic_hash": "dfea8ab09c8108ab159b6d8f203ead68"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/.vs/VSWorkspaceState.json": {
+    "mtime": 1707249620.97,
+    "ast_hash": "70dff6b6bc44c37c01943a5ed9483c79",
+    "semantic_hash": "70dff6b6bc44c37c01943a5ed9483c79"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/assets/js/_main.js": {
+    "mtime": 1704022789.25,
+    "ast_hash": "64d07b47523b91f92434684b5fe10bf8",
+    "semantic_hash": "64d07b47523b91f92434684b5fe10bf8"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/assets/js/collapse.js": {
+    "mtime": 1704022789.25,
+    "ast_hash": "a7619de8449a047415cee4680b6a8b42",
+    "semantic_hash": "a7619de8449a047415cee4680b6a8b42"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/assets/js/main.min.js": {
+    "mtime": 1704022789.25,
+    "ast_hash": "0a0b691dedf2f554eccd8ed1bae923b6",
+    "semantic_hash": "0a0b691dedf2f554eccd8ed1bae923b6"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/assets/js/plugins/jquery.fitvids.js": {
+    "mtime": 1704022789.25,
+    "ast_hash": "eebb3a0cfe2cf49b72e25d61cf4c533f",
+    "semantic_hash": "eebb3a0cfe2cf49b72e25d61cf4c533f"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/assets/js/plugins/jquery.greedy-navigation.js": {
+    "mtime": 1704022789.25,
+    "ast_hash": "03f64d14b17f20508c2052c6598ce26a",
+    "semantic_hash": "03f64d14b17f20508c2052c6598ce26a"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/assets/js/plugins/jquery.magnific-popup.js": {
+    "mtime": 1704022789.25,
+    "ast_hash": "6a16283a2183c35e9499e678c51fac18",
+    "semantic_hash": "6a16283a2183c35e9499e678c51fac18"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/assets/js/plugins/jquery.smooth-scroll.min.js": {
+    "mtime": 1704022789.25,
+    "ast_hash": "ee5bd2a00f7ab2db9a6be01703c6b2b0",
+    "semantic_hash": "ee5bd2a00f7ab2db9a6be01703c6b2b0"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/assets/js/plugins/stickyfill.min.js": {
+    "mtime": 1704022789.25,
+    "ast_hash": "495b48640c992d913967c1f231f85bed",
+    "semantic_hash": "495b48640c992d913967c1f231f85bed"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/assets/js/vendor/jquery/jquery-1.12.4.min.js": {
+    "mtime": 1704022789.25,
+    "ast_hash": "0fca26b5a37a66d68d0f4406976be4b5",
+    "semantic_hash": "0fca26b5a37a66d68d0f4406976be4b5"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/attenuation/generate_xcom.py": {
+    "mtime": 1779017181.04,
+    "ast_hash": "44703be9092d3d877e583caf609699bc",
+    "semantic_hash": "44703be9092d3d877e583caf609699bc"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/attenuation/test.py": {
+    "mtime": 1779015801.5800002,
+    "ast_hash": "b5013e6ce1f768facafac3bd674a7933",
+    "semantic_hash": "b5013e6ce1f768facafac3bd674a7933"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/manifest.json": {
+    "mtime": 1704022789.27,
+    "ast_hash": "51296a6384461762325733ef3ca52779",
+    "semantic_hash": "51296a6384461762325733ef3ca52779"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/markdown_generator/patents.py": {
+    "mtime": 1781464151.5800002,
+    "ast_hash": "e958c25240eda8e0dbc10c51e07c15ea",
+    "semantic_hash": "e958c25240eda8e0dbc10c51e07c15ea"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/markdown_generator/posters.py": {
+    "mtime": 1781465025.9199998,
+    "ast_hash": "f3b1a0f6b4c23f1558ce3a94caa19cd3",
+    "semantic_hash": "f3b1a0f6b4c23f1558ce3a94caa19cd3"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/markdown_generator/publications.py": {
+    "mtime": 1781465052.56,
+    "ast_hash": "e5ff5977fca6d9441a2f3f192e9c2ca8",
+    "semantic_hash": "e5ff5977fca6d9441a2f3f192e9c2ca8"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/markdown_generator/talkmap.py": {
+    "mtime": 1704022789.27,
+    "ast_hash": "50793afdf72ff44cdb45050dfe760cb3",
+    "semantic_hash": "50793afdf72ff44cdb45050dfe760cb3"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/markdown_generator/talks.py": {
+    "mtime": 1781465034.52,
+    "ast_hash": "4e3b67f5773157efc8365239d04f4564",
+    "semantic_hash": "4e3b67f5773157efc8365239d04f4564"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/package.json": {
+    "mtime": 1704022789.27,
+    "ast_hash": "53a5e9204cf8822ff7a7988e54e567af",
+    "semantic_hash": "53a5e9204cf8822ff7a7988e54e567af"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/talkmap/leaflet_dist/leaflet.markercluster-src.js": {
+    "mtime": 1704022789.27,
+    "ast_hash": "bb97d38b8654317fd47f6043c4fe97ad",
+    "semantic_hash": "bb97d38b8654317fd47f6043c4fe97ad"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/talkmap/leaflet_dist/leaflet.markercluster.js": {
+    "mtime": 1704022789.27,
+    "ast_hash": "5dee40487aa79fab32f1bf333c81d18b",
+    "semantic_hash": "5dee40487aa79fab32f1bf333c81d18b"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/talkmap/org-locations.js": {
+    "mtime": 1704022789.27,
+    "ast_hash": "9460f1e887b23999c1718bf3d30de658",
+    "semantic_hash": "9460f1e887b23999c1718bf3d30de658"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/.agents/rules/graphify.md": {
+    "mtime": 1781437233.09,
+    "ast_hash": "f1e53ecc9194573d3c28fc116c743a2e",
+    "semantic_hash": "f1e53ecc9194573d3c28fc116c743a2e"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/.agents/rules/instructions.md": {
+    "mtime": 1781630034.5960166,
+    "ast_hash": "b7f7443cc41134936070bc78737c686d",
+    "semantic_hash": "b7f7443cc41134936070bc78737c686d"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/.agents/skills/graphify/SKILL.md": {
+    "mtime": 1781437873.72,
+    "ast_hash": "97c2755905a5a0e53b96b31c725a7010",
+    "semantic_hash": "97c2755905a5a0e53b96b31c725a7010"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/.agents/skills/graphify/references/add-watch.md": {
+    "mtime": 1781436344.71,
+    "ast_hash": "0df0589623217ca38a12bdcabfb42f4c",
+    "semantic_hash": "0df0589623217ca38a12bdcabfb42f4c"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/.agents/skills/graphify/references/exports.md": {
+    "mtime": 1781436344.71,
+    "ast_hash": "c04ddf8f1f5ef5e262ebec491a523c74",
+    "semantic_hash": "c04ddf8f1f5ef5e262ebec491a523c74"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/.agents/skills/graphify/references/extraction-spec.md": {
+    "mtime": 1781436344.71,
+    "ast_hash": "24808b03abfeaf5f6435bb69c0125b2c",
+    "semantic_hash": "24808b03abfeaf5f6435bb69c0125b2c"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/.agents/skills/graphify/references/github-and-merge.md": {
+    "mtime": 1781436344.71,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": "cde13df085e4c492aeb7ba298a996d0d"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/.agents/skills/graphify/references/hooks.md": {
+    "mtime": 1781436344.71,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": "3f545db6ce646650bb9de588f5512a27"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/.agents/skills/graphify/references/query.md": {
+    "mtime": 1781436344.71,
+    "ast_hash": "8b40ed8c9e9060fc215219a8fc964091",
+    "semantic_hash": "8b40ed8c9e9060fc215219a8fc964091"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/.agents/skills/graphify/references/transcribe.md": {
+    "mtime": 1781436344.71,
+    "ast_hash": "70f6aa30d6211f3a2c7e9fc45479f50c",
+    "semantic_hash": "70f6aa30d6211f3a2c7e9fc45479f50c"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/.agents/skills/graphify/references/update.md": {
+    "mtime": 1781436344.71,
+    "ast_hash": "0dad167a95bdb389f02fecffb60b1bc8",
+    "semantic_hash": "0dad167a95bdb389f02fecffb60b1bc8"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/.agents/workflows/graphify.md": {
+    "mtime": 1781437233.09,
+    "ast_hash": "0bc020d491fca99550c1ea3de0a5f862",
+    "semantic_hash": "0bc020d491fca99550c1ea3de0a5f862"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/CHANGELOG.md": {
+    "mtime": 1704022789.22,
+    "ast_hash": "21ba21e3c869bc3831c2c5cb8c9faed1",
+    "semantic_hash": "21ba21e3c869bc3831c2c5cb8c9faed1"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/CONTRIBUTING.md": {
+    "mtime": 1704022789.22,
+    "ast_hash": "63c93fb1216bdecf1f5a9457d3b0766c",
+    "semantic_hash": "63c93fb1216bdecf1f5a9457d3b0766c"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/README.md": {
+    "mtime": 1719657189.03,
+    "ast_hash": "0ad187dce32b1d482012afab7ee782c9",
+    "semantic_hash": "0ad187dce32b1d482012afab7ee782c9"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_config.dev.yml": {
+    "mtime": 1704022789.22,
+    "ast_hash": "a45d4c79656cf969aa93a38bd8c2a600",
+    "semantic_hash": "a45d4c79656cf969aa93a38bd8c2a600"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_config.yml": {
+    "mtime": 1781467350.69,
+    "ast_hash": "2c6091d972c9f78e95e042a0a9dfa0de",
+    "semantic_hash": "2c6091d972c9f78e95e042a0a9dfa0de"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_cv/cv-summary.md": {
+    "mtime": 1781462061.07,
+    "ast_hash": "c4cd16193c02d9c9a0f7300c9e4c3904",
+    "semantic_hash": "c4cd16193c02d9c9a0f7300c9e4c3904"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_data/authors.yml": {
+    "mtime": 1704022789.22,
+    "ast_hash": "a8702f259b34f062e97abaf979fdf0b7",
+    "semantic_hash": "a8702f259b34f062e97abaf979fdf0b7"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_data/comments/layout-comments/comment-1470944006665.yml": {
+    "mtime": 1704022789.22,
+    "ast_hash": "98ea11adce55f8898c033474c106bcf3",
+    "semantic_hash": "98ea11adce55f8898c033474c106bcf3"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_data/comments/layout-comments/comment-1470944162041.yml": {
+    "mtime": 1704022789.22,
+    "ast_hash": "75ff1483f606e55bb65f70c14de681c1",
+    "semantic_hash": "75ff1483f606e55bb65f70c14de681c1"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_data/comments/markup-syntax-highlighting/comment-1470969665387.yml": {
+    "mtime": 1704022789.22,
+    "ast_hash": "6bab23a1bbf49c0a1e307b07f6239645",
+    "semantic_hash": "6bab23a1bbf49c0a1e307b07f6239645"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_data/comments/welcome-to-jekyll/comment-1470942205700.yml": {
+    "mtime": 1704022789.22,
+    "ast_hash": "b73de11d0149694367c93653e2660db7",
+    "semantic_hash": "b73de11d0149694367c93653e2660db7"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_data/comments/welcome-to-jekyll/comment-1470942247755.yml": {
+    "mtime": 1704022789.22,
+    "ast_hash": "d0e378838781f1cc4798f02949cb1fd8",
+    "semantic_hash": "d0e378838781f1cc4798f02949cb1fd8"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_data/comments/welcome-to-jekyll/comment-1470942265819.yml": {
+    "mtime": 1704022789.22,
+    "ast_hash": "e179b93f8836272b200ba6da1ea56095",
+    "semantic_hash": "e179b93f8836272b200ba6da1ea56095"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_data/comments/welcome-to-jekyll/comment-1470942493518.yml": {
+    "mtime": 1704022789.22,
+    "ast_hash": "5de45e38eabc9dcebc0c6a0d427b3ff1",
+    "semantic_hash": "5de45e38eabc9dcebc0c6a0d427b3ff1"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_data/navigation.yml": {
+    "mtime": 1775398038.02,
+    "ast_hash": "ec45d91be74e65890ae8adb80406bf48",
+    "semantic_hash": "ec45d91be74e65890ae8adb80406bf48"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_data/ui-text.yml": {
+    "mtime": 1704022789.22,
+    "ast_hash": "f6028c688585e6a2df772584079332fa",
+    "semantic_hash": "f6028c688585e6a2df772584079332fa"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_drafts/post-draft.md": {
+    "mtime": 1704022789.22,
+    "ast_hash": "37ffe97b84c1dde799fd6f0a7157c141",
+    "semantic_hash": "37ffe97b84c1dde799fd6f0a7157c141"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/analytics-providers/custom.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "d2bf2b19136b9fde0419937b58f86b1c",
+    "semantic_hash": "d2bf2b19136b9fde0419937b58f86b1c"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/analytics-providers/google-universal.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "3ca6fc0a6cb80bd6d3dc4d0cca7ad34e",
+    "semantic_hash": "3ca6fc0a6cb80bd6d3dc4d0cca7ad34e"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/analytics-providers/google.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "71b0e7e8600023db9dc2495650b868d1",
+    "semantic_hash": "71b0e7e8600023db9dc2495650b868d1"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/analytics.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "7e9edbc70e47c09ec847b601fdb0d439",
+    "semantic_hash": "7e9edbc70e47c09ec847b601fdb0d439"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/archive-single-cv.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "3d8e6b1bd90eddfbf4edc012ee473b78",
+    "semantic_hash": "3d8e6b1bd90eddfbf4edc012ee473b78"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/archive-single-patent.html": {
+    "mtime": 1707042652.41,
+    "ast_hash": "30b96544d0c0afd340faf40c1c4206d0",
+    "semantic_hash": "30b96544d0c0afd340faf40c1c4206d0"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/archive-single-programming.html": {
+    "mtime": 1781465930.5800002,
+    "ast_hash": "434c2c982cdf8819ad63df7458866990",
+    "semantic_hash": "434c2c982cdf8819ad63df7458866990"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/archive-single-publication.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "f89ec4f5946dcc1f4e2f3561a4203cc1",
+    "semantic_hash": "f89ec4f5946dcc1f4e2f3561a4203cc1"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/archive-single-research.html": {
+    "mtime": 1781465937.56,
+    "ast_hash": "30789672b9e0d0704ed4f5184aa3ea1d",
+    "semantic_hash": "30789672b9e0d0704ed4f5184aa3ea1d"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/archive-single-talk-cv.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "ed0020934beb516864d26a5c55211a06",
+    "semantic_hash": "ed0020934beb516864d26a5c55211a06"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/archive-single-talk.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "865e2b4c631ecee01d8f6335eba8f4d6",
+    "semantic_hash": "865e2b4c631ecee01d8f6335eba8f4d6"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/archive-single.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "15f27e548311247860484b913ee84ae4",
+    "semantic_hash": "15f27e548311247860484b913ee84ae4"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/author-profile.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "4a842a7b4a318a42e21063181d8eee9e",
+    "semantic_hash": "4a842a7b4a318a42e21063181d8eee9e"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/breadcrumbs.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "0c62c29d435fd036c3058a681979e9e6",
+    "semantic_hash": "0c62c29d435fd036c3058a681979e9e6"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/browser-upgrade.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "1de0204a94b0841125be3873c7363c7c",
+    "semantic_hash": "1de0204a94b0841125be3873c7363c7c"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/category-list.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "2df386cc3bec09108d0aed69d723a878",
+    "semantic_hash": "2df386cc3bec09108d0aed69d723a878"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/comment.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "2dddca8a05194d4e27c231e6b8ef2dba",
+    "semantic_hash": "2dddca8a05194d4e27c231e6b8ef2dba"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/comments-providers/custom.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "ef547e7a1c75fcc820011505826341a0",
+    "semantic_hash": "ef547e7a1c75fcc820011505826341a0"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/comments-providers/discourse.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "ad1f0a8efb4a910bc8b03c5ecd7e50db",
+    "semantic_hash": "ad1f0a8efb4a910bc8b03c5ecd7e50db"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/comments-providers/disqus.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "072656a498c8f591a018f08e862544a6",
+    "semantic_hash": "072656a498c8f591a018f08e862544a6"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/comments-providers/facebook.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "7da135eb85c41072374e120b8bcc7b40",
+    "semantic_hash": "7da135eb85c41072374e120b8bcc7b40"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/comments-providers/google-plus.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "7723b28aad538bedfd97844ffe8de9ba",
+    "semantic_hash": "7723b28aad538bedfd97844ffe8de9ba"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/comments-providers/scripts.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "e56182219356999012db458bbcf1d4a1",
+    "semantic_hash": "e56182219356999012db458bbcf1d4a1"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/comments-providers/staticman.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "064678d0772a2cfd2a32ad031b255cfb",
+    "semantic_hash": "064678d0772a2cfd2a32ad031b255cfb"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/comments.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "86f90b58e47bd440027e1ffa4a92ab53",
+    "semantic_hash": "86f90b58e47bd440027e1ffa4a92ab53"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/footer.html": {
+    "mtime": 1781466205.8500001,
+    "ast_hash": "8501547051e5c053d96193021e34c45a",
+    "semantic_hash": "8501547051e5c053d96193021e34c45a"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/footer/custom.html": {
+    "mtime": 1781466200.5,
+    "ast_hash": "395266b756da4fc121166b7de55af5db",
+    "semantic_hash": "395266b756da4fc121166b7de55af5db"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/head.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "ec5d772fd82cb22b81cbb2f976bcb83f",
+    "semantic_hash": "ec5d772fd82cb22b81cbb2f976bcb83f"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/head/custom.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "d65b5e9383c40eaec0bd0ba25c8c252c",
+    "semantic_hash": "d65b5e9383c40eaec0bd0ba25c8c252c"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/masthead.html": {
+    "mtime": 1781464021.61,
+    "ast_hash": "9bece559a6a6996502123437970aa465",
+    "semantic_hash": "9bece559a6a6996502123437970aa465"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/page__hero.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "ba47fab3ee6084b6a3bc7cf4964ef595",
+    "semantic_hash": "ba47fab3ee6084b6a3bc7cf4964ef595"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/page__taxonomy.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "f19c67ef08f62c32865b9dddf7ee8ceb",
+    "semantic_hash": "f19c67ef08f62c32865b9dddf7ee8ceb"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/paginator.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "1ff98862a1e004c85033889430a58afe",
+    "semantic_hash": "1ff98862a1e004c85033889430a58afe"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/post_pagination.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "930ed305182f9d26476a0856f7af9ff3",
+    "semantic_hash": "930ed305182f9d26476a0856f7af9ff3"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/read-time.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "57b9249442acedfc7181e0892a021204",
+    "semantic_hash": "57b9249442acedfc7181e0892a021204"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/scripts.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "a3dee92da6ead8b6deedc859a1c3fa72",
+    "semantic_hash": "a3dee92da6ead8b6deedc859a1c3fa72"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/seo.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "e44f2e441fd1117f86d8e9f2d6d9ca9c",
+    "semantic_hash": "e44f2e441fd1117f86d8e9f2d6d9ca9c"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/sidebar.html": {
+    "mtime": 1704561444.5,
+    "ast_hash": "c9ad3c646966060af8b525e5e82b40f0",
+    "semantic_hash": "c9ad3c646966060af8b525e5e82b40f0"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/social-share.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "66ddaf89fd45cf5063990d5e64d9d19d",
+    "semantic_hash": "66ddaf89fd45cf5063990d5e64d9d19d"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_includes/tag-list.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "3eae2296148af4d6985c25a1adb33264",
+    "semantic_hash": "3eae2296148af4d6985c25a1adb33264"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_layouts/archive-no-title.html": {
+    "mtime": 1708863428.55,
+    "ast_hash": "06577b6a183c5cea18530788d76b3dc7",
+    "semantic_hash": "06577b6a183c5cea18530788d76b3dc7"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_layouts/archive-taxonomy.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "789e2d6b7651fd8885f7b122ec78615b",
+    "semantic_hash": "789e2d6b7651fd8885f7b122ec78615b"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_layouts/archive.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "0273b904eac8da8b63d33c2f2166bcae",
+    "semantic_hash": "0273b904eac8da8b63d33c2f2166bcae"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_layouts/compress.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "91a7c1a294ce551aecb6e762ae90ba80",
+    "semantic_hash": "91a7c1a294ce551aecb6e762ae90ba80"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_layouts/default.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "e4c4f8e0618acd6ab0bf28f3b7208616",
+    "semantic_hash": "e4c4f8e0618acd6ab0bf28f3b7208616"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_layouts/single.html": {
+    "mtime": 1708862953.8,
+    "ast_hash": "a22aa9843219cdcc83f5e3b0b7f0ebac",
+    "semantic_hash": "a22aa9843219cdcc83f5e3b0b7f0ebac"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_layouts/splash.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "ab9e8ab37c4fbba1fe892ad64d36094f",
+    "semantic_hash": "ab9e8ab37c4fbba1fe892ad64d36094f"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_layouts/talk.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "c9324468f55f9eba080da97470a98b16",
+    "semantic_hash": "c9324468f55f9eba080da97470a98b16"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_layouts/talks.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "7e3ef4378fcbe29f63541bee0d9c63eb",
+    "semantic_hash": "7e3ef4378fcbe29f63541bee0d9c63eb"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/404.md": {
+    "mtime": 1719657192.39,
+    "ast_hash": "7cdfc43dbb97533a74110d6504f5fa75",
+    "semantic_hash": "7cdfc43dbb97533a74110d6504f5fa75"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/about.md": {
+    "mtime": 1781467161.94,
+    "ast_hash": "c770472da122bb3eb70679467a44ed80",
+    "semantic_hash": "c770472da122bb3eb70679467a44ed80"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/archive-layout-with-content.md": {
+    "mtime": 1704022789.22,
+    "ast_hash": "cafaa9d6214903cd3ff7c2c01e72c3a4",
+    "semantic_hash": "cafaa9d6214903cd3ff7c2c01e72c3a4"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/attenuation-calculator.md": {
+    "mtime": 1781464009.36,
+    "ast_hash": "c2fb7c00cfcbf412142997fcbc0e27c7",
+    "semantic_hash": "c2fb7c00cfcbf412142997fcbc0e27c7"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/attenuation-explanation.md": {
+    "mtime": 1781464016.11,
+    "ast_hash": "d12ed44ec818c1b02f1f7de43ccc872b",
+    "semantic_hash": "d12ed44ec818c1b02f1f7de43ccc872b"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/category-archive.html": {
+    "mtime": 1704022789.22,
+    "ast_hash": "80ac201e526b9d11f6f53570c30a368c",
+    "semantic_hash": "80ac201e526b9d11f6f53570c30a368c"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/collection-archive.html": {
+    "mtime": 1704022789.23,
+    "ast_hash": "045e0ebdb2d489be6966448a72babfa5",
+    "semantic_hash": "045e0ebdb2d489be6966448a72babfa5"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/cv.md": {
+    "mtime": 1707042652.41,
+    "ast_hash": "32b7bb77f054e5c9f4e777eda4c26088",
+    "semantic_hash": "32b7bb77f054e5c9f4e777eda4c26088"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/markdown.md": {
+    "mtime": 1704022789.23,
+    "ast_hash": "3133a84603de56a6bf6e51ecd86c4749",
+    "semantic_hash": "3133a84603de56a6bf6e51ecd86c4749"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/non-menu-page.md": {
+    "mtime": 1707593901.3300002,
+    "ast_hash": "a4f52634620cea5db82e6d2829a08976",
+    "semantic_hash": "a4f52634620cea5db82e6d2829a08976"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/page-archive.html": {
+    "mtime": 1704022789.23,
+    "ast_hash": "d898003fb9a16c05e6cbc188bc44859d",
+    "semantic_hash": "d898003fb9a16c05e6cbc188bc44859d"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/programming.md": {
+    "mtime": 1704022789.23,
+    "ast_hash": "adc575dee8df8669601855ed8c094f43",
+    "semantic_hash": "adc575dee8df8669601855ed8c094f43"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/publications.md": {
+    "mtime": 1779036989.95,
+    "ast_hash": "0221a8e23e3aa530d0085d19f1bca520",
+    "semantic_hash": "0221a8e23e3aa530d0085d19f1bca520"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/research.md": {
+    "mtime": 1708863337.1200001,
+    "ast_hash": "1e0bd0e01399465541ce1277eccc455f",
+    "semantic_hash": "1e0bd0e01399465541ce1277eccc455f"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/sitemap.md": {
+    "mtime": 1781466214.24,
+    "ast_hash": "0929f452ccf288408f1379c4b62239ff",
+    "semantic_hash": "0929f452ccf288408f1379c4b62239ff"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/tag-archive.html": {
+    "mtime": 1704022789.23,
+    "ast_hash": "fdbd5a167ba7aa85cc948d83e12be7a9",
+    "semantic_hash": "fdbd5a167ba7aa85cc948d83e12be7a9"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/talkmap.html": {
+    "mtime": 1704022789.23,
+    "ast_hash": "285b377f9d08d8ac2f924c0492a6a2c0",
+    "semantic_hash": "285b377f9d08d8ac2f924c0492a6a2c0"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/talks.html": {
+    "mtime": 1779037694.04,
+    "ast_hash": "5448203b71dc0e1e5a0e6a99443902fc",
+    "semantic_hash": "5448203b71dc0e1e5a0e6a99443902fc"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/terms.md": {
+    "mtime": 1704022789.23,
+    "ast_hash": "d61867a1028b152097989e547e256fda",
+    "semantic_hash": "d61867a1028b152097989e547e256fda"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_pages/year-archive.html": {
+    "mtime": 1704022789.23,
+    "ast_hash": "b03fd6c5bbf075e011dd217308eb879e",
+    "semantic_hash": "b03fd6c5bbf075e011dd217308eb879e"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_patents/2015.0-otdr.md": {
+    "mtime": 1781465044.47,
+    "ast_hash": "9e27150a85be61513db891373dac887d",
+    "semantic_hash": "9e27150a85be61513db891373dac887d"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_patents/2016.0-methane.md": {
+    "mtime": 1781465044.47,
+    "ast_hash": "de1314ea6b8f4c793a56b9a7317706b1",
+    "semantic_hash": "de1314ea6b8f4c793a56b9a7317706b1"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_posters/2018-09-18-poster-4.md": {
+    "mtime": 1781465057.68,
+    "ast_hash": "d7ed2ccca28a4dd3bea24a41c7da2115",
+    "semantic_hash": "d7ed2ccca28a4dd3bea24a41c7da2115"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_posters/2019-03-05-poster-3.md": {
+    "mtime": 1781465057.68,
+    "ast_hash": "8da1d82c10e4198d671b20f62af3d5aa",
+    "semantic_hash": "8da1d82c10e4198d671b20f62af3d5aa"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_posters/2019-09-03-poster-2.md": {
+    "mtime": 1781465057.68,
+    "ast_hash": "ba7e192d2d7f49336c826a1bfccd0c0f",
+    "semantic_hash": "ba7e192d2d7f49336c826a1bfccd0c0f"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_posters/2021-06-24-poster-5.md": {
+    "mtime": 1781465057.68,
+    "ast_hash": "fa22b9aa6e69322b3f2acd5faac5b2b6",
+    "semantic_hash": "fa22b9aa6e69322b3f2acd5faac5b2b6"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_posters/2022-09-21-poster-1.md": {
+    "mtime": 1781465057.68,
+    "ast_hash": "0566c1b722846e0f66f888af20173efc",
+    "semantic_hash": "0566c1b722846e0f66f888af20173efc"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_posts/2012-08-14-blog-post-1.md": {
+    "mtime": 1704022789.23,
+    "ast_hash": "34d2c0d07ba55f4aca7e462c109fb5e5",
+    "semantic_hash": "34d2c0d07ba55f4aca7e462c109fb5e5"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_posts/2013-08-14-blog-post-2.md": {
+    "mtime": 1704022789.23,
+    "ast_hash": "0fd03842f07c3406e473cb8f17c50d2a",
+    "semantic_hash": "0fd03842f07c3406e473cb8f17c50d2a"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_posts/2014-08-14-blog-post-3.md": {
+    "mtime": 1704022789.23,
+    "ast_hash": "e29a2b70efb5e7d04f50e74ce5805969",
+    "semantic_hash": "e29a2b70efb5e7d04f50e74ce5805969"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_posts/2015-08-14-blog-post-4.md": {
+    "mtime": 1704022789.23,
+    "ast_hash": "21e651a1335d6065501ff4514110dd2b",
+    "semantic_hash": "21e651a1335d6065501ff4514110dd2b"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_posts/2199-01-01-future-post.md": {
+    "mtime": 1704022789.23,
+    "ast_hash": "98ddbe848232903028490f1a95ba778a",
+    "semantic_hash": "98ddbe848232903028490f1a95ba778a"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_programming/1-G4-Emittance.md": {
+    "mtime": 1704022789.23,
+    "ast_hash": "83e08059fa246d14bcc290b08d07369f",
+    "semantic_hash": "83e08059fa246d14bcc290b08d07369f"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_programming/2-G4-CsIStack.md": {
+    "mtime": 1704022789.23,
+    "ast_hash": "49736e1b2c5b697d5e287bc797b4694d",
+    "semantic_hash": "49736e1b2c5b697d5e287bc797b4694d"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_programming/3-jetito.md": {
+    "mtime": 1704022789.23,
+    "ast_hash": "ecedb01d5c3c051a3be40fb1b0f5f377",
+    "semantic_hash": "ecedb01d5c3c051a3be40fb1b0f5f377"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_programming/4-DG-delay-box.md": {
+    "mtime": 1781466429.36,
+    "ast_hash": "f9091ee8080f43c23b3e3b27e5f0b111",
+    "semantic_hash": "f9091ee8080f43c23b3e3b27e5f0b111"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_publications/0-2026-paper-pepper-pot.md": {
+    "mtime": 1781465060.61,
+    "ast_hash": "e1d1bf4bd93fd9670d4ef6b60e1ff7d1",
+    "semantic_hash": "e1d1bf4bd93fd9670d4ef6b60e1ff7d1"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_publications/10-2021-paper-luxe-cdr.md": {
+    "mtime": 1781465060.61,
+    "ast_hash": "56aef9be6db3d1f1c8d29506a281ed8a",
+    "semantic_hash": "56aef9be6db3d1f1c8d29506a281ed8a"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_publications/2-2024-paper-nbw-laser-focus.md": {
+    "mtime": 1781465060.61,
+    "ast_hash": "1a2c2281eff8ad5c9f4e3eb953e0b0df",
+    "semantic_hash": "1a2c2281eff8ad5c9f4e3eb953e0b0df"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_publications/3-2024-paper-luxe-tdr.md": {
+    "mtime": 1781465060.61,
+    "ast_hash": "ea42bdc514471ddb4bb622a3b7fd4096",
+    "semantic_hash": "ea42bdc514471ddb4bb622a3b7fd4096"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_publications/4-2024-paper-emittance-glaser-grating.md": {
+    "mtime": 1781465060.61,
+    "ast_hash": "d4447a3e8374b5c8ea5b039ae1fcc48d",
+    "semantic_hash": "d4447a3e8374b5c8ea5b039ae1fcc48d"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_publications/5-2023-paper-laser-hofi.md": {
+    "mtime": 1781465060.61,
+    "ast_hash": "2e5c56c61a303885d208fcef269baffd",
+    "semantic_hash": "2e5c56c61a303885d208fcef269baffd"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_publications/6-2023-thesis-fcsalgado.md": {
+    "mtime": 1781465060.61,
+    "ast_hash": "6a3be5eb3d30139fb73602e81c805183",
+    "semantic_hash": "6a3be5eb3d30139fb73602e81c805183"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_publications/7-2021-paper-single-particle-detector.md": {
+    "mtime": 1781465060.61,
+    "ast_hash": "dd39510e8bd940829e8f138323a0ba11",
+    "semantic_hash": "dd39510e8bd940829e8f138323a0ba11"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_publications/8-2021-paper-cala-design.md": {
+    "mtime": 1781465060.61,
+    "ast_hash": "8a170b417929483f377affd81bbbdf78",
+    "semantic_hash": "8a170b417929483f377affd81bbbdf78"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_publications/9-2021-paper-linear-bw.gemini.md": {
+    "mtime": 1781465060.61,
+    "ast_hash": "eda0547c30bc236f4e423cef9e19c287",
+    "semantic_hash": "eda0547c30bc236f4e423cef9e19c287"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_research/1-pairprod-Focus3.md": {
+    "mtime": 1704022789.23,
+    "ast_hash": "bb31eca402f8708284c0c8e966776c03",
+    "semantic_hash": "bb31eca402f8708284c0c8e966776c03"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_research/2-detector-Focus2.md": {
+    "mtime": 1704022789.23,
+    "ast_hash": "fc68955c2b46586d861609c8c4def53d",
+    "semantic_hash": "fc68955c2b46586d861609c8c4def53d"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_research/3-lwfa-Focus1.md": {
+    "mtime": 1704022789.23,
+    "ast_hash": "70311009d1e937a3043aa43a50e6c92b",
+    "semantic_hash": "70311009d1e937a3043aa43a50e6c92b"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_talks/2021-09-14-talk-5.md": {
+    "mtime": 1781465049.16,
+    "ast_hash": "ce1e35a99ca4740e089219550d652bb3",
+    "semantic_hash": "ce1e35a99ca4740e089219550d652bb3"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_talks/2022-09-26-talk-2.md": {
+    "mtime": 1781465049.16,
+    "ast_hash": "3aca3ef5d322d3449f54b41d3cc7b2d7",
+    "semantic_hash": "3aca3ef5d322d3449f54b41d3cc7b2d7"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_talks/2022-10-19-talk-1.md": {
+    "mtime": 1781465049.16,
+    "ast_hash": "a55cbbb630795adf6371243d1191e82d",
+    "semantic_hash": "a55cbbb630795adf6371243d1191e82d"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_talks/2023-02-22-talk-3.md": {
+    "mtime": 1781465049.16,
+    "ast_hash": "e86dc59d8207284ad73a0b4078cc23f5",
+    "semantic_hash": "e86dc59d8207284ad73a0b4078cc23f5"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_talks/2023-09-13-talk-4.md": {
+    "mtime": 1781465049.16,
+    "ast_hash": "1d8f53039f8eb48174fb7415e144a951",
+    "semantic_hash": "1d8f53039f8eb48174fb7415e144a951"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_talks/2024-05-21-talk-6.md": {
+    "mtime": 1781465049.16,
+    "ast_hash": "cd608f0778731d10f78ecb0aa9ad9914",
+    "semantic_hash": "cd608f0778731d10f78ecb0aa9ad9914"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/talkmap/map.html": {
+    "mtime": 1704022789.27,
+    "ast_hash": "5dc28e1a8b7096c2aaca3051edbc9018",
+    "semantic_hash": "5dc28e1a8b7096c2aaca3051edbc9018"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_publications/1-2025-paper-linear-bw2-gemini.md": {
+    "mtime": 1781465060.61,
+    "ast_hash": "811be8abc3e571db8a1356a0ad171c72",
+    "semantic_hash": "811be8abc3e571db8a1356a0ad171c72"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/_publications/11-2017-paper-raman-dts.md": {
+    "mtime": 1781465060.61,
+    "ast_hash": "c4a3cd9d9fbf52da2b76dbbdcee4bf1b",
+    "semantic_hash": "c4a3cd9d9fbf52da2b76dbbdcee4bf1b"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/files/patents/methane_patent_letter.pdf": {
+    "mtime": 1707042652.4199998,
+    "ast_hash": "7e53078500d7a2ff7815d1bbc3f39a9c",
+    "semantic_hash": "7e53078500d7a2ff7815d1bbc3f39a9c"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/files/patents/otdr_patent_letter.pdf": {
+    "mtime": 1707042652.43,
+    "ast_hash": "b30e974e09138fd92e5c00631a2f7b2d",
+    "semantic_hash": "b30e974e09138fd92e5c00631a2f7b2d"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/assets/fonts/academicons.svg": {
+    "mtime": 1704022789.24,
+    "ast_hash": "cfe4fb274f02c9b99412b2f02b9338bb",
+    "semantic_hash": "cfe4fb274f02c9b99412b2f02b9338bb"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/assets/fonts/fa-brands-400.svg": {
+    "mtime": 1704022789.25,
+    "ast_hash": "42f9fd6acee87559ac0d6a33488db65e",
+    "semantic_hash": "42f9fd6acee87559ac0d6a33488db65e"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/assets/fonts/fa-regular-400.svg": {
+    "mtime": 1704022789.25,
+    "ast_hash": "0c41971339b9fc5b1cefb0abad1e2e69",
+    "semantic_hash": "0c41971339b9fc5b1cefb0abad1e2e69"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/assets/fonts/fa-solid-900.svg": {
+    "mtime": 1704022789.25,
+    "ast_hash": "4478b4d7022cad174e4c04246fe622ef",
+    "semantic_hash": "4478b4d7022cad174e4c04246fe622ef"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/3953273590_704e3899d5_m.jpg": {
+    "mtime": 1704022789.25,
+    "ast_hash": "c776b7389f1b26432c7015540cd7dbc7",
+    "semantic_hash": "c776b7389f1b26432c7015540cd7dbc7"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/500x300.png": {
+    "mtime": 1704022789.25,
+    "ast_hash": "a3fefa2bcbc404c278eecae374c4a97f",
+    "semantic_hash": "a3fefa2bcbc404c278eecae374c4a97f"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/CALA_detector_setup.png": {
+    "mtime": 1704022789.25,
+    "ast_hash": "e6ceadafaeb643eeff1a9f00fb666e2d",
+    "semantic_hash": "e6ceadafaeb643eeff1a9f00fb666e2d"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/CALA_detector_setup_clip.png": {
+    "mtime": 1704022789.25,
+    "ast_hash": "58abaf6cc744ae7c6ce0a45c647b6f56",
+    "semantic_hash": "58abaf6cc744ae7c6ce0a45c647b6f56"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/CLF_logo.jpg": {
+    "mtime": 1704022789.25,
+    "ast_hash": "027cd668a95f0446b084998537089f28",
+    "semantic_hash": "027cd668a95f0446b084998537089f28"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/DG-app_screen.png": {
+    "mtime": 1704022789.26,
+    "ast_hash": "1a2d5277a329d1ef952d98d968190695",
+    "semantic_hash": "1a2d5277a329d1ef952d98d968190695"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/E230_detectorsetup_updated_colored_PCX.svg": {
+    "mtime": 1704022789.26,
+    "ast_hash": "bd6d78f992facbf3630e64a4cd309816",
+    "semantic_hash": "bd6d78f992facbf3630e64a4cd309816"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/E320_detector.png": {
+    "mtime": 1704022789.26,
+    "ast_hash": "5b53905a087904f5f1d97edbb5500b0a",
+    "semantic_hash": "5b53905a087904f5f1d97edbb5500b0a"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/HIJ_de_logo.png": {
+    "mtime": 1704022789.26,
+    "ast_hash": "a4870822aa52d9d950522f29c5fbe9ee",
+    "semantic_hash": "a4870822aa52d9d950522f29c5fbe9ee"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/HIJ_de_logo.svg": {
+    "mtime": 1704022789.26,
+    "ast_hash": "f10d8788f6fb1b11e35c42021c117dd9",
+    "semantic_hash": "f10d8788f6fb1b11e35c42021c117dd9"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/LWFA_sims.png": {
+    "mtime": 1704022789.26,
+    "ast_hash": "5ccbe79f61bf646a225cd113cad3a362",
+    "semantic_hash": "5ccbe79f61bf646a225cd113cad3a362"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/PP_shot_cropped.png": {
+    "mtime": 1704022789.26,
+    "ast_hash": "09c1d8664c78355aa1b34f2715422a38",
+    "semantic_hash": "09c1d8664c78355aa1b34f2715422a38"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/Research_interests.svg": {
+    "mtime": 1704022789.26,
+    "ast_hash": "4f243dc5b6791dcf40d1ce04950e9aa0",
+    "semantic_hash": "4f243dc5b6791dcf40d1ce04950e9aa0"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/android-chrome-192x192.png": {
+    "mtime": 1781467888.43,
+    "ast_hash": "f6dc36a6056c367a8344a45ddb496d42",
+    "semantic_hash": "f6dc36a6056c367a8344a45ddb496d42"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/apple-touch-icon-114x114.png": {
+    "mtime": 1781467888.39,
+    "ast_hash": "e777618bd53a9a38714dd91e9282d6ed",
+    "semantic_hash": "e777618bd53a9a38714dd91e9282d6ed"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/apple-touch-icon-120x120.png": {
+    "mtime": 1781467888.3999999,
+    "ast_hash": "4d25c256741b124045489b24b145f528",
+    "semantic_hash": "4d25c256741b124045489b24b145f528"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/apple-touch-icon-144x144.png": {
+    "mtime": 1781467888.3999999,
+    "ast_hash": "2f687ab350f7f92560fc557fbd2cead7",
+    "semantic_hash": "2f687ab350f7f92560fc557fbd2cead7"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/apple-touch-icon-152x152.png": {
+    "mtime": 1781467888.41,
+    "ast_hash": "e3af93cf528e05ea3d877fdcd39569ff",
+    "semantic_hash": "e3af93cf528e05ea3d877fdcd39569ff"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/apple-touch-icon-180x180.png": {
+    "mtime": 1781467888.41,
+    "ast_hash": "e51798846b12fb8d1dea190ed9d1ab4d",
+    "semantic_hash": "e51798846b12fb8d1dea190ed9d1ab4d"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/apple-touch-icon-57x57.png": {
+    "mtime": 1781467888.3700001,
+    "ast_hash": "91449eb59cb0407df20df32514cdbd41",
+    "semantic_hash": "91449eb59cb0407df20df32514cdbd41"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/apple-touch-icon-60x60.png": {
+    "mtime": 1781467888.3799999,
+    "ast_hash": "1dc8c75a949aade103a08faaec29a16e",
+    "semantic_hash": "1dc8c75a949aade103a08faaec29a16e"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/apple-touch-icon-72x72.png": {
+    "mtime": 1781467888.3799999,
+    "ast_hash": "812148a206fe05b0e329323ad6e072d7",
+    "semantic_hash": "812148a206fe05b0e329323ad6e072d7"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/apple-touch-icon-76x76.png": {
+    "mtime": 1781467888.39,
+    "ast_hash": "1b49e1e6745911e1d3323adf5d6243a5",
+    "semantic_hash": "1b49e1e6745911e1d3323adf5d6243a5"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/betatron_sims.png": {
+    "mtime": 1704022789.26,
+    "ast_hash": "6be81eb7f594a0be7c5d663112447030",
+    "semantic_hash": "6be81eb7f594a0be7c5d663112447030"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/bio-photo.jpg": {
+    "mtime": 1704022789.26,
+    "ast_hash": "18020ee4f73294657655d8e9a304a223",
+    "semantic_hash": "18020ee4f73294657655d8e9a304a223"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/cala.png": {
+    "mtime": 1704022789.26,
+    "ast_hash": "819c26386c529b740a0df910ca73ffaf",
+    "semantic_hash": "819c26386c529b740a0df910ca73ffaf"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/emittance_PP.png": {
+    "mtime": 1704022789.26,
+    "ast_hash": "9ab3b0dda7f12a4959adc5f1515404fc",
+    "semantic_hash": "9ab3b0dda7f12a4959adc5f1515404fc"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/emittance_PP2.png": {
+    "mtime": 1704022789.26,
+    "ast_hash": "9048b3f2fc18a31c76107843d3b96a59",
+    "semantic_hash": "9048b3f2fc18a31c76107843d3b96a59"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/facet-ii.png": {
+    "mtime": 1704022789.26,
+    "ast_hash": "ac65370ca05be58dc7a0b44fc0565ee5",
+    "semantic_hash": "ac65370ca05be58dc7a0b44fc0565ee5"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/favicon-16x16.png": {
+    "mtime": 1781467888.4199998,
+    "ast_hash": "a7474f0695ad25fc93d130c850d08d8b",
+    "semantic_hash": "a7474f0695ad25fc93d130c850d08d8b"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/favicon-32x32.png": {
+    "mtime": 1781467888.4199998,
+    "ast_hash": "6e8dc25074710b937aab977dc85cec24",
+    "semantic_hash": "6e8dc25074710b937aab977dc85cec24"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/favicon-96x96.png": {
+    "mtime": 1781467888.4199998,
+    "ast_hash": "9ccd38e474ff158b72654d576452fb47",
+    "semantic_hash": "9ccd38e474ff158b72654d576452fb47"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/image-alignment-1200x4002.jpg": {
+    "mtime": 1704022789.27,
+    "ast_hash": "027d03300eb64c54a81adc70865e51f1",
+    "semantic_hash": "027d03300eb64c54a81adc70865e51f1"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/image-alignment-150x150.jpg": {
+    "mtime": 1704022789.27,
+    "ast_hash": "26a731845bd54a13d9e1ece5f47ec5b6",
+    "semantic_hash": "26a731845bd54a13d9e1ece5f47ec5b6"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/image-alignment-300x200.jpg": {
+    "mtime": 1704022789.27,
+    "ast_hash": "60f9c6c7490bca0eecef9f0195a3b417",
+    "semantic_hash": "60f9c6c7490bca0eecef9f0195a3b417"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/image-alignment-580x300.jpg": {
+    "mtime": 1704022789.27,
+    "ast_hash": "539c0066996ddbcc605b6947b35b041e",
+    "semantic_hash": "539c0066996ddbcc605b6947b35b041e"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/mstile-144x144.png": {
+    "mtime": 1781467888.43,
+    "ast_hash": "2f687ab350f7f92560fc557fbd2cead7",
+    "semantic_hash": "2f687ab350f7f92560fc557fbd2cead7"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/nonlinear_Breit-Wheeler.png": {
+    "mtime": 1704022789.27,
+    "ast_hash": "7a00259c06be6fe05f40bdf952d6bc13",
+    "semantic_hash": "7a00259c06be6fe05f40bdf952d6bc13"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/profile.png": {
+    "mtime": 1704022789.27,
+    "ast_hash": "b6681619dcc616623083589aa826d2be",
+    "semantic_hash": "b6681619dcc616623083589aa826d2be"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/profile_Salgado.jpeg": {
+    "mtime": 1704113704.5,
+    "ast_hash": "03c858b0a37ac496e71ffb2a356007d8",
+    "semantic_hash": "03c858b0a37ac496e71ffb2a356007d8"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/programming_Edep.png": {
+    "mtime": 1704022789.27,
+    "ast_hash": "c1a5084a17f9bfa6af723318bd66c427",
+    "semantic_hash": "c1a5084a17f9bfa6af723318bd66c427"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/safari-pinned-tab.svg": {
+    "mtime": 1704022789.27,
+    "ast_hash": "ec3b6020e1e58017b856449b190c3bb9",
+    "semantic_hash": "ec3b6020e1e58017b856449b190c3bb9"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/sfqed-compton.png": {
+    "mtime": 1704022789.27,
+    "ast_hash": "5875235354e916b6532357fdcd1db4bf",
+    "semantic_hash": "5875235354e916b6532357fdcd1db4bf"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/sfqed-compton.svg": {
+    "mtime": 1704022789.27,
+    "ast_hash": "320fcd3df9febc94ecb9994915d8752b",
+    "semantic_hash": "320fcd3df9febc94ecb9994915d8752b"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/sfqed-process.png": {
+    "mtime": 1704022789.27,
+    "ast_hash": "84d571cea33247faa1b4a88030c8f2bc",
+    "semantic_hash": "84d571cea33247faa1b4a88030c8f2bc"
+  },
+  "/Users/felip/Documents/Repositories/felipecsalgado.github.io/images/variable_selection.svg": {
+    "mtime": 1704022789.27,
+    "ast_hash": "c4a972cda20d5ec594b3cdde2b515665",
+    "semantic_hash": "c4a972cda20d5ec594b3cdde2b515665"
   }
 }
