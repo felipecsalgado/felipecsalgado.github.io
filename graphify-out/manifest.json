@@ -235,7 +235,7 @@
     "semantic_hash": "5de45e38eabc9dcebc0c6a0d427b3ff1"
   },
   "_data/navigation.yml": {
-    "mtime": 1782060718.6709745,
+    "mtime": 1782062231.4666407,
     "ast_hash": "5f2629829c4b21c9d65fc277d5056797",
     "semantic_hash": ""
   },
@@ -1395,12 +1395,12 @@
     "semantic_hash": ""
   },
   "_pages/physics-tree.md": {
-    "mtime": 1782062041.4238212,
+    "mtime": 1782062231.466875,
     "ast_hash": "d31e965c35835fc167fc4a792e76c5e7",
     "semantic_hash": ""
   },
   "images/nobel_medal.png": {
-    "mtime": 1782060274.125198,
+    "mtime": 1782062231.471891,
     "ast_hash": "6e06c24fe760feb9794efad6caa98bf4",
     "semantic_hash": ""
   }
