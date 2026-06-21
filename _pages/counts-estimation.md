@@ -319,10 +319,7 @@ html, body {
     
     <div class="results-column">
       <div class="result-card" style="text-align: left;">
-        <div class="results-info">
-          <span><strong>Status:</strong> Calculations based on the input parameters shown on the left.</span>
-        </div>
-        
+
         <div class="results-section-header">General Metrics</div>
         <div class="results-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 20px;">
           <div class="result-card">
