@@ -118,16 +118,16 @@ redirect_from:
 <div class="physics-tree-container">
   {% include base_path %}
   <h2 class="page__title">Physics Tree</h2>
-  <p>PhD supervisor and academic advisor genealogy tree from my career, tracing back from Felipe Cezar Salgado to the Scientific Revolution.</p>
+  <p>PhD supervisor and academic advisor genealogy tree.</p>
   
   <div style="margin-top: 30px;">
     <div class="physics-tree-card">
   <div class="card-content-wrapper">
-    <h3 class="researcher-name">Felipe Cezar Salgado</h3>
+    <h3 class="researcher-name">Felipe Salgado</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Completed PhD (Dr. rer. nat.) in 2023.</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Completed PhD (Dr. rer. nat.) in <strong>2023</strong>.</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">Friedrich Schiller University Jena.</span></li>
-      <li><strong class="detail-label">Supervisors:</strong><span class="detail-value">Matt Zepf (Matthäus Zepf).</span></li>
+      <li><strong class="detail-label">Supervisors:</strong><span class="detail-value">Matt Zepf.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">High-intensity laser-plasma interactions, laser-driven particle acceleration as laser wakefield acceleration. Strong-field quantum electrodynamics (SF-QED) experiments (e.g., E-320 at FACET-II and FOR2783 at CALA).</span></li>
       <li><strong class="detail-label">Source:</strong><span class="detail-value">Felipe Cezar Salgado, <a href="https://www.db-thueringen.de/receive/dbt_mods_00055695" target="_blank"><em>Design of a single-particle detection system for strong-field QED experiments</em></a>, Dissertation, Friedrich-Schiller-Universität Jena (2023).</span></li>
     </ul>
@@ -138,7 +138,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Matt Zepf</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Joined as a DPhil student in 1994. Completed PhD in 1997.</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Joined as a DPhil student in 1994; Completed PhD in <strong>1997</strong>.</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Oxford.</span></li>
       <li><strong class="detail-label">Supervisor:</strong><span class="detail-value">Justin Wark.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">High-intensity laser-plasma interactions, laser-driven particle acceleration, and the generation of secondary radiation sources (X-rays, protons) from plasmas.</span></li>
@@ -151,7 +151,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Justin Wark</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Began undergraduate studies in 1979 (tutored by Paul Ewart); completed PhD in 1985 (Imperial College); joined the department as a Royal Society URF in 1988.</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Began undergraduate studies in 1979 (tutored by Paul Ewart); completed PhD in <strong>1985</strong> (Imperial College); joined the department as a Royal Society URF in 1988.</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Oxford / Imperial College London.</span></li>
       <li><strong class="detail-label">Undergraduate Tutor:</strong><span class="detail-value">Paul Ewart.</span></li>
       <li><strong class="detail-label">PhD Supervisor:</strong><span class="detail-value">Joseph D. Kilkenny.</span></li>
@@ -165,7 +165,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Joseph D. Kilkenny</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Completed PhD in 1972.</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Completed PhD in <strong>1972</strong>.</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">Imperial College London.</span></li>
       <li><strong class="detail-label">PhD Supervisor:</strong><span class="detail-value">Robert Latham.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Inertial confinement fusion (ICF) and high-speed plasma instrumentation (e.g., x-ray streak cameras). Program Leader for ICF at Lawrence Livermore National Laboratory (LLNL).</span></li>
@@ -178,7 +178,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Robert Latham</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Completed PhD in 1946 (Research Fellow at Queens' College 1945–1948).</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Completed PhD in <strong>1946</strong> (Research Fellow at Queens' College 1945–1948).</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge (Cavendish Laboratory) / Imperial College London.</span></li>
       <li><strong class="detail-label">PhD Supervisor / Mentor:</strong><span class="detail-value">George Paget Thomson. <em>(Note: Latham began his research at Cambridge, but his post-war academic and research lineage is mapped via Sir George Paget Thomson, who recruited him for early thermonuclear fusion research at Imperial College in 1948).</em></span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Plasma physics, gas discharge, and early thermonuclear fusion research (Z-pinch). Worked on microwave radar valves during World War II.</span></li>
@@ -194,7 +194,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">George Paget Thomson</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Nobel Prize in Physics in 1937 (for discovering wave properties of electron by diffraction); Professor of Physics at Imperial College London (1930–1952); Master of Corpus Christi College, Cambridge (1952–1962).</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Nobel Prize in Physics in <strong>1937</strong> (for discovering wave properties of electron by diffraction); Professor of Physics at Imperial College London (1930–1952); Master of Corpus Christi College, Cambridge (1952–1962).</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge (Cavendish Laboratory) / Imperial College London.</span></li>
       <li><strong class="detail-label">Supervisor:</strong><span class="detail-value">J. J. Thomson.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Discovered electron diffraction, worked on neutron physics, and chaired the MAUD Committee in WWII. Co-founded early thermonuclear fusion research at Imperial College.</span></li>
@@ -226,7 +226,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Lord Rayleigh</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">M.A. 1868.</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">M.A. <strong>1868</strong>.</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge.</span></li>
       <li><strong class="detail-label">Tutors:</strong><span class="detail-value">Edward Routh, George Gabriel Stokes, and James Clerk Maxwell.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Formulated the theory of acoustic scattering ("Rayleigh scattering"), co-discovered Argon.</span></li>
@@ -239,7 +239,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Edward Routh</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in 1857.</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in <strong>1857</strong>.</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge.</span></li>
       <li><strong class="detail-label">Supervisors:</strong><span class="detail-value">William Hopkins, Isaac Todhunter, and Augustus De Morgan.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Cambridge's greatest "Mathematical Coach". Formulated the Routh-Hurwitz theorem.</span></li>
@@ -252,7 +252,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">George Gabriel Stokes</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated BA in 1841.</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated BA in <strong>1841</strong>.</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge.</span></li>
       <li><strong class="detail-label">Supervisor:</strong><span class="detail-value">William Hopkins.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Co-formulated the Navier-Stokes equations governing fluid dynamics.</span></li>
@@ -265,7 +265,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">William Hopkins</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in 1830.</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in <strong>1830</strong>.</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge.</span></li>
       <li><strong class="detail-label">Supervisor:</strong><span class="detail-value">Adam Sedgwick.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Famed "Senior-Wrangler Maker". Pioneer of physical geology.</span></li>
@@ -278,7 +278,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Adam Sedgwick</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in 1811.</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in <strong>1811</strong>.</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge.</span></li>
       <li><strong class="detail-label">Supervisors:</strong><span class="detail-value">Thomas Jones and John Dawson.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Founder of modern geology. Proposed the Cambrian and Devonian periods.</span></li>
@@ -291,7 +291,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Thomas Jones</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in 1782 (B.A. in 1779).</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in <strong>1782</strong> (B.A. in 1779).</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge (Trinity College).</span></li>
       <li><strong class="detail-label">Supervisor:</strong><span class="detail-value">Thomas Postlethwaite.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Head Tutor at Trinity College, Cambridge. Famed for his lectures on mathematics and his influence on many Cambridge scholars including Adam Sedgwick.</span></li>
@@ -304,7 +304,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Thomas Postlethwaite</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in 1756 (B.A. in 1753).</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in <strong>1756</strong> (B.A. in 1753).</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge (Trinity College).</span></li>
       <li><strong class="detail-label">Supervisor:</strong><span class="detail-value">Stephen Whisson.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Master of Trinity College, Cambridge.</span></li>
@@ -317,7 +317,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Stephen Whisson</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in 1742 (B.A. in 1738).</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in <strong>1742</strong> (B.A. in 1738).</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge (Trinity College).</span></li>
       <li><strong class="detail-label">Supervisor:</strong><span class="detail-value">Walter Taylor.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Tutor and Senior Fellow at Trinity College, Cambridge. University Librarian.</span></li>
@@ -330,7 +330,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Walter Taylor</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in 1723.</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in <strong>1723</strong>.</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge (Trinity College).</span></li>
       <li><strong class="detail-label">Supervisor:</strong><span class="detail-value">Robert Smith.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Regius Professor of Greek and Tutor at Trinity College, Cambridge.</span></li>
@@ -343,7 +343,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Robert Smith</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in 1715 (B.A. in 1711).</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in <strong>1715</strong> (B.A. in 1711).</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge.</span></li>
       <li><strong class="detail-label">Supervisor:</strong><span class="detail-value">Roger Cotes.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Published <em>A Compleat System of Opticks</em> (1738). Succeeded Cotes as Plumian Professor. Founded the Smith's Prizes.</span></li>
@@ -356,7 +356,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Roger Cotes</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in 1706 (B.A. in 1702).</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in <strong>1706</strong> (B.A. in 1702).</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge.</span></li>
       <li><strong class="detail-label">Supervisor:</strong><span class="detail-value">Sir Isaac Newton.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Collaborated with Newton to edit the second edition of the <em>Principia</em>. First Plumian Professor.</span></li>
@@ -369,7 +369,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Sir Isaac Newton</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in 1668 (B.A. in 1665).</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in <strong>1668</strong> (B.A. in 1665).</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge.</span></li>
       <li><strong class="detail-label">Supervisors/Tutors:</strong><span class="detail-value">Isaac Barrow and Benjamin Pulleyn.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Formulated the laws of motion and universal gravitation. Lucasian Professor.</span></li>
@@ -382,7 +382,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Isaac Barrow</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in 1652 (B.A. in 1648).</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Graduated M.A. in <strong>1652</strong> (B.A. in 1648).</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge / Independent study in Italy.</span></li>
       <li><strong class="detail-label">Mentor:</strong><span class="detail-value">Vincenzo Viviani.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Pioneer of calculus. First to state the Fundamental Theorem of Calculus. First Lucasian Professor.</span></li>
@@ -395,7 +395,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Vincenzo Viviani</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Became a pupil to Galileo in 1639.</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Became a pupil to Galileo in <strong>1639</strong>.</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">Court of the Grand Duke of Tuscany.</span></li>
       <li><strong class="detail-label">Supervisor:</strong><span class="detail-value">Galileo Galilei.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">First to accurately determine the speed of sound. Reconstructed Apollonius's lost work <em>De locis planis</em>. Served as Galileo's last pupil and biographer.</span></li>
@@ -408,7 +408,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Galileo Galilei</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Student starting in 1581.</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">Student starting in <strong>1581</strong>.</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Pisa.</span></li>
       <li><strong class="detail-label">Supervisor:</strong><span class="detail-value">Ostilio Ricci.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Championed heliocentrism, discovered the four largest moons of Jupiter, formulated the basic law of falling bodies.</span></li>
