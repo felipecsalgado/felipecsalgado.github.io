@@ -24,54 +24,35 @@
   * **Main Research & Works:** Warm dense matter, ultra-fast X-ray science, and shock-compressed matter diagnostics. Director of the Oxford Centre for High Energy Density Science (OxCHEDS).
   * **Supervisor Source:** C. N. Danson *et al.*, A history of high-power laser research and development in the United Kingdom, High Power Laser Sci. Eng. **9**, e18 (2021). *(Explicitly notes Wark was tutored by Ewart and details his doctoral and postdoctoral contributions)*.
 
-* **Paul Ewart**
-  * **Timeline:** Completed PhD in **1974**; moved to the University of Oxford in **1979** (Emeritus Professor).
-  * **Institute:** Queen's University Belfast.
-  * **Supervisor:** Daniel Joseph Bradley.
-  * **Main Research & Works:** Laser spectroscopy, quantum optics, and degenerate four-wave mixing. Former Head of Atomic and Laser Physics at Oxford.
-  * **Supervisor Source:** C. N. Danson *et al.*, A history of high-power laser research and development in the United Kingdom, High Power Laser Sci. Eng. **9**, e18 (2021). *(Explicitly notes Ewart completed his PhD supervised by Bradley)*.
+* **Joseph D. Kilkenny** (Joseph David Kilkenny)
+  * **Timeline:** Completed PhD in **1972**.
+  * **Institute:** Imperial College London.
+  * **PhD Supervisor:** Robert Latham.
+  * **Main Research & Works:** Inertial confinement fusion (ICF) and high-speed plasma instrumentation (e.g., x-ray streak cameras). Program Leader for ICF at Lawrence Livermore National Laboratory (LLNL).
+  * **Supervisor Source:** Joseph D. Kilkenny, *Measurement of the ion energy in a theta pinch*, Ph.D. Thesis, University of London (Imperial College) (1972). *(Explicitly notes Dr. R. Latham as his supervisor in the acknowledgements)*.
 
+* **Robert Latham** (Robert Bob Latham)
+  * **Timeline:** Completed PhD in **1946** (Research Fellow at Queens' College 1945–1948).
+  * **Institute:** University of Cambridge (Cavendish Laboratory) / Imperial College London.
+  * **PhD Supervisor / Mentor:** George Paget Thomson. *(Note: Latham began his research at Cambridge, but his post-war academic and research lineage is mapped via Sir George Paget Thomson, who recruited him for early thermonuclear fusion research at Imperial College in 1948).*
+  * **Main Research & Works:** Plasma physics, gas discharge, and early thermonuclear fusion research (Z-pinch). Worked on microwave radar valves during World War II.
+  * **Supervisor Source:** [Robert Latham](https://academictree.org/physics/peopleinfo.php?pid=844789), Physics Tree (Accessed 2026); and [Queens' College Record 1995](https://history.queens.cam.ac.uk/sites/default/files/downloads/record-1995.pdf), University of Cambridge. *(Obituary of Robert Latham, Research Fellow 1945–1948, p. 9; note that the same issue on p. 8 notes John Wilson Findlay, and not Latham, as Lord Rutherford's last research student, clarifying the connection).*
 
-* **Dan Bradley**
-  * **Timeline:** PhD awarded in **1961**.
-  * **Institute:** Royal Holloway, University of London / Imperial College London.
-  * **Supervisor:** Samuel Tolansky.
-  * **Main Research & Works:** A pioneer in the development of ultra-fast pulsed lasers (picosecond and femtosecond lasers). He invented the ultra-fast streak camera.
-  * **Supervisor Source:** J. Roy Taylor, Daniel Joseph Bradley. 18 January 1928 — 7 February 2010, Biogr. Mems Fell. R. Soc. **63**, 23 (2017). *(Details his PhD enrollment under Samuel Tolansky at Royal Holloway)*.
+### The Late 19th & Early 20th Century: Nuclear Physics and Electron Discovery
 
-### The Early 20th Century: Interferometry, Spectroscopy, and X-ray Crystallography
+* **George Paget Thomson** (Sir George Paget Thomson)
+  * **Timeline:** Nobel Prize in Physics in **1937** (for discovering wave properties of electron by diffraction); Professor of Physics at Imperial College London (1930–1952); Master of Corpus Christi College, Cambridge (1952–1962).
+  * **Institute:** University of Cambridge (Cavendish Laboratory) / Imperial College London.
+  * **Supervisor:** J. J. Thomson.
+  * **Main Research & Works:** Discovered electron diffraction, worked on neutron physics, and chaired the MAUD Committee in WWII. Co-founded early thermonuclear fusion research at Imperial College.
+  * **Supervisor Source:** [George Paget Thomson Biography](https://en.wikipedia.org/wiki/George_Paget_Thomson), Wikipedia (Accessed 2026); and [George Paget Thomson](https://academictree.org/physics/peopleinfo.php?pid=74104), Physics Tree (Accessed 2026).
 
-* **Samuel Tolansky**
-  * **Timeline:** Completed PhD at Durham University (Armstrong College) in **1931** and PhD at the University of London (Imperial College) in **1934**.
-  * **Supervisors:** William E. Curtis, Alfred Fowler, William Lawrence Bragg.
-  * **Main Research & Works:** Invented multiple-beam interferometry. Performed groundbreaking analyses on the structure of diamonds and lunar dust.
-  * **Supervisor Source:** R. W. Ditchburn and G. D. Rochester, Samuel Tolansky 1907-1973, Biogr. Mems Fell. R. Soc. **20**, 429 (1974). *(Details his direct research supervision under Curtis, Fowler, and Bragg)*.
-
-
-*(Lineage branches through Tolansky's mentors)*
-
-**Branch A: The Astrophysics Lineage**
-* **Alfred Fowler**
-  * **Timeline:** Student and research assistant in the **1880s**.
-  * **Institute:** Normal School of Science (Imperial College London).
-  * **Supervisor:** Norman Lockyer (Discoverer of Helium).
-  * **Main Research & Works:** Astrophysical spectroscopy. Identified the presence of titanium oxide in cool stars.
-  * **Supervisor Source:** H. Dingle, Alfred Fowler. 1868-1940, Obit. Not. Fell. R. Soc. **3**, 483 (1941). *(Confirms Fowler's role as Lockyer's direct assistant and student)*.
-
-**Branch B: The Subatomic and Crystallography Lineage**
-* **William Lawrence Bragg**
-  * **Timeline:** M.A. awarded **1912** (Nobel Prize in 1915).
-  * **Institute:** University of Cambridge.
-  * **Supervisor:** J. J. Thomson (at Cambridge); also supervised by William Henry Bragg (at Leeds, 1914).
-  * **Main Research & Works:** Co-founder of X-ray crystallography ("Bragg's Law").
-  * **Supervisor Source:** [William Lawrence Bragg](https://www.mathgenealogy.org/id.php?id=122657), Mathematics Genealogy Project (Accessed 2026).
-
-* **J. J. Thomson**
-  * **Timeline:** M.A. awarded **1883**.
-  * **Institute:** University of Cambridge.
+* **J. J. Thomson** (Joseph John Thomson)
+  * **Timeline:** M.A. awarded **1883** (Nobel Prize in Physics in 1906).
+  * **Institute:** University of Cambridge (Cavendish Laboratory).
   * **Supervisor:** Lord Rayleigh.
-  * **Main Research & Works:** Discovered the electron through his experiments with cathode rays.
-  * **Supervisor Source:** [Joseph John Thomson](https://www.mathgenealogy.org/id.php?id=50701), Mathematics Genealogy Project (Accessed 2026).
+  * **Main Research & Works:** Discovered the electron and isotopes, and pioneered the mass spectrometer.
+  * **Supervisor Source:** [Joseph John Thomson](https://www.mathgenealogy.org/id.php?id=50701), Mathematics Genealogy Project (Accessed 2026); and [J. J. Thomson](https://academictree.org/physics/peopleinfo.php?pid=13139), Physics Tree (Accessed 2026).
 
 ### The Cambridge Mathematical Coaches (18th & 19th Century)
 

@@ -16,6 +16,8 @@ All source pages from the Mathematics Genealogy Project, MacTutor History of Mat
 | `DB_Thueringen_Felipe_Cezar_Salgado_Dissertation.pdf` | Felipe Cezar Salgado | Dissertation profile in Digitale Bibliothek Thüringen. | https://www.db-thueringen.de/receive/dbt_mods_00055695 |
 | `Website_Felipe_Cezar_Salgado.pdf` | Felipe Cezar Salgado | Personal website of Felipe Cezar Salgado. | https://felipecsalgado.de |
 | `Google_Scholar_Felipe_Cezar_Salgado.pdf` | Felipe Cezar Salgado | Google Scholar profile of Felipe Cezar Salgado. | https://scholar.google.com/citations?user=XFDI87QAAAAJ&hl=en |
+| `Kilkenny_PhD_Thesis_1972.pdf` | Joseph D. Kilkenny | Ph.D. Thesis of Joseph David Kilkenny, *Measurement of the ion energy in a theta pinch*, University of London (Imperial College). | https://spiral.imperial.ac.uk/server/api/core/bitstreams/2a946180-dbd9-4471-a63b-b39aaf57112f/content |
+| `Queens_College_Record_1995.pdf` | Robert Latham (and John Wilson Findlay) | Queens' College Record 1995, University of Cambridge. Contains obituaries of Robert Latham (Fellow 1945–1948, p. 9) and John Wilson Findlay (Fellow 1945–1953, p. 8; noted as Rutherford's last research student). | https://history.queens.cam.ac.uk/sites/default/files/downloads/record-1995.pdf |
 
 
 ### Paywalled Memoirs (Require manual/institutional access for full text)
@@ -37,6 +39,7 @@ These files are PDF prints of the verified MGP pages for each individual in the 
 
 | File | Person | MGP ID | MGP URL |
 |---|---|---|---|
+| `MGP_Ernest_Rutherford.pdf` | Ernest Rutherford | 50699 | https://www.mathgenealogy.org/id.php?id=50699 |
 | `MGP_William_Lawrence_Bragg.pdf` | William Lawrence Bragg | 122657 | https://www.mathgenealogy.org/id.php?id=122657 |
 | `MGP_Joseph_John_Thomson.pdf` | Joseph John Thomson | 50701 | https://www.mathgenealogy.org/id.php?id=50701 |
 | `MGP_John_William_Strutt_Lord_Rayleigh.pdf` | John William Strutt (Lord Rayleigh) | 101979 | https://www.mathgenealogy.org/id.php?id=101979 |
@@ -91,6 +94,8 @@ These files are PDF archives of the Wikipedia biographies for verification of ti
 | `Wikipedia_Stephen_Whisson.pdf` | Stephen Whisson | https://en.wikipedia.org/wiki/Stephen_Whisson |
 | `Wikipedia_Thomas_Postlethwaite.pdf` | Thomas Postlethwaite | https://en.wikipedia.org/wiki/Thomas_Postlethwaite |
 | `Wikipedia_Thomas_Jones.pdf` | Thomas Jones | https://en.wikipedia.org/wiki/Thomas_Jones_(mathematician) |
+| `Wikipedia_Ernest_Rutherford.pdf` | Ernest Rutherford | https://en.wikipedia.org/wiki/Ernest_Rutherford |
+| `Wikipedia_George_Paget_Thomson.pdf` | George Paget Thomson | https://en.wikipedia.org/wiki/George_Paget_Thomson |
 | `Wikipedia_Paul_Ewart.pdf` | Paul Ewart | https://en.wikipedia.org/wiki/Paul_Ewart |
 | `Wikipedia_Daniel_Joseph_Bradley.pdf` | Dan Bradley | https://en.wikipedia.org/wiki/Daniel_Joseph_Bradley |
 | `Wikipedia_Samuel_Tolansky.pdf` | Samuel Tolansky | https://en.wikipedia.org/wiki/Samuel_Tolansky |
