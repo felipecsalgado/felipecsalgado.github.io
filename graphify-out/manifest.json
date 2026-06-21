@@ -1090,8 +1090,8 @@
     "semantic_hash": ""
   },
   "my_carrer_genealogy_tree.md": {
-    "mtime": 1782072055.4926274,
-    "ast_hash": "90a4a7c9a749ebbd1f7b294b8db02294",
+    "mtime": 1782076301.9907982,
+    "ast_hash": "22709ca8e6ced93eee221ace79fe3be1",
     "semantic_hash": ""
   },
   "References tree/DB_Thueringen_Felipe_Cezar_Salgado_Dissertation.pdf": {
@@ -1240,8 +1240,8 @@
     "semantic_hash": ""
   },
   "References tree/REFERENCE_GUIDE.md": {
-    "mtime": 1782058642.0989306,
-    "ast_hash": "3b7003a2f24cf1903efcd0b848ac06f0",
+    "mtime": 1782076307.861316,
+    "ast_hash": "89e1f43485bb439b1c89a8df90085bca",
     "semantic_hash": ""
   },
   "References tree/Website_Felipe_Cezar_Salgado.pdf": {
@@ -1390,8 +1390,8 @@
     "semantic_hash": ""
   },
   "_pages/physics-tree.md": {
-    "mtime": 1782068877.6904767,
-    "ast_hash": "e0437128ebe9578e35d5d72a9318593d",
+    "mtime": 1782076298.5347269,
+    "ast_hash": "e2c8fa4a74b5a93e8c4af45ce69c432f",
     "semantic_hash": ""
   },
   "images/nobel_medal.png": {
@@ -1402,6 +1402,11 @@
   "my_carrer_genealogy_tree.pdf": {
     "mtime": 1782073148.3485851,
     "ast_hash": "00a19c5a75e56db48b908656b6dc1a84",
+    "semantic_hash": ""
+  },
+  "References tree/Wark-JS-1985-PhD-Thesis.pdf": {
+    "mtime": 1782075837.1450834,
+    "ast_hash": "ec10c1be65a6c4c848027a547c6f3fd6",
     "semantic_hash": ""
   }
 }

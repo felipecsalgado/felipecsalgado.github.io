@@ -22,7 +22,7 @@
   * **Undergraduate Tutor:** Paul Ewart.
   * **PhD Supervisor:** Joseph D. Kilkenny.
   * **Main research:** Warm dense matter, ultra-fast X-ray science, and shock-compressed matter diagnostics. Director of the Oxford Centre for High Energy Density Science (OxCHEDS).
-  * **Source:** C. N. Danson *et al.*, [A history of high-power laser research and development in the United Kingdom](/References%20tree/a-history-of-high-power-laser-research-and-development-in-the-united-kingdom.pdf), High Power Laser Sci. Eng. **9**, e18 (2021).
+  * **Source:** C. N. Danson *et al.*, [A history of high-power laser research and development in the United Kingdom](/References%20tree/a-history-of-high-power-laser-research-and-development-in-the-united-kingdom.pdf), High Power Laser Sci. Eng. **9**, e18 (2021); and Justin S. Wark, [Observations of the Rayleigh-Taylor instability in laser accelerated targets](/References%20tree/Wark-JS-1985-PhD-Thesis.pdf), Ph.D. Thesis, University of London (Imperial College) (1985). *(Explicitly notes J. D. Kilkenny as his supervisor)*.
 
 * **Joseph D. Kilkenny**
   * **Timeline:** Completed PhD in **1972**.

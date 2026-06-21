@@ -17,6 +17,7 @@ All source pages from the Mathematics Genealogy Project, MacTutor History of Mat
 | `Website_Felipe_Cezar_Salgado.pdf` | Felipe Cezar Salgado | Personal website of Felipe Cezar Salgado. | https://felipecsalgado.de |
 | `Google_Scholar_Felipe_Cezar_Salgado.pdf` | Felipe Cezar Salgado | Google Scholar profile of Felipe Cezar Salgado. | https://scholar.google.com/citations?user=XFDI87QAAAAJ&hl=en |
 | `Kilkenny_PhD_Thesis_1972.pdf` | Joseph D. Kilkenny | Ph.D. Thesis of Joseph David Kilkenny, *Measurement of the ion energy in a theta pinch*, University of London (Imperial College). | https://spiral.imperial.ac.uk/server/api/core/bitstreams/2a946180-dbd9-4471-a63b-b39aaf57112f/content |
+| `Wark-JS-1985-PhD-Thesis.pdf` | Justin S. Wark | Ph.D. Thesis of Justin Stephen Wark, *Observations of the Rayleigh-Taylor instability in laser accelerated targets*, University of London (Imperial College). | N/A |
 | `Queens_College_Record_1995.pdf` | Robert Latham (and John Wilson Findlay) | Queens' College Record 1995, University of Cambridge. Contains obituaries of Robert Latham (Fellow 1945–1948, p. 9) and John Wilson Findlay (Fellow 1945–1953, p. 8; noted as Rutherford's last research student). | https://history.queens.cam.ac.uk/sites/default/files/downloads/record-1995.pdf |
 
 

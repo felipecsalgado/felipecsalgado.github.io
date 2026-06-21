@@ -156,7 +156,7 @@ redirect_from:
       <li><strong class="detail-label">Undergraduate Tutor:</strong><span class="detail-value">Paul Ewart.</span></li>
       <li><strong class="detail-label">PhD Supervisor:</strong><span class="detail-value">Joseph D. Kilkenny.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Warm dense matter, ultra-fast X-ray science, and shock-compressed matter diagnostics. Director of the Oxford Centre for High Energy Density Science (OxCHEDS).</span></li>
-      <li><strong class="detail-label">Source:</strong><span class="detail-value">C. N. Danson <em>et al.</em>, <a href="/References%20tree/a-history-of-high-power-laser-research-and-development-in-the-united-kingdom.pdf" target="_blank"><em>A history of high-power laser research and development in the United Kingdom</em></a>, High Power Laser Sci. Eng. <strong>9</strong>, e18 (2021).</span></li>
+      <li><strong class="detail-label">Source:</strong><span class="detail-value">C. N. Danson <em>et al.</em>, <a href="/References%20tree/a-history-of-high-power-laser-research-and-development-in-the-united-kingdom.pdf" target="_blank"><em>A history of high-power laser research and development in the United Kingdom</em></a>, High Power Laser Sci. Eng. <strong>9</strong>, e18 (2021); and Justin S. Wark, <a href="/References%20tree/Wark-JS-1985-PhD-Thesis.pdf" target="_blank"><em>Observations of the Rayleigh-Taylor instability in laser accelerated targets</em></a>, Ph.D. Thesis, University of London (Imperial College) (1985). <em>(Explicitly notes J. D. Kilkenny as his supervisor)</em>.</span></li>
     </ul>
   </div>
 </div>
