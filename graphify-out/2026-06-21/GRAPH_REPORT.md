@@ -1,11 +1,11 @@
 # Graph Report - felipecsalgado.github.io  (2026-06-21)
 
 ## Corpus Check
-- 97 files · ~568,958 words
+- 98 files · ~569,671 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 687 nodes · 722 edges · 180 communities (112 shown, 68 thin omitted)
+- 688 nodes · 722 edges · 181 communities (113 shown, 68 thin omitted)
 - Extraction: 81% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 137 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
@@ -171,7 +171,7 @@
 - **Patents and Intellectual Property** — patents_2015_0_otdr, patents_2016_0_methane [INFERRED 0.85]
 - **Photon Attenuation App Feature** — pages_attenuation_calculator, pages_attenuation_explanation [INFERRED 0.95]
 
-## Communities (180 total, 68 thin omitted)
+## Communities (181 total, 68 thin omitted)
 
 ### Community 0 - "jQuery Core Library"
 Cohesion: 0.06

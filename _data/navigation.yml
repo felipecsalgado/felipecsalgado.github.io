@@ -10,7 +10,7 @@ main:
     url: /talks/
 
   - title: "Analysis & Tools"
-    url: /attenuation-calculator/
+    url: /analysis-tools/
     submenu:
       - title: "Photon Attenuation"
         url: /attenuation-calculator/
