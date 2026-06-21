@@ -118,7 +118,7 @@ redirect_from:
 <div class="physics-tree-container">
   {% include base_path %}
   <h2 class="page__title">Physics Tree</h2>
-  <p>PhD supervisor and academic advisor genealogy tree.</p>
+  <p>PhD and academic advisor genealogy tree.</p>
   
   <div style="margin-top: 30px;">
     <div class="physics-tree-card">
@@ -142,7 +142,7 @@ redirect_from:
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Oxford.</span></li>
       <li><strong class="detail-label">Supervisor:</strong><span class="detail-value">Justin Wark.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">High-intensity laser-plasma interactions, laser-driven particle acceleration, and the generation of secondary radiation sources (X-rays, protons) from plasmas.</span></li>
-      <li><strong class="detail-label">Source:</strong><span class="detail-value">C. N. Danson <em>et al.</em>, A history of high-power laser research and development in the United Kingdom, High Power Laser Sci. Eng. <strong>9</strong>, e18 (2021). <em>(Notes Zepf as a DPhil student in Wark's group)</em>.</span></li>
+      <li><strong class="detail-label">Source:</strong><span class="detail-value">C. N. Danson <em>et al.</em>, <a href="/References%20tree/a-history-of-high-power-laser-research-and-development-in-the-united-kingdom.pdf" target="_blank"><em>A history of high-power laser research and development in the United Kingdom</em></a>, High Power Laser Sci. Eng. <strong>9</strong>, e18 (2021). <em>(Notes Zepf as a DPhil student in Wark's group)</em>.</span></li>
     </ul>
   </div>
 </div>
@@ -156,7 +156,7 @@ redirect_from:
       <li><strong class="detail-label">Undergraduate Tutor:</strong><span class="detail-value">Paul Ewart.</span></li>
       <li><strong class="detail-label">PhD Supervisor:</strong><span class="detail-value">Joseph D. Kilkenny.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Warm dense matter, ultra-fast X-ray science, and shock-compressed matter diagnostics. Director of the Oxford Centre for High Energy Density Science (OxCHEDS).</span></li>
-      <li><strong class="detail-label">Source:</strong><span class="detail-value">C. N. Danson <em>et al.</em>, A history of high-power laser research and development in the United Kingdom, High Power Laser Sci. Eng. <strong>9</strong>, e18 (2021). <em>(Explicitly notes Wark was tutored by Ewart and details his doctoral and postdoctoral contributions)</em>.</span></li>
+      <li><strong class="detail-label">Source:</strong><span class="detail-value">C. N. Danson <em>et al.</em>, <a href="/References%20tree/a-history-of-high-power-laser-research-and-development-in-the-united-kingdom.pdf" target="_blank"><em>A history of high-power laser research and development in the United Kingdom</em></a>, High Power Laser Sci. Eng. <strong>9</strong>, e18 (2021).</span></li>
     </ul>
   </div>
 </div>
@@ -169,7 +169,7 @@ redirect_from:
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">Imperial College London.</span></li>
       <li><strong class="detail-label">PhD Supervisor:</strong><span class="detail-value">Robert Latham.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Inertial confinement fusion (ICF) and high-speed plasma instrumentation (e.g., x-ray streak cameras). Program Leader for ICF at Lawrence Livermore National Laboratory (LLNL).</span></li>
-      <li><strong class="detail-label">Source:</strong><span class="detail-value">Joseph D. Kilkenny, <em>Measurement of the ion energy in a theta pinch</em>, Ph.D. Thesis, University of London (Imperial College) (1972). <em>(Explicitly notes Dr. R. Latham as his supervisor in the acknowledgements)</em>.</span></li>
+      <li><strong class="detail-label">Source:</strong><span class="detail-value">Joseph D. Kilkenny, <a href="/References%20tree/Kilkenny_PhD_Thesis_1972.pdf" target="_blank"><em>Measurement of the ion energy in a theta pinch</em></a>, Ph.D. Thesis, University of London (Imperial College) (1972). <em>(Explicitly notes Dr. R. Latham as his supervisor in the acknowledgements)</em>.</span></li>
     </ul>
   </div>
 </div>
