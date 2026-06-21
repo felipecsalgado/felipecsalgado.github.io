@@ -565,8 +565,8 @@
     "semantic_hash": "1e0bd0e01399465541ce1277eccc455f"
   },
   "_pages/sitemap.md": {
-    "mtime": 1782034921.4253383,
-    "ast_hash": "d368e6711d6e796502a5160db84c8d5f",
+    "mtime": 1782034455.7947843,
+    "ast_hash": "f950b3607bcd12e9a909fc474aef4442",
     "semantic_hash": ""
   },
   "_pages/tag-archive.html": {
@@ -1090,8 +1090,8 @@
     "semantic_hash": ""
   },
   "_pages/counts-estimation.md": {
-    "mtime": 1782034933.5616546,
-    "ast_hash": "a64736917ca04d2966241bbb307a5d5c",
+    "mtime": 1782034466.579171,
+    "ast_hash": "fc92d426c0f77c9a3b38fcec8412bdc9",
     "semantic_hash": ""
   },
   "my_carrer_genealogy_tree.md": {
@@ -1317,11 +1317,6 @@
   "References tree/Wikipedia_Walter_Taylor.pdf": {
     "mtime": 1781905905.8039317,
     "ast_hash": "87ef34d0daa9fbc4e4438a66709161da",
-    "semantic_hash": ""
-  },
-  "_pages/counts-estimation-explanation.md": {
-    "mtime": 1782034917.344628,
-    "ast_hash": "c9c177bd8b97255778b3f6e2fb5b2614",
     "semantic_hash": ""
   }
 }

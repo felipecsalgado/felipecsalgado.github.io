@@ -19,6 +19,7 @@ author_profile: true
     <li><a href="{{ base_path }}/talks/">Talks &amp; Presentations</a></li>
     <li><a href="{{ base_path }}/programming/">Programming Codes</a></li>
     <li><a href="{{ base_path }}/attenuation-calculator/">Photon Attenuation Calculator</a></li>
+    <li><a href="{{ base_path }}/counts-estimation/">Counts Estimation</a></li>
     <li><a href="{{ base_path }}/cv/">CV / Resume</a></li>
   </ul>
 
@@ -40,6 +41,8 @@ author_profile: true
   <ul>
     <li><a href="{{ base_path }}/attenuation-calculator/">Photon Attenuation Calculator</a></li>
     <li><a href="{{ base_path }}/attenuation-explanation/">Photon Attenuation Calculation Details</a></li>
+    <li><a href="{{ base_path }}/counts-estimation/">Counts Estimation</a></li>
+    <li><a href="{{ base_path }}/counts-estimation-explanation/">Counts Estimation Calculation Details</a></li>
   </ul>
 
 </div>

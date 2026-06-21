@@ -14,5 +14,7 @@ main:
     submenu:
       - title: "Photon Attenuation"
         url: /attenuation-calculator/
+      - title: "Counts Estimation"
+        url: /counts-estimation/
       - title: "Programming"
         url: /programming/
