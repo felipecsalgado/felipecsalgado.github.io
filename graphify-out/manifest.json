@@ -1045,8 +1045,8 @@
     "semantic_hash": "f789c483d3482c5d89f9bded597c2fb4"
   },
   ".agents/rules/instructions.md": {
-    "mtime": 1782058641.948099,
-    "ast_hash": "285ed0892cb765ab2b5d747ebfc553c7",
+    "mtime": 1782072401.9767683,
+    "ast_hash": "52bfb2b21eaa67b787037e96ccad32a6",
     "semantic_hash": ""
   },
   "files/camera_counts.py": {
@@ -1397,6 +1397,11 @@
   "images/nobel_medal.png": {
     "mtime": 1782062231.471891,
     "ast_hash": "6e06c24fe760feb9794efad6caa98bf4",
+    "semantic_hash": ""
+  },
+  "my_carrer_genealogy_tree.pdf": {
+    "mtime": 1782073148.3485851,
+    "ast_hash": "00a19c5a75e56db48b908656b6dc1a84",
     "semantic_hash": ""
   }
 }
