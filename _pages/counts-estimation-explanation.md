@@ -151,7 +151,7 @@ title: "Counts Estimation Calculation Details"
   <p>where:</p>
   <ul>
     <li><strong>Saturation Capacity</strong> is the maximum number of electrons a pixel can hold before saturating (in \(\text{e}^-\)),</li>
-    <li>\(\sigma_{\text{read}}\) is the temporal dark noise or read noise (in \(\text{e}^-\)).</li>
+    <li>\(\sigma_{\text{read}}\) is the temporal dark noise or read noise (in \(\text{e}^-\\)).</li>
   </ul>
 
   <p>Given the dynamic range and read noise, we can derive the <strong>implied saturation capacity</strong>:</p>
@@ -173,5 +173,35 @@ title: "Counts Estimation Calculation Details"
   <div class="note-box">
     <p><strong>Note:</strong> This is a simplified SNR that only considers read noise. A full noise model would also include photon shot noise (\(\sqrt{N_{e^-}}\)) and dark current noise, but for the low-light signals typical of scintillator imaging, read noise is often the dominant noise source.</p>
   </div>
+
+  <h3>Understanding Datasheet "Signal-to-Noise Ratio (typical/minimal)"</h3>
+
+  <p>Camera datasheets (e.g., from manufacturers like Basler or Allied Vision) often list a typical "Signal-to-Noise Ratio" (such as 40 dB) alongside the "Dynamic Range" (such as 73 dB). These two metrics describe different limits of the camera:</p>
+  <ul>
+    <li><strong>Dynamic Range (DR)</strong> characterizes performance at the <strong>dark limit</strong> (the ratio between saturation and the noise floor).</li>
+    <li><strong>Signal-to-Noise Ratio (SNR)</strong> in a datasheet characterizes performance at the <strong>bright limit</strong> (the maximum possible SNR achieved at saturation, $SNR_{\text{max}}$).</li>
+  </ul>
+
+  <p>The full SNR equation for a given signal \(S\) (in electrons) is:</p>
+  <div class="equation-box">
+    <p>\[\text{SNR} = \frac{S}{\sqrt{\sigma_{\text{read}}^2 + S}}\]</p>
+  </div>
+  <p>where the term \(S\) under the square root represents <strong>photon shot noise</strong> (which follows Poisson statistics, so its variance equals the signal itself).</p>
+
+  <p>At the absolute limit of the sensor's capacity (when the signal equals the Saturation Capacity, \(C_{\text{sat}}\)), the shot noise dominates completely because \(C_{\text{sat}} \gg \sigma_{\text{read}}^2\). Therefore, the read noise term becomes negligible, and the maximum SNR simplifies to:</p>
+  <div class="equation-box">
+    <p>\[\text{SNR}_{\text{max}} \approx \frac{C_{\text{sat}}}{\sqrt{C_{\text{sat}}}} = \sqrt{C_{\text{sat}}}\]</p>
+  </div>
+
+  <p>Expressed in decibels:</p>
+  <div class="equation-box">
+    <p>\[\text{SNR}_{\text{max, dB}} = 20 \cdot \log_{10}(\sqrt{C_{\text{sat}}}) = 10 \cdot \log_{10}(C_{\text{sat}})\]</p>
+  </div>
+
+  <p><strong>Example:</strong> For a sensor with a Saturation Capacity of \(10.4\text{ ke}^- = 10,400\text{ e}^-\) and a Dark Noise of \(2.3\text{ e}^-\):</p>
+  <ul>
+    <li><strong>Dynamic Range:</strong> \(20 \cdot \log_{10}(10,400 / 2.3) \approx \mathbf{73.1\text{ dB}}\) (performance in darkness).</li>
+    <li><strong>Typical SNR:</strong> \(10 \cdot \log_{10}(10,400) \approx \mathbf{40.2\text{ dB}}\) (performance at saturation).</li>
+  </ul>
 
 </div>

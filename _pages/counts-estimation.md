@@ -47,17 +47,29 @@ html, body {
 .counts-form label {
   display: block;
   font-weight: bold;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   font-size: 12px;
-  min-height: 34px;
 }
-.counts-form input {
+.counts-form input, .counts-form select {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 13px;
   box-sizing: border-box;
+}
+.counts-form input:disabled, .counts-form select:disabled {
+  background-color: #e9ecef !important;
+  color: #495057 !important;
+  cursor: not-allowed;
+  border-color: #ced4da;
+}
+.counts-form input:not(:disabled), .counts-form select:not(:disabled) {
+  background-color: #ffffff !important;
+}
+.counts-form select {
+  height: 37px;
+  background: white;
 }
 .counts-form button {
   background: #2c3e50;
@@ -83,6 +95,14 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 12px;
+}
+.form-row-2 > .form-group, .form-row-3 > .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-row-2 > .form-group input, .form-row-2 > .form-group select,
+.form-row-3 > .form-group input, .form-row-3 > .form-group select {
+  margin-top: auto;
 }
 .result-card {
   background: #f9f5f5;
@@ -170,10 +190,10 @@ html, body {
     grid-template-columns: 1fr;
   }
   .input-column {
-    order: 2;
+    order: 1;
   }
   .results-column {
-    order: 1;
+    order: 2;
   }
   .counts-container {
     padding: 15px 20px;
@@ -201,28 +221,57 @@ html, body {
     <div class="input-column">
       <div class="counts-form">
         <div class="section-title">1. Crystal & Energy</div>
-        <div class="form-row-2">
-          <div class="form-group">
-            <label for="dEdxMass">Mass stopping power dE/dx (MeV·cm²/g):</label>
-            <input type="number" id="dEdxMass" value="1.628" min="0.0001" step="0.001">
-          </div>
-          <div class="form-group">
-            <label for="density">Density of crystal (g/cm³):</label>
-            <input type="number" id="density" value="5.4" min="0.0001" step="0.01">
-          </div>
+        <div class="form-group" style="margin-bottom: 12px;">
+          <label for="crystalSelect">Crystal Type:</label>
+          <select id="crystalSelect">
+            <option value="CsI">CsI</option>
+            <option value="CsI(Na)">CsI(Na)</option>
+            <option value="CsI(Tl)" selected>CsI(Tl)</option>
+            <option value="LYSO(Ce)">LYSO(Ce)</option>
+            <option value="NaI(Tl)">NaI(Tl)</option>
+            <option value="YAG(Ce)">YAG(Ce)</option>
+            <option value="PbF2">PbF2</option>
+            <option value="Custom">Custom</option>
+          </select>
         </div>
         <div class="form-row-2">
           <div class="form-group">
-            <label for="thicknessCm">Crystal thickness (cm):</label>
-            <input type="number" id="thicknessCm" value="5" min="0.0001" step="0.1">
+            <label for="density">Density of crystal (g/cm³):</label>
+            <input type="number" id="density" value="5.4" min="0.0001" step="0.01">
           </div>
           <div class="form-group">
             <label for="lightYield">Light yield (photons/keV):</label>
             <input type="number" id="lightYield" value="54" min="0" step="1">
           </div>
         </div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="dEdxMass">Mass stopping power dE/dx (MeV·cm²/g):</label>
+            <input type="number" id="dEdxMass" value="1.628" min="0.0001" step="0.001">
+          </div>
+          <div class="form-group">
+            <label for="thicknessCm">Crystal thickness (cm):</label>
+            <input type="number" id="thicknessCm" value="5" min="0.0001" step="0.1">
+          </div>
+        </div>
 
         <div class="section-title">2. Camera specs</div>
+        <div class="form-group" style="margin-bottom: 12px;">
+          <label for="cameraSelect">Camera Model:</label>
+          <select id="cameraSelect">
+            <option value="Manta-G145B NIR">Manta-G145B NIR</option>
+            <option value="Manta-033">Manta-033</option>
+            <option value="Andor Ikon-L (936 BV)" selected>Andor Ikon-L (936 BV)</option>
+            <option value="Andor Ikon-L (936 BEX2-DD )">Andor Ikon-L (936 BEX2-DD )</option>
+            <option value="Andor Ikon-M (934 BV)">Andor Ikon-M (934 BV)</option>
+            <option value="Andor Ikon-M (BEX2-DD)">Andor Ikon-M (BEX2-DD)</option>
+            <option value="Andor Ikon-M SO (BN/BEN/BR-DD)">Andor Ikon-M SO (BN/BEN/BR-DD)</option>
+            <option value="Andor Ikon-L SO (BN/BEN/BR-DD)">Andor Ikon-L SO (BN/BEN/BR-DD)</option>
+            <option value="Basler acA2440-20gm">Basler acA2440-20gm</option>
+            <option value="Basler acA1920-40gm">Basler acA1920-40gm</option>
+            <option value="Custom">Custom</option>
+          </select>
+        </div>
         <div class="form-row-3">
           <div class="form-group">
             <label for="fwc">Full well capacity (e⁻):</label>
@@ -239,16 +288,6 @@ html, body {
         </div>
         <div class="form-row-2">
           <div class="form-group">
-            <label for="fNumber">Lens f-number (f/#):</label>
-            <input type="number" id="fNumber" value="1.6" min="0.1" step="0.1">
-          </div>
-          <div class="form-group">
-            <label for="focalLength">Lens Focal Length (mm):</label>
-            <input type="number" id="focalLength" value="25" min="0.1" step="1">
-          </div>
-        </div>
-        <div class="form-row-2">
-          <div class="form-group">
             <label for="dynamicRange">Dynamic Range (dB) <span style="font-weight:normal; font-size:11px; color:#777;">(optional)</span>:</label>
             <input type="number" id="dynamicRange" placeholder="e.g. 65.6" min="0" step="0.1">
           </div>
@@ -258,7 +297,17 @@ html, body {
           </div>
         </div>
 
-        <div class="section-title">3. Geometry</div>
+        <div class="section-title">3. Imaging System</div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="fNumber">Lens f-number (f/#):</label>
+            <input type="number" id="fNumber" value="1.6" min="0.1" step="0.1">
+          </div>
+          <div class="form-group">
+            <label for="focalLength">Lens Focal Length (mm):</label>
+            <input type="number" id="focalLength" value="25" min="0.1" step="1">
+          </div>
+        </div>
         <div class="form-group" style="margin-bottom: 0;">
           <label for="objectDist">Object Distance (mm):</label>
           <input type="number" id="objectDist" value="345" min="0.1" step="1">
@@ -341,12 +390,39 @@ html, body {
             <div class="value" id="snrLambertian">-</div>
           </div>
         </div>
+        
+        <div style="margin-top: 20px; font-size: 12px; color: #7f8c8d; text-align: center; border-top: 1px solid #eee; padding-top: 12px;">
+          If any error is found in the specs or calculations, please let me know and I can correct them.
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+const CRYSTALS = {
+  'CsI': { lightYield: 2, density: 5.41 },
+  'CsI(Na)': { lightYield: 41, density: 5.4 },
+  'CsI(Tl)': { lightYield: 54, density: 5.4 },
+  'LYSO(Ce)': { lightYield: 25, density: 7.1 },
+  'NaI(Tl)': { lightYield: 55, density: 3.7 },
+  'YAG(Ce)': { lightYield: 35, density: 4.5 },
+  'PbF2': { lightYield: 0, density: 7.77 }
+};
+
+const CAMERAS = {
+  'Manta-G145B NIR': { fwc: 17900, adcBits: 12, qe: 38, dynamicRange: 65.6, readNoise: 8.8 },
+  'Manta-033': { fwc: 25949, adcBits: 12, qe: 38, dynamicRange: null, readNoise: null },
+  'Andor Ikon-L (936 BV)': { fwc: 100000, adcBits: 16, qe: 95, dynamicRange: null, readNoise: null },
+  'Andor Ikon-L (936 BEX2-DD )': { fwc: 150000, adcBits: 16, qe: 90, dynamicRange: null, readNoise: null },
+  'Andor Ikon-M (934 BV)': { fwc: 100000, adcBits: 16, qe: 95, dynamicRange: null, readNoise: null },
+  'Andor Ikon-M (BEX2-DD)': { fwc: 150000, adcBits: 16, qe: 90, dynamicRange: null, readNoise: null },
+  'Andor Ikon-M SO (BN/BEN/BR-DD)': { fwc: 150000, adcBits: 16, qe: 90, dynamicRange: null, readNoise: null },
+  'Andor Ikon-L SO (BN/BEN/BR-DD)': { fwc: 100000, adcBits: 16, qe: 90, dynamicRange: null, readNoise: null },
+  'Basler acA2440-20gm': { fwc: 10400, adcBits: 12, qe: 68, dynamicRange: 73.3, readNoise: 2.3 },
+  'Basler acA1920-40gm': { fwc: 31900, adcBits: 12, qe: 70, dynamicRange: 73.5, readNoise: 6.7 }
+};
+
 function formatValue(value, decimals = 1) {
   if (value === undefined || value === null || isNaN(value)) return '-';
   return value.toFixed(decimals);
@@ -371,6 +447,63 @@ function showError(message) {
 function hideError() {
   const errorDiv = document.getElementById('errorMessage');
   errorDiv.classList.remove('visible');
+}
+
+function updateCrystalFields() {
+  const crystal = document.getElementById('crystalSelect').value;
+  const densityInput = document.getElementById('density');
+  const lightYieldInput = document.getElementById('lightYield');
+  
+  if (crystal === 'Custom') {
+    densityInput.disabled = false;
+    lightYieldInput.disabled = false;
+  } else {
+    const data = CRYSTALS[crystal];
+    densityInput.value = data.density;
+    lightYieldInput.value = data.lightYield;
+    densityInput.disabled = true;
+    lightYieldInput.disabled = true;
+  }
+}
+
+function updateCameraFields() {
+  const camera = document.getElementById('cameraSelect').value;
+  const fwcInput = document.getElementById('fwc');
+  const adcBitsInput = document.getElementById('adcBits');
+  const qeInput = document.getElementById('qe');
+  const dynamicRangeInput = document.getElementById('dynamicRange');
+  const readNoiseInput = document.getElementById('readNoise');
+  
+  if (camera === 'Custom') {
+    fwcInput.disabled = false;
+    adcBitsInput.disabled = false;
+    qeInput.disabled = false;
+    dynamicRangeInput.disabled = false;
+    readNoiseInput.disabled = false;
+  } else {
+    const data = CAMERAS[camera];
+    fwcInput.value = data.fwc;
+    adcBitsInput.value = data.adcBits;
+    qeInput.value = data.qe;
+    
+    if (data.dynamicRange !== null) {
+      dynamicRangeInput.value = data.dynamicRange;
+    } else {
+      dynamicRangeInput.value = '';
+    }
+    
+    if (data.readNoise !== null) {
+      readNoiseInput.value = data.readNoise;
+    } else {
+      readNoiseInput.value = '';
+    }
+    
+    fwcInput.disabled = true;
+    adcBitsInput.disabled = true;
+    qeInput.disabled = true;
+    dynamicRangeInput.disabled = true;
+    readNoiseInput.disabled = true;
+  }
 }
 
 function calculateSignal() {
@@ -460,7 +593,7 @@ function calculateSignal() {
 
   // Display Results
   document.getElementById('energyDeposited').textContent = formatValue(energyDepositedMev, 1) + ' MeV';
-  document.getElementById('photonsGenerated').textContent = formatInteger(photonsGenerated) + ' photons';
+  document.getElementById('photonsGenerated').textContent = formatScientific(photonsGenerated, 3) + ' photons';
   document.getElementById('conversionGain').textContent = formatValue(electronsPerAdc, 2) + ' e⁻/DN';
 
   // Dynamic Range Cross-Check
@@ -509,6 +642,18 @@ function calculateSignal() {
 
 document.getElementById('calculateBtn').addEventListener('click', calculateSignal);
 
-// Initial calculation on page load
+document.getElementById('crystalSelect').addEventListener('change', () => {
+  updateCrystalFields();
+  calculateSignal();
+});
+
+document.getElementById('cameraSelect').addEventListener('change', () => {
+  updateCameraFields();
+  calculateSignal();
+});
+
+// Initial run on page load
+updateCrystalFields();
+updateCameraFields();
 calculateSignal();
 </script>
