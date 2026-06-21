@@ -118,7 +118,7 @@ redirect_from:
 <div class="physics-tree-container">
   {% include base_path %}
   <h2 class="page__title">Physics Tree</h2>
-  <p>PhD and academic advisor genealogy tree.</p>
+  <p>This is my PhD and academic advisor genealogy tree. What started as a fun project to learn more about the history of laser-plasma interactions slowly started to become a genealogy of my academic lineage, tracing my advisors, their advisors, the advisors of those advisors, and so on. Some in the tree were Nobel laureates, and others have multiple advisors, but I only put the first advisor of each researcher. I hope you have as much fun exploring it as I did researching it!</p>
   
   <div style="margin-top: 30px;">
     <div class="physics-tree-card">
