@@ -189,7 +189,7 @@ redirect_from:
 
 <div class="physics-tree-card nobel-laureate">
   <div class="nobel-badge-container">
-    <img src="{{ base_path }}/images/nobel_medal.png" class="nobel-medal-icon" alt="Nobel Medal" title="Nobel Laureate">
+    <img src="/images/nobel_medal.png" class="nobel-medal-icon" alt="Nobel Medal" title="Nobel Laureate">
   </div>
   <div class="card-content-wrapper">
     <h3 class="researcher-name">George Paget Thomson</h3>
@@ -205,7 +205,7 @@ redirect_from:
 
 <div class="physics-tree-card nobel-laureate">
   <div class="nobel-badge-container">
-    <img src="{{ base_path }}/images/nobel_medal.png" class="nobel-medal-icon" alt="Nobel Medal" title="Nobel Laureate">
+    <img src="/images/nobel_medal.png" class="nobel-medal-icon" alt="Nobel Medal" title="Nobel Laureate">
   </div>
   <div class="card-content-wrapper">
     <h3 class="researcher-name">J. J. Thomson</h3>
@@ -221,7 +221,7 @@ redirect_from:
 
 <div class="physics-tree-card nobel-laureate">
   <div class="nobel-badge-container">
-    <img src="{{ base_path }}/images/nobel_medal.png" class="nobel-medal-icon" alt="Nobel Medal" title="Nobel Laureate">
+    <img src="/images/nobel_medal.png" class="nobel-medal-icon" alt="Nobel Medal" title="Nobel Laureate">
   </div>
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Lord Rayleigh</h3>
