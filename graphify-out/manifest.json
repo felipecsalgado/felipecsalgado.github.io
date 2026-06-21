@@ -1324,11 +1324,6 @@
     "ast_hash": "be010a518800ad6bde27f6145a2674a3",
     "semantic_hash": ""
   },
-  "References tree/Kilkenny-JD-1972-PhD-Thesis.pdf": {
-    "mtime": 1782058641.9853134,
-    "ast_hash": "ac12016455e3c1bf48a71d2572d6ca7d",
-    "semantic_hash": ""
-  },
   "References tree/Kilkenny_PhD_Thesis_1972.pdf": {
     "mtime": 1782058642.0026953,
     "ast_hash": "ac12016455e3c1bf48a71d2572d6ca7d",
@@ -1395,8 +1390,8 @@
     "semantic_hash": ""
   },
   "_pages/physics-tree.md": {
-    "mtime": 1782062468.0323303,
-    "ast_hash": "711a435d5326d704daa0596adee3d69e",
+    "mtime": 1782068568.3244925,
+    "ast_hash": "a7514f25f1cfe84fdea582a9b6fb69b2",
     "semantic_hash": ""
   },
   "images/nobel_medal.png": {
