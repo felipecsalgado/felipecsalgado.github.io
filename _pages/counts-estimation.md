@@ -247,6 +247,16 @@ html, body {
             <input type="number" id="focalLength" value="25" min="0.1" step="1">
           </div>
         </div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="dynamicRange">Dynamic Range (dB) <span style="font-weight:normal; font-size:11px; color:#777;">(optional)</span>:</label>
+            <input type="number" id="dynamicRange" placeholder="e.g. 65.6" min="0" step="0.1">
+          </div>
+          <div class="form-group">
+            <label for="readNoise">Read Noise (e⁻) <span style="font-weight:normal; font-size:11px; color:#777;">(optional)</span>:</label>
+            <input type="number" id="readNoise" placeholder="e.g. 8.8" min="0" step="0.1">
+          </div>
+        </div>
 
         <div class="section-title">3. Geometry</div>
         <div class="form-group" style="margin-bottom: 0;">
@@ -265,7 +275,7 @@ html, body {
         </div>
         
         <div class="results-section-header">General Metrics</div>
-        <div class="results-grid" style="grid-template-columns: repeat(2, 1fr); margin-bottom: 20px;">
+        <div class="results-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 20px;">
           <div class="result-card">
             <h4>Energy Deposited</h4>
             <div class="value" id="energyDeposited">-</div>
@@ -273,6 +283,22 @@ html, body {
           <div class="result-card">
             <h4>Photons Generated</h4>
             <div class="value" id="photonsGenerated">-</div>
+          </div>
+          <div class="result-card">
+            <h4>Conversion Gain</h4>
+            <div class="value" id="conversionGain">-</div>
+          </div>
+        </div>
+
+        <div class="results-section-header" id="drCrossCheckHeader" style="display:none;">Dynamic Range Cross-Check</div>
+        <div class="results-grid" id="drCrossCheckGrid" style="grid-template-columns: repeat(2, 1fr); margin-bottom: 20px; display:none;">
+          <div class="result-card">
+            <h4>Implied Saturation</h4>
+            <div class="value" id="impliedSaturation">-</div>
+          </div>
+          <div class="result-card">
+            <h4>DR / Read Noise</h4>
+            <div class="value" id="drReadNoise">-</div>
           </div>
         </div>
 
@@ -290,6 +316,10 @@ html, body {
             <h4>ADC Counts</h4>
             <div class="value" id="adcIsotropic">-</div>
           </div>
+          <div class="result-card" id="snrIsoCard" style="display:none;">
+            <h4>SNR</h4>
+            <div class="value" id="snrIsotropic">-</div>
+          </div>
         </div>
 
         <div class="results-section-header">Lambertian Emission (polished/wrapped light-guide)</div>
@@ -305,6 +335,10 @@ html, body {
           <div class="result-card highlight">
             <h4>ADC Counts</h4>
             <div class="value" id="adcLambertian">-</div>
+          </div>
+          <div class="result-card" id="snrLambCard" style="display:none;">
+            <h4>SNR</h4>
+            <div class="value" id="snrLambertian">-</div>
           </div>
         </div>
       </div>
@@ -356,6 +390,13 @@ function calculateSignal() {
 
   const objectDist = parseFloat(document.getElementById('objectDist').value);
 
+  // Optional inputs
+  const dynamicRangeStr = document.getElementById('dynamicRange').value.trim();
+  const readNoiseStr = document.getElementById('readNoise').value.trim();
+
+  const dynamicRangeInput = dynamicRangeStr !== '' ? parseFloat(dynamicRangeStr) : null;
+  const readNoiseInput = readNoiseStr !== '' ? parseFloat(readNoiseStr) : null;
+
   // Validation
   if (isNaN(dEdxMass) || dEdxMass <= 0) return showError('Mass stopping power must be a positive number.');
   if (isNaN(density) || density <= 0) return showError('Density must be a positive number.');
@@ -367,6 +408,8 @@ function calculateSignal() {
   if (isNaN(fNumber) || fNumber <= 0) return showError('Lens f-number must be a positive number.');
   if (isNaN(focalLength) || focalLength <= 0) return showError('Focal length must be a positive number.');
   if (isNaN(objectDist) || objectDist <= 0) return showError('Object distance must be a positive number.');
+  if (dynamicRangeInput !== null && (isNaN(dynamicRangeInput) || dynamicRangeInput <= 0)) return showError('Dynamic Range must be a positive number.');
+  if (readNoiseInput !== null && (isNaN(readNoiseInput) || readNoiseInput < 0)) return showError('Read Noise must be a non-negative number.');
 
   if (objectDist <= focalLength) {
     return showError('Object distance must be strictly greater than lens focal length (to form a real image).');
@@ -401,19 +444,67 @@ function calculateSignal() {
   const adcIso = Math.floor(electronsIso / electronsPerAdc);
   const adcLamb = Math.floor(electronsLamb / electronsPerAdc);
 
+  // 6. Dynamic Range & SNR (optional)
+  let snrIso = null;
+  let snrLamb = null;
+  let impliedSaturation = null;
+
+  if (readNoiseInput !== null && readNoiseInput > 0) {
+    snrIso = electronsIso / readNoiseInput;
+    snrLamb = electronsLamb / readNoiseInput;
+  }
+
+  if (dynamicRangeInput !== null && readNoiseInput !== null && readNoiseInput > 0) {
+    impliedSaturation = readNoiseInput * Math.pow(10, dynamicRangeInput / 20.0);
+  }
+
   // Display Results
   document.getElementById('energyDeposited').textContent = formatValue(energyDepositedMev, 1) + ' MeV';
   document.getElementById('photonsGenerated').textContent = formatInteger(photonsGenerated) + ' photons';
+  document.getElementById('conversionGain').textContent = formatValue(electronsPerAdc, 2) + ' e⁻/DN';
+
+  // Dynamic Range Cross-Check
+  const drHeader = document.getElementById('drCrossCheckHeader');
+  const drGrid = document.getElementById('drCrossCheckGrid');
+  if (impliedSaturation !== null) {
+    drHeader.style.display = '';
+    drGrid.style.display = '';
+    document.getElementById('impliedSaturation').textContent = formatInteger(impliedSaturation) + ' e⁻';
+    document.getElementById('drReadNoise').textContent = formatValue(dynamicRangeInput, 1) + ' dB / ' + formatValue(readNoiseInput, 1) + ' e⁻';
+  } else {
+    drHeader.style.display = 'none';
+    drGrid.style.display = 'none';
+  }
 
   // Isotropic
   document.getElementById('effIsotropic').textContent = formatScientific(etaIsotropic, 1);
   document.getElementById('electronsIsotropic').textContent = formatValue(electronsIso, 1) + ' e⁻';
   document.getElementById('adcIsotropic').textContent = formatInteger(adcIso) + ' counts';
 
+  // Isotropic SNR
+  const snrIsoCard = document.getElementById('snrIsoCard');
+  if (snrIso !== null) {
+    snrIsoCard.style.display = '';
+    const snrIsoDb = 20 * Math.log10(snrIso);
+    document.getElementById('snrIsotropic').textContent = formatValue(snrIso, 2) + ' (' + formatValue(snrIsoDb, 1) + ' dB)';
+  } else {
+    snrIsoCard.style.display = 'none';
+  }
+
   // Lambertian
   document.getElementById('effLambertian').textContent = formatScientific(etaLambertian, 1);
   document.getElementById('electronsLambertian').textContent = formatValue(electronsLamb, 1) + ' e⁻';
   document.getElementById('adcLambertian').textContent = formatInteger(adcLamb) + ' counts';
+
+  // Lambertian SNR
+  const snrLambCard = document.getElementById('snrLambCard');
+  if (snrLamb !== null) {
+    snrLambCard.style.display = '';
+    const snrLambDb = 20 * Math.log10(snrLamb);
+    document.getElementById('snrLambertian').textContent = formatValue(snrLamb, 2) + ' (' + formatValue(snrLambDb, 1) + ' dB)';
+  } else {
+    snrLambCard.style.display = 'none';
+  }
 }
 
 document.getElementById('calculateBtn').addEventListener('click', calculateSignal);

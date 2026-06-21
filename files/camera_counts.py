@@ -1,4 +1,4 @@
-def calculate_camera_signal():
+def calculate_camera_signal(dynamic_range_db=None, read_noise_e=None):
     # 1. Input parameter
     # a. Energy Deposition and crystal characteristics
     dE_dx_mass = 1.628     # MeV cm^2/g # LYSO = 1.628
@@ -42,25 +42,59 @@ def calculate_camera_signal():
     
     # 5. ADC Conversion
     max_adc = (2**adc_bits) - 1 # 4095
-    
     electrons_per_adc = fwc / max_adc
-    
+
     adc_iso = electrons_iso / electrons_per_adc
     adc_lamb = electrons_lamb / electrons_per_adc
     
+    # 6. Dynamic Range & SNR (optional)
+    # If dynamic range (dB) and/or read noise are provided, compute SNR
+    snr_iso = None
+    snr_lamb = None
+
+    if read_noise_e is not None and read_noise_e > 0:
+        # SNR = signal / noise  (signal in electrons, noise = read noise)
+        snr_iso = electrons_iso / read_noise_e
+        snr_lamb = electrons_lamb / read_noise_e
+
+    # Cross-check: if dynamic range is given, derive the implied saturation capacity
+    implied_saturation = None
+    if dynamic_range_db is not None and read_noise_e is not None and read_noise_e > 0:
+        import math
+        implied_saturation = read_noise_e * (10 ** (dynamic_range_db / 20.0))
+
     # Print Results
     print("--- Scintillator & Camera Signal Calculation ---")
     print(f"Energy Deposited:       {energy_deposited_mev:.4f} MeV")
     print(f"Total Photons Generated:{photons_generated:.0f} photons")
     print(f"Conversion Gain:        {electrons_per_adc:.2f} e-/ADC count")
+
+    if implied_saturation is not None:
+        print(f"\n--- Dynamic Range Cross-Check ---")
+        print(f"Dynamic Range:          {dynamic_range_db:.1f} dB")
+        print(f"Read Noise:             {read_noise_e:.1f} e-")
+        print(f"Implied Saturation:     {implied_saturation:.0f} e-")
+
     print("\n--- Results: Isotropic Emission ---")
     print(f"Collection Efficiency:  {eta_isotropic:.3e}")
     print(f"Electrons Generated:    {electrons_iso:.3f} e-")
     print(f"ADC Counts:             {adc_iso:.3f} counts")
+    if snr_iso is not None:
+        print(f"SNR:                    {snr_iso:.2f} ({20 * __import__('math').log10(snr_iso):.1f} dB)")
+
     print("\n--- Results: Lambertian Emission ---")
     print(f"Collection Efficiency:  {eta_lambertian:.3e}")
     print(f"Electrons Generated:    {electrons_lamb:.3f} e-")
     print(f"ADC Counts:             {adc_lamb:.3e} counts")
+    if snr_lamb is not None:
+        print(f"SNR:                    {snr_lamb:.2f} ({20 * __import__('math').log10(snr_lamb):.1f} dB)")
 
 if __name__ == "__main__":
+    # Example: run with default values
     calculate_camera_signal()
+
+    # Example: run with Manta G-145B NIR datasheet values (DR and read noise)
+    print("\n" + "="*55)
+    print("=== With Manta G-145B NIR DR & read noise ===")
+    print("="*55 + "\n")
+    calculate_camera_signal(dynamic_range_db=65.6, read_noise_e=8.8)

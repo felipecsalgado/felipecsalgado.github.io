@@ -129,11 +129,49 @@ title: "Counts Estimation Calculation Details"
   <div class="equation-box">
     <p>\[\text{Gain}_{\text{ADC}} = \frac{\text{FWC}}{2^B - 1}\]</p>
   </div>
+
+  <div class="note-box">
+    <p><strong>Note:</strong> Many camera datasheets report a <strong>saturation capacity</strong> (measured per the EMVA 1288 standard) which may differ from the nominal full well capacity. When available, use the EMVA 1288 saturation capacity as the FWC value for a more accurate conversion gain. Similarly, use the actual ADC bit depth from the datasheet (e.g. 12-bit), not the output bit depth (which may be 16-bit due to padding).</p>
+  </div>
   
-  <p>Finally, the recorded digital ADC counts is calculated by dividing the total generated photoelectrons by this conversion gain. Because physical digital counts are discrete and cannot be fractional, the value is rounded down to the nearest integer:</p>
+  <p>The recorded digital ADC counts is calculated by dividing the total generated photoelectrons by the conversion gain. Because physical digital counts are discrete and cannot be fractional, the value is rounded down to the nearest integer:</p>
   
   <div class="equation-box">
     <p>\[\text{ADC Counts} = \left\lfloor \frac{N_{e^-}}{\text{Gain}_{\text{ADC}}} \right\rfloor\]</p>
   </div>
-  
+
+  <h2>6. Dynamic Range and Signal-to-Noise Ratio</h2>
+
+  <p>The <strong>dynamic range</strong> of a camera sensor quantifies the ratio between the maximum signal it can capture (saturation capacity) and the minimum signal it can distinguish from noise (read noise). It is defined as:</p>
+
+  <div class="equation-box">
+    <p>\[\text{DR}_{\text{dB}} = 20 \cdot \log_{10}\left(\frac{\text{Saturation Capacity}}{\sigma_{\text{read}}}\right)\]</p>
+  </div>
+
+  <p>where:</p>
+  <ul>
+    <li><strong>Saturation Capacity</strong> is the maximum number of electrons a pixel can hold before saturating (in \(\text{e}^-\)),</li>
+    <li>\(\sigma_{\text{read}}\) is the temporal dark noise or read noise (in \(\text{e}^-\)).</li>
+  </ul>
+
+  <p>Given the dynamic range and read noise, we can derive the <strong>implied saturation capacity</strong>:</p>
+
+  <div class="equation-box">
+    <p>\[\text{Saturation Capacity} = \sigma_{\text{read}} \cdot 10^{\text{DR}_{\text{dB}} / 20}\]</p>
+  </div>
+
+  <p>This serves as a useful <strong>cross-check</strong>: if the implied saturation capacity differs significantly from the FWC entered by the user, the input parameters may be inconsistent.</p>
+
+  <h3>Signal-to-Noise Ratio (SNR)</h3>
+
+  <p>When read noise is provided, the tool computes a simplified Signal-to-Noise Ratio for the detected signal. This indicates whether the signal is detectable above the camera's noise floor:</p>
+
+  <div class="equation-box">
+    <p>\[\text{SNR} = \frac{N_{e^-}}{\sigma_{\text{read}}}\]</p>
+  </div>
+
+  <div class="note-box">
+    <p><strong>Note:</strong> This is a simplified SNR that only considers read noise. A full noise model would also include photon shot noise (\(\sqrt{N_{e^-}}\)) and dark current noise, but for the low-light signals typical of scintillator imaging, read noise is often the dominant noise source.</p>
+  </div>
+
 </div>
