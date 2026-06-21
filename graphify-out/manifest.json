@@ -235,8 +235,8 @@
     "semantic_hash": "5de45e38eabc9dcebc0c6a0d427b3ff1"
   },
   "_data/navigation.yml": {
-    "mtime": 1782058642.1939046,
-    "ast_hash": "9538dd046f2b77175a04dd7d1c3e5496",
+    "mtime": 1782060718.6709745,
+    "ast_hash": "5f2629829c4b21c9d65fc277d5056797",
     "semantic_hash": ""
   },
   "_data/ui-text.yml": {
@@ -1392,6 +1392,16 @@
   ".github/workflows/jekyll-gh-pages.yml": {
     "mtime": 1782059568.9952655,
     "ast_hash": "ad6af5c37c6bd19cad3ab88dc888f834",
+    "semantic_hash": ""
+  },
+  "_pages/physics-tree.md": {
+    "mtime": 1782062041.4238212,
+    "ast_hash": "d31e965c35835fc167fc4a792e76c5e7",
+    "semantic_hash": ""
+  },
+  "images/nobel_medal.png": {
+    "mtime": 1782060274.125198,
+    "ast_hash": "6e06c24fe760feb9794efad6caa98bf4",
     "semantic_hash": ""
   }
 }

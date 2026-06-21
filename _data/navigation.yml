@@ -18,3 +18,7 @@ main:
         url: /counts-estimation/
       - title: "Programming"
         url: /programming/
+
+  - title: "Physics tree"
+    url: /physics-tree/
+

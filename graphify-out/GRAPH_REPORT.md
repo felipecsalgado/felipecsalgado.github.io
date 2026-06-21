@@ -1,16 +1,16 @@
 # Graph Report - felipecsalgado.github.io  (2026-06-21)
 
 ## Corpus Check
-- 100 files · ~723,469 words
+- 101 files · ~765,512 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 700 nodes · 737 edges · 183 communities (115 shown, 68 thin omitted)
+- 701 nodes · 737 edges · 184 communities (116 shown, 68 thin omitted)
 - Extraction: 81% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 137 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f20ce2bf`
+- Built from commit: `6c9d29cc`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -172,7 +172,7 @@
 - **Patents and Intellectual Property** — patents_2015_0_otdr, patents_2016_0_methane [INFERRED 0.85]
 - **Photon Attenuation App Feature** — pages_attenuation_calculator, pages_attenuation_explanation [INFERRED 0.95]
 
-## Communities (183 total, 68 thin omitted)
+## Communities (184 total, 68 thin omitted)
 
 ### Community 0 - "jQuery Core Library"
 Cohesion: 0.06
@@ -308,7 +308,7 @@ Nodes (3): Markdown Generator - Posters, Poster 2022 - ICUIL Prize, Talk: ICUIL 
 
 ### Community 139 - "Community 139"
 Cohesion: 0.07
-Nodes (26): [1.0.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.1), [1.0.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.2), [1.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.2), [1.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.3.1), [2.2.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.0), [2.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.1), [3.0.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.0.3), [3.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.4) (+18 more)
+Nodes (26): [1.0.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.1), [1.0.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.2), [1.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.2), [1.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.3.1), [2.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.1), [3.0.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.0.3), [3.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.4), [3.1.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.5) (+18 more)
 
 ### Community 140 - "Community 140"
 Cohesion: 0.29
@@ -413,7 +413,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `GOD NODE: Physics Research (SF-QED, LWFA, Detector)` connect `Physics Research & Career` to `Jekyll Site Configuration`, `Photon Attenuation Calculator`, `Felipe Salgado CV`, `Publication & SF-QED Diagrams`, `Markdown Generator README`, `DG645 Controller App Screenshot`, `Research: Laser-Driven Particle Accel...`?**
   _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **Why does `GOD NODE: Academic Website Infrastructure (Jekyll/GitHub Pages)` connect `Jekyll Site Configuration` to `Physics Research & Career`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+  _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **Why does `GOD NODE: Photon/Radiation Physics Tools` connect `Photon Attenuation Calculator` to `Physics Research & Career`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
 - **Are the 13 inferred relationships involving `GOD NODE: Physics Research (SF-QED, LWFA, Detector)` (e.g. with `Single-Particle Detector Design` and `Laser Wakefield Acceleration (LWFA)`) actually correct?**

@@ -2767,7 +2767,7 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "changelog_3_3_2_https_github_com_mmistakes_minimal_mistakes_releases_tag_3_3_2",
-      "community": 139,
+      "community": 182,
       "norm_label": "[3.3.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.2)"
     },
     {
@@ -2777,7 +2777,7 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "changelog_bug_fixes_87",
-      "community": 139,
+      "community": 182,
       "norm_label": "bug fixes"
     },
     {
@@ -3117,7 +3117,7 @@
       "source_location": "L210",
       "_origin": "ast",
       "id": "changelog_3_2_2_https_github_com_mmistakes_minimal_mistakes_releases_tag_3_2_2",
-      "community": 162,
+      "community": 139,
       "norm_label": "[3.2.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.2)"
     },
     {
@@ -3127,7 +3127,7 @@
       "source_location": "L212",
       "_origin": "ast",
       "id": "changelog_enhancements_212",
-      "community": 162,
+      "community": 139,
       "norm_label": "enhancements"
     },
     {
@@ -3267,7 +3267,7 @@
       "source_location": "L260",
       "_origin": "ast",
       "id": "changelog_3_1_5_https_github_com_mmistakes_minimal_mistakes_releases_tag_3_1_5",
-      "community": 182,
+      "community": 139,
       "norm_label": "[3.1.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.5)"
     },
     {
@@ -3277,7 +3277,7 @@
       "source_location": "L262",
       "_origin": "ast",
       "id": "changelog_maintenance_262",
-      "community": 182,
+      "community": 139,
       "norm_label": "maintenance"
     },
     {
@@ -3447,7 +3447,7 @@
       "source_location": "L340",
       "_origin": "ast",
       "id": "changelog_2_2_0_https_github_com_mmistakes_minimal_mistakes_releases_tag_2_2_0",
-      "community": 139,
+      "community": 162,
       "norm_label": "[2.2.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.0)"
     },
     {
@@ -3457,7 +3457,7 @@
       "source_location": "L342",
       "_origin": "ast",
       "id": "changelog_enhancements_342",
-      "community": 139,
+      "community": 162,
       "norm_label": "enhancements"
     },
     {
@@ -4759,6 +4759,16 @@
       "id": "pages_non_menu_page",
       "community": 91,
       "norm_label": "non-menu-page.md"
+    },
+    {
+      "label": "physics-tree.md",
+      "file_type": "document",
+      "source_file": "_pages/physics-tree.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pages_physics_tree",
+      "community": 183,
+      "norm_label": "physics-tree.md"
     },
     {
       "label": "programming.md",
@@ -7566,9 +7576,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation",
-      "target": "js_counts_estimation_calculatesignal",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_calculatesignal"
     },
     {
       "relation": "contains",
@@ -7576,9 +7586,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation",
-      "target": "js_counts_estimation_cameras",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_cameras"
     },
     {
       "relation": "contains",
@@ -7586,9 +7596,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation",
-      "target": "js_counts_estimation_crystals",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_crystals"
     },
     {
       "relation": "contains",
@@ -7596,9 +7606,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation",
-      "target": "js_counts_estimation_formatinteger",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_formatinteger"
     },
     {
       "relation": "contains",
@@ -7606,9 +7616,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation",
-      "target": "js_counts_estimation_formatscientific",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_formatscientific"
     },
     {
       "relation": "contains",
@@ -7616,9 +7626,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation",
-      "target": "js_counts_estimation_formatvalue",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_formatvalue"
     },
     {
       "relation": "contains",
@@ -7626,9 +7636,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation",
-      "target": "js_counts_estimation_hideerror",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_hideerror"
     },
     {
       "relation": "contains",
@@ -7636,9 +7646,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation",
-      "target": "js_counts_estimation_showerror",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_showerror"
     },
     {
       "relation": "contains",
@@ -7646,9 +7656,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation",
-      "target": "js_counts_estimation_updatecamerafields",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_updatecamerafields"
     },
     {
       "relation": "contains",
@@ -7656,9 +7666,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation",
-      "target": "js_counts_estimation_updatecrystalfields",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_updatecrystalfields"
     },
     {
       "relation": "calls",
@@ -7667,9 +7677,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L193",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation_calculatesignal",
-      "target": "js_counts_estimation_formatvalue",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_formatvalue"
     },
     {
       "relation": "calls",
@@ -7678,9 +7688,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L194",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation_calculatesignal",
-      "target": "js_counts_estimation_formatscientific",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_formatscientific"
     },
     {
       "relation": "calls",
@@ -7689,9 +7699,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L203",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation_calculatesignal",
-      "target": "js_counts_estimation_formatinteger",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_formatinteger"
     },
     {
       "relation": "calls",
@@ -7700,9 +7710,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation_calculatesignal",
-      "target": "js_counts_estimation_showerror",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_showerror"
     },
     {
       "relation": "calls",
@@ -7711,9 +7721,9 @@
       "source_file": "assets/js/counts-estimation.js",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_counts_estimation_calculatesignal",
-      "target": "js_counts_estimation_hideerror",
-      "confidence_score": 1.0
+      "target": "js_counts_estimation_hideerror"
     },
     {
       "relation": "contains",
@@ -15105,5 +15115,5 @@
       "source_file": "_pages/attenuation-calculator.md"
     }
   ],
-  "built_at_commit": "f20ce2bfa951c55553b110fdbcf93f900875f4fe"
+  "built_at_commit": "6c9d29cc0dff0e08cd7c1f00ba8219a43e67df40"
 }
