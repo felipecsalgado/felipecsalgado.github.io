@@ -210,7 +210,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">J. J. Thomson</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">M.A. awarded 1883 (Nobel Prize in Physics in 1906).</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">M.A. awarded 1883; Nobel Prize in Physics in 1906.</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge (Cavendish Laboratory).</span></li>
       <li><strong class="detail-label">Supervisor:</strong><span class="detail-value">Lord Rayleigh.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Discovered the electron and isotopes, and pioneered the mass spectrometer.</span></li>
@@ -226,7 +226,7 @@ redirect_from:
   <div class="card-content-wrapper">
     <h3 class="researcher-name">Lord Rayleigh</h3>
     <ul class="researcher-details">
-      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">M.A. <strong>1868</strong>.</span></li>
+      <li><strong class="detail-label">Timeline:</strong><span class="detail-value">M.A. awarded in <strong>1868</strong>; Nobel Prize in Physics in 1904.</span></li>
       <li><strong class="detail-label">Institute:</strong><span class="detail-value">University of Cambridge.</span></li>
       <li><strong class="detail-label">Tutors:</strong><span class="detail-value">Edward Routh, George Gabriel Stokes, and James Clerk Maxwell.</span></li>
       <li><strong class="detail-label">Main research:</strong><span class="detail-value">Formulated the theory of acoustic scattering ("Rayleigh scattering"), co-discovered Argon.</span></li>
