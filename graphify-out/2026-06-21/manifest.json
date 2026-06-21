@@ -235,8 +235,8 @@
     "semantic_hash": "5de45e38eabc9dcebc0c6a0d427b3ff1"
   },
   "_data/navigation.yml": {
-    "mtime": 1782034452.025543,
-    "ast_hash": "fff33bde06ab2e51e5a6de16cb22a89e",
+    "mtime": 1782057866.2461083,
+    "ast_hash": "9538dd046f2b77175a04dd7d1c3e5496",
     "semantic_hash": ""
   },
   "_data/ui-text.yml": {
@@ -390,14 +390,14 @@
     "semantic_hash": "ec5d772fd82cb22b81cbb2f976bcb83f"
   },
   "_includes/head/custom.html": {
-    "mtime": 1704022789.22,
-    "ast_hash": "d65b5e9383c40eaec0bd0ba25c8c252c",
-    "semantic_hash": "d65b5e9383c40eaec0bd0ba25c8c252c"
+    "mtime": 1782057916.0586083,
+    "ast_hash": "df195da4d6781072210d23758898e90e",
+    "semantic_hash": ""
   },
   "_includes/masthead.html": {
-    "mtime": 1781464021.61,
-    "ast_hash": "9bece559a6a6996502123437970aa465",
-    "semantic_hash": "9bece559a6a6996502123437970aa465"
+    "mtime": 1782058108.943658,
+    "ast_hash": "66eb79a30edcd39af58adc9ab9c2b152",
+    "semantic_hash": ""
   },
   "_includes/page__hero.html": {
     "mtime": 1704022789.22,
@@ -430,9 +430,9 @@
     "semantic_hash": "a3dee92da6ead8b6deedc859a1c3fa72"
   },
   "_includes/seo.html": {
-    "mtime": 1704022789.22,
-    "ast_hash": "e44f2e441fd1117f86d8e9f2d6d9ca9c",
-    "semantic_hash": "e44f2e441fd1117f86d8e9f2d6d9ca9c"
+    "mtime": 1782057910.9553664,
+    "ast_hash": "78a929675793796d2ec8f5e9724efc51",
+    "semantic_hash": ""
   },
   "_includes/sidebar.html": {
     "mtime": 1704561444.5,
@@ -814,11 +814,6 @@
     "ast_hash": "4478b4d7022cad174e4c04246fe622ef",
     "semantic_hash": "4478b4d7022cad174e4c04246fe622ef"
   },
-  "images/3953273590_704e3899d5_m.jpg": {
-    "mtime": 1704022789.25,
-    "ast_hash": "c776b7389f1b26432c7015540cd7dbc7",
-    "semantic_hash": "c776b7389f1b26432c7015540cd7dbc7"
-  },
   "images/500x300.png": {
     "mtime": 1704022789.25,
     "ast_hash": "a3fefa2bcbc404c278eecae374c4a97f",
@@ -980,9 +975,9 @@
     "semantic_hash": "c4cd16193c02d9c9a0f7300c9e4c3904"
   },
   "images/android-chrome-192x192.png": {
-    "mtime": 1781630842.6302369,
-    "ast_hash": "07d4e4af468569e4ced56a49d50c4e82",
-    "semantic_hash": "07d4e4af468569e4ced56a49d50c4e82"
+    "mtime": 1782057904.0786874,
+    "ast_hash": "278f7978281e0fe9373379f892833a45",
+    "semantic_hash": ""
   },
   "images/apple-touch-icon-114x114.png": {
     "mtime": 1781630842.634495,
@@ -1030,19 +1025,19 @@
     "semantic_hash": "14c7959e6fb5e89fdcf68c715b88ec4d"
   },
   "images/favicon-16x16.png": {
-    "mtime": 1781630842.6250656,
-    "ast_hash": "a3ee467f8152f4e61bd8e24d7a98adcb",
-    "semantic_hash": "a3ee467f8152f4e61bd8e24d7a98adcb"
+    "mtime": 1782057904.0746067,
+    "ast_hash": "ea7c4d5c6975b041f01dfb16b7bcc6ba",
+    "semantic_hash": ""
   },
   "images/favicon-32x32.png": {
-    "mtime": 1781630842.6252775,
-    "ast_hash": "6d7f8955aff42cf09dc53236848e38b9",
-    "semantic_hash": "6d7f8955aff42cf09dc53236848e38b9"
+    "mtime": 1782057904.074907,
+    "ast_hash": "511c865c9cf883de453dbc3e9865fc71",
+    "semantic_hash": ""
   },
   "images/favicon-96x96.png": {
-    "mtime": 1781630842.6259344,
-    "ast_hash": "c5f939dacc70b5b0bbb86fea573181f5",
-    "semantic_hash": "c5f939dacc70b5b0bbb86fea573181f5"
+    "mtime": 1782057904.0758936,
+    "ast_hash": "f7a6bf7cf3a223bf7d93c2f516b6ee47",
+    "semantic_hash": ""
   },
   "images/mstile-144x144.png": {
     "mtime": 1781630842.6321285,
@@ -1095,8 +1090,8 @@
     "semantic_hash": ""
   },
   "my_carrer_genealogy_tree.md": {
-    "mtime": 1781908303.0572739,
-    "ast_hash": "d349e783e5eb8e1ab46787838e3afb3e",
+    "mtime": 1782045826.5722945,
+    "ast_hash": "34c5a9145c703999a0dcef7f28bf8038",
     "semantic_hash": ""
   },
   "References tree/DB_Thueringen_Felipe_Cezar_Salgado_Dissertation.pdf": {
@@ -1245,8 +1240,8 @@
     "semantic_hash": ""
   },
   "References tree/REFERENCE_GUIDE.md": {
-    "mtime": 1781908267.9332848,
-    "ast_hash": "795d251f00485c44d24726a339b10ab8",
+    "mtime": 1782045371.5917177,
+    "ast_hash": "3b7003a2f24cf1903efcd0b848ac06f0",
     "semantic_hash": ""
   },
   "References tree/Website_Felipe_Cezar_Salgado.pdf": {
@@ -1322,6 +1317,66 @@
   "_pages/counts-estimation-explanation.md": {
     "mtime": 1782039025.28305,
     "ast_hash": "d34b6afd85948fd043e50aca267fb816",
+    "semantic_hash": ""
+  },
+  "_pages/analysis-tools.md": {
+    "mtime": 1782057862.4118927,
+    "ast_hash": "c65cdb419ffa11e6dcde37b5f9430c0d",
+    "semantic_hash": ""
+  },
+  "References tree/Kilkenny-JD-1972-PhD-Thesis.pdf": {
+    "mtime": 1782042745.052937,
+    "ast_hash": "ac12016455e3c1bf48a71d2572d6ca7d",
+    "semantic_hash": ""
+  },
+  "References tree/Kilkenny_PhD_Thesis_1972.pdf": {
+    "mtime": 1782042883.2691128,
+    "ast_hash": "ac12016455e3c1bf48a71d2572d6ca7d",
+    "semantic_hash": ""
+  },
+  "References tree/MGP_Ernest_Rutherford.pdf": {
+    "mtime": 1782042906.5512912,
+    "ast_hash": "06cb1e106576a9e3e1f836e5eb0df0b8",
+    "semantic_hash": ""
+  },
+  "References tree/Queens_College_Record_1995.pdf": {
+    "mtime": 1782043871.2734618,
+    "ast_hash": "67b57328494b66d214637c4d07008614",
+    "semantic_hash": ""
+  },
+  "References tree/Wikipedia_Ernest_Rutherford.pdf": {
+    "mtime": 1782042910.8256633,
+    "ast_hash": "8744dc6fd52dacbf414ce33b6de5bf8b",
+    "semantic_hash": ""
+  },
+  "References tree/Wikipedia_George_Paget_Thomson.pdf": {
+    "mtime": 1782045365.0374815,
+    "ast_hash": "fc3734e6d783adbabec94896288c9867",
+    "semantic_hash": ""
+  },
+  "References tree/a-history-of-high-power-laser-research-and-development-in-the-united-kingdom.pdf": {
+    "mtime": 1782042204.9439237,
+    "ast_hash": "714b2835ff9e06a15fbaea06d445f541",
+    "semantic_hash": ""
+  },
+  "References tree/record-1995.pdf": {
+    "mtime": 1782043149.944043,
+    "ast_hash": "67b57328494b66d214637c4d07008614",
+    "semantic_hash": ""
+  },
+  "images/camera_counts.png": {
+    "mtime": 1782048028.7542186,
+    "ast_hash": "bcd5fd1e529f3f3ccc959f85c45f6dc7",
+    "semantic_hash": ""
+  },
+  "images/programming.png": {
+    "mtime": 1782048198.7965443,
+    "ast_hash": "6bf4dd3964a4ed07fa5ffb224bedb518",
+    "semantic_hash": ""
+  },
+  "images/xray-photon-att.png": {
+    "mtime": 1782056333.8807225,
+    "ast_hash": "362346527f3139480d33e0347dafa896",
     "semantic_hash": ""
   }
 }

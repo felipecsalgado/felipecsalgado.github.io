@@ -51,6 +51,116 @@
       "norm_label": "collapse.js"
     },
     {
+      "label": "counts-estimation.js",
+      "file_type": "code",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_counts_estimation",
+      "community": 167,
+      "norm_label": "counts-estimation.js"
+    },
+    {
+      "label": "CRYSTALS",
+      "file_type": "code",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_counts_estimation_crystals",
+      "community": 167,
+      "norm_label": "crystals"
+    },
+    {
+      "label": "CAMERAS",
+      "file_type": "code",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "js_counts_estimation_cameras",
+      "community": 167,
+      "norm_label": "cameras"
+    },
+    {
+      "label": "formatValue()",
+      "file_type": "code",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "js_counts_estimation_formatvalue",
+      "community": 167,
+      "norm_label": "formatvalue()"
+    },
+    {
+      "label": "formatScientific()",
+      "file_type": "code",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "js_counts_estimation_formatscientific",
+      "community": 167,
+      "norm_label": "formatscientific()"
+    },
+    {
+      "label": "formatInteger()",
+      "file_type": "code",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "js_counts_estimation_formatinteger",
+      "community": 167,
+      "norm_label": "formatinteger()"
+    },
+    {
+      "label": "showError()",
+      "file_type": "code",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "js_counts_estimation_showerror",
+      "community": 167,
+      "norm_label": "showerror()"
+    },
+    {
+      "label": "hideError()",
+      "file_type": "code",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "js_counts_estimation_hideerror",
+      "community": 167,
+      "norm_label": "hideerror()"
+    },
+    {
+      "label": "updateCrystalFields()",
+      "file_type": "code",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "js_counts_estimation_updatecrystalfields",
+      "community": 167,
+      "norm_label": "updatecrystalfields()"
+    },
+    {
+      "label": "updateCameraFields()",
+      "file_type": "code",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "js_counts_estimation_updatecamerafields",
+      "community": 167,
+      "norm_label": "updatecamerafields()"
+    },
+    {
+      "label": "calculateSignal()",
+      "file_type": "code",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "js_counts_estimation_calculatesignal",
+      "community": 167,
+      "norm_label": "calculatesignal()"
+    },
+    {
       "label": "_()",
       "file_type": "code",
       "source_file": "assets/js/main.min.js",
@@ -2657,7 +2767,7 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "changelog_3_3_2_https_github_com_mmistakes_minimal_mistakes_releases_tag_3_3_2",
-      "community": 167,
+      "community": 139,
       "norm_label": "[3.3.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.2)"
     },
     {
@@ -2667,7 +2777,7 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "changelog_bug_fixes_87",
-      "community": 167,
+      "community": 139,
       "norm_label": "bug fixes"
     },
     {
@@ -3157,7 +3267,7 @@
       "source_location": "L260",
       "_origin": "ast",
       "id": "changelog_3_1_5_https_github_com_mmistakes_minimal_mistakes_releases_tag_3_1_5",
-      "community": 139,
+      "community": 182,
       "norm_label": "[3.1.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.5)"
     },
     {
@@ -3167,7 +3277,7 @@
       "source_location": "L262",
       "_origin": "ast",
       "id": "changelog_maintenance_262",
-      "community": 139,
+      "community": 182,
       "norm_label": "maintenance"
     },
     {
@@ -7450,6 +7560,161 @@
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "js_counts_estimation",
+      "target": "js_counts_estimation_calculatesignal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "js_counts_estimation",
+      "target": "js_counts_estimation_cameras",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "js_counts_estimation",
+      "target": "js_counts_estimation_crystals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "js_counts_estimation",
+      "target": "js_counts_estimation_formatinteger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "js_counts_estimation",
+      "target": "js_counts_estimation_formatscientific",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "js_counts_estimation",
+      "target": "js_counts_estimation_formatvalue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "js_counts_estimation",
+      "target": "js_counts_estimation_hideerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "js_counts_estimation",
+      "target": "js_counts_estimation_showerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "js_counts_estimation",
+      "target": "js_counts_estimation_updatecamerafields",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "js_counts_estimation",
+      "target": "js_counts_estimation_updatecrystalfields",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L193",
+      "weight": 1.0,
+      "source": "js_counts_estimation_calculatesignal",
+      "target": "js_counts_estimation_formatvalue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L194",
+      "weight": 1.0,
+      "source": "js_counts_estimation_calculatesignal",
+      "target": "js_counts_estimation_formatscientific",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L203",
+      "weight": 1.0,
+      "source": "js_counts_estimation_calculatesignal",
+      "target": "js_counts_estimation_formatinteger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "js_counts_estimation_calculatesignal",
+      "target": "js_counts_estimation_showerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/counts-estimation.js",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "js_counts_estimation_calculatesignal",
+      "target": "js_counts_estimation_hideerror",
+      "confidence_score": 1.0
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -13459,9 +13724,9 @@
       "source_file": "my_carrer_genealogy_tree.md",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "my_carrer_genealogy_tree_academic_genealogy_tree_felipe_cezar_salgado_to_the_scientific_revolution",
-      "target": "my_carrer_genealogy_tree_the_late_19th_early_20th_century_nuclear_physics_and_electron_discovery",
-      "confidence_score": 1.0
+      "target": "my_carrer_genealogy_tree_the_late_19th_early_20th_century_nuclear_physics_and_electron_discovery"
     },
     {
       "relation": "contains",
@@ -14840,5 +15105,5 @@
       "source_file": "_pages/attenuation-calculator.md"
     }
   ],
-  "built_at_commit": "5d84030e1ccde2bb809d5817a15e7a9e823d7981"
+  "built_at_commit": "f20ce2bfa951c55553b110fdbcf93f900875f4fe"
 }

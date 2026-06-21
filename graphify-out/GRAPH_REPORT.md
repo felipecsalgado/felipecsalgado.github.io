@@ -1,16 +1,16 @@
 # Graph Report - felipecsalgado.github.io  (2026-06-21)
 
 ## Corpus Check
-- 99 files · ~723,459 words
+- 100 files · ~723,469 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 689 nodes · 722 edges · 182 communities (114 shown, 68 thin omitted)
+- 700 nodes · 737 edges · 183 communities (115 shown, 68 thin omitted)
 - Extraction: 81% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 137 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5d84030e`
+- Built from commit: `f20ce2bf`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -139,6 +139,7 @@
 - [[_COMMUNITY_Community 169|Community 169]]
 - [[_COMMUNITY_Community 170|Community 170]]
 - [[_COMMUNITY_Community 171|Community 171]]
+- [[_COMMUNITY_Community 182|Community 182]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `_()` - 31 edges
@@ -171,7 +172,7 @@
 - **Patents and Intellectual Property** — patents_2015_0_otdr, patents_2016_0_methane [INFERRED 0.85]
 - **Photon Attenuation App Feature** — pages_attenuation_calculator, pages_attenuation_explanation [INFERRED 0.95]
 
-## Communities (182 total, 68 thin omitted)
+## Communities (183 total, 68 thin omitted)
 
 ### Community 0 - "jQuery Core Library"
 Cohesion: 0.06
@@ -397,8 +398,12 @@ Nodes (3): [3.3.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.
 Cohesion: 0.67
 Nodes (3): [3.3.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.5), Enhancements, Maintenance
 
+### Community 167 - "Community 167"
+Cohesion: 0.27
+Nodes (8): calculateSignal(), CAMERAS, CRYSTALS, formatInteger(), formatScientific(), formatValue(), hideError(), showError()
+
 ## Knowledge Gaps
-- **305 isolated node(s):** `name`, `icons`, `name`, `version`, `description` (+300 more)
+- **307 isolated node(s):** `CRYSTALS`, `CAMERAS`, `name`, `icons`, `name` (+302 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **68 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -406,15 +411,15 @@ Nodes (3): [3.3.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `GOD NODE: Physics Research (SF-QED, LWFA, Detector)` connect `Physics Research & Career` to `Jekyll Site Configuration`, `Photon Attenuation Calculator`, `Felipe Salgado CV`, `Publication & SF-QED Diagrams`, `Markdown Generator README`, `DG645 Controller App Screenshot`, `Research: Laser-Driven Particle Accel...`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **Why does `GOD NODE: Academic Website Infrastructure (Jekyll/GitHub Pages)` connect `Jekyll Site Configuration` to `Physics Research & Career`?**
   _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **Why does `GOD NODE: Photon/Radiation Physics Tools` connect `Photon Attenuation Calculator` to `Physics Research & Career`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
 - **Are the 13 inferred relationships involving `GOD NODE: Physics Research (SF-QED, LWFA, Detector)` (e.g. with `Single-Particle Detector Design` and `Laser Wakefield Acceleration (LWFA)`) actually correct?**
   _`GOD NODE: Physics Research (SF-QED, LWFA, Detector)` has 13 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `name`, `icons`, `Produce entities within text.` to the rest of the system?**
-  _311 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `CRYSTALS`, `CAMERAS`, `name` to the rest of the system?**
+  _313 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `jQuery Core Library` be split into smaller, more focused modules?**
   _Cohesion score 0.05889724310776942 - nodes in this community are weakly interconnected._
 - **Should `Markdown Demo Page` be split into smaller, more focused modules?**

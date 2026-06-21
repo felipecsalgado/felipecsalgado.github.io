@@ -1,16 +1,16 @@
 # Graph Report - felipecsalgado.github.io  (2026-06-21)
 
 ## Corpus Check
-- 98 files · ~569,671 words
+- 99 files · ~723,459 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 688 nodes · 722 edges · 181 communities (113 shown, 68 thin omitted)
+- 689 nodes · 722 edges · 182 communities (114 shown, 68 thin omitted)
 - Extraction: 81% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 137 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `48c68005`
+- Built from commit: `5d84030e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -171,7 +171,7 @@
 - **Patents and Intellectual Property** — patents_2015_0_otdr, patents_2016_0_methane [INFERRED 0.85]
 - **Photon Attenuation App Feature** — pages_attenuation_calculator, pages_attenuation_explanation [INFERRED 0.95]
 
-## Communities (181 total, 68 thin omitted)
+## Communities (182 total, 68 thin omitted)
 
 ### Community 0 - "jQuery Core Library"
 Cohesion: 0.06
@@ -307,11 +307,11 @@ Nodes (3): Markdown Generator - Posters, Poster 2022 - ICUIL Prize, Talk: ICUIL 
 
 ### Community 139 - "Community 139"
 Cohesion: 0.07
-Nodes (26): [1.0.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.1), [1.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.2), [1.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.3.1), [2.2.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.0), [2.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.1), [3.0.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.0.3), [3.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.4), [3.2.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.0) (+18 more)
+Nodes (26): [1.0.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.1), [1.0.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.2), [1.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.2), [1.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.3.1), [2.2.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.0), [2.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.1), [3.0.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.0.3), [3.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.4) (+18 more)
 
 ### Community 140 - "Community 140"
 Cohesion: 0.29
-Nodes (6): Academic Genealogy Tree: Felipe Cezar Salgado to the Scientific Revolution, The Cambridge Mathematical Coaches (18th & 19th Century), The Early 20th Century: Interferometry, Spectroscopy, and X-ray Crystallography, The Enlightenment and Scientific Revolution (16th & 17th Century), The Italian Renaissance, The Modern Era: High-Power Lasers and Plasma Physics
+Nodes (6): Academic Genealogy Tree: Felipe Cezar Salgado to the Scientific Revolution, The Cambridge Mathematical Coaches (18th & 19th Century), The Enlightenment and Scientific Revolution (16th & 17th Century), The Italian Renaissance, The Late 19th & Early 20th Century: Nuclear Physics and Electron Discovery, The Modern Era: High-Power Lasers and Plasma Physics
 
 ### Community 141 - "Community 141"
 Cohesion: 0.50
